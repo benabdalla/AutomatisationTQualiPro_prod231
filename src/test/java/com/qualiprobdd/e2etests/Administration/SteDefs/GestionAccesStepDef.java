@@ -161,7 +161,7 @@ public   static   int  emp=0;
 
     @When("^Ajouter une fonction$")
     public void ajouter_une_fonction() throws Throwable {
-        GestionAccesModel.ajouter_une_fonction();
+        GestionAccesModel.ajouter_une_fonction(driver);
     }
 
     @When("^Valider fiche Employé$")

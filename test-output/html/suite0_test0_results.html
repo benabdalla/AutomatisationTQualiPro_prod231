@@ -12,7 +12,7 @@
 <body>
 <div id="meta">
 G&#x00E9;n&#x00E9;r&#x00E9;s par <a href="http://www.testng.org" target="_blank">TestNG</a> avec <a href="https://github.com/testng-team/reportng" target="_blank">ReportNG</a>
-&#x00E0; 09:18 WAT du vendredi 28 mai 2021
+&#x00E0; 13:35 WAT du vendredi 28 mai 2021
     <br/><span
     id="systemInfo">Mootaz.benabdallah@DESKTOP-83OEK5H&nbsp;/&nbsp;Java 1.8.0_291 (Oracle Corporation)&nbsp;/&nbsp;Windows 10 10.0 (amd64)</span>
 </div>
@@ -24,12 +24,14 @@ G&#x00E9;n&#x00E9;r&#x00E9;s par <a href="http://www.testng.org" target="_blank"
 </p>
 
 <p>Dur&#x00E9;e de name
-    : 1,085s</p>
+    : 64,683s</p>
 
 
-    <table class="resultsTable">
+
+
+    <table class="resultsTable" width="100%">
         <tr>
-            <th colspan="3" class="header failed">Tests &#x00C9;chou&#x00E9;s</th>
+            <th colspan="3" class="header passed">Tests R&#x00E9;ussis</th>
         </tr>
             <tr>
                 <td class="group" colspan="3">com.qualiprobdd.e2etests.EmpRunner</td>
@@ -41,7 +43,7 @@ G&#x00E9;n&#x00E9;r&#x00E9;s par <a href="http://www.testng.org" target="_blank"
                 </span>
         </td>
         <td class="duration">
-            0,655s
+            63,761s
         </td>
         <td class="result">
             <!-- Display the dependencies for skipped test methods -->
@@ -54,187 +56,9 @@ G&#x00E9;n&#x00E9;r&#x00E9;s par <a href="http://www.testng.org" target="_blank"
 
             <!-- Show logger output for the test -->
 
-                <a href="javascript:toggleElement('exception-0', 'block')"
-                   title="Cliquez pour afficher/cacher">
-                    <b>cucumber.runtime.CucumberException: java.lang.NoClassDefFoundError: org/apache/commons/logging/LogFactory</b>
-                </a>
-                <br/>
-                <div class="stackTrace" id="exception-0">
-                        cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)<br/>
-                        cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)<br/>
-                        sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br/>
-                        sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br/>
-                        sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br/>
-                        java.lang.reflect.Method.invoke(Method.java:498)<br/>
-                        org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)<br/>
-                        org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)<br/>
-                        org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)<br/>
-                        org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)<br/>
-                        org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)<br/>
-                        org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)<br/>
-                        org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)<br/>
-                        org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)<br/>
-                        java.util.ArrayList.forEach(ArrayList.java:1259)<br/>
-                        org.testng.TestRunner.privateRun(TestRunner.java:764)<br/>
-                        org.testng.TestRunner.run(TestRunner.java:585)<br/>
-                        org.testng.SuiteRunner.runTest(SuiteRunner.java:384)<br/>
-                        org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)<br/>
-                        org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)<br/>
-                        org.testng.SuiteRunner.run(SuiteRunner.java:286)<br/>
-                        org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)<br/>
-                        org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)<br/>
-                        org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)<br/>
-                        org.testng.TestNG.runSuitesLocally(TestNG.java:1140)<br/>
-                        org.testng.TestNG.runSuites(TestNG.java:1069)<br/>
-                        org.testng.TestNG.run(TestNG.java:1037)<br/>
-                        com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)<br/>
-                        com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)<br/>
-                        <b>Caus&#x00E9;s par: </b>
-                        <a href="javascript:toggleElement('exception-1', 'block')"
-                           title="Click to expand/collapse">
-                            java.lang.NoClassDefFoundError: org/apache/commons/logging/LogFactory
-                        </a>
-                        <br/>
-                        <div class="stackTrace" id="exception-1">
-                                org.apache.http.conn.ssl.AbstractVerifier.&lt;init&gt;(AbstractVerifier.java:61)<br/>
-                                org.apache.http.conn.ssl.AllowAllHostnameVerifier.&lt;init&gt;(AllowAllHostnameVerifier.java:44)<br/>
-                                org.apache.http.conn.ssl.AllowAllHostnameVerifier.&lt;clinit&gt;(AllowAllHostnameVerifier.java:46)<br/>
-                                org.apache.http.conn.ssl.SSLConnectionSocketFactory.&lt;clinit&gt;(SSLConnectionSocketFactory.java:146)<br/>
-                                org.openqa.selenium.remote.internal.HttpClientFactory.getClientConnectionManager(HttpClientFactory.java:71)<br/>
-                                org.openqa.selenium.remote.internal.HttpClientFactory.&lt;init&gt;(HttpClientFactory.java:57)<br/>
-                                org.openqa.selenium.remote.internal.HttpClientFactory.&lt;init&gt;(HttpClientFactory.java:60)<br/>
-                                org.openqa.selenium.remote.internal.ApacheHttpClient$Factory.getDefaultHttpClientFactory(ApacheHttpClient.java:242)<br/>
-                                org.openqa.selenium.remote.internal.ApacheHttpClient$Factory.&lt;init&gt;(ApacheHttpClient.java:219)<br/>
-                                org.openqa.selenium.remote.HttpCommandExecutor.getDefaultClientFactory(HttpCommandExecutor.java:93)<br/>
-                                org.openqa.selenium.remote.HttpCommandExecutor.&lt;init&gt;(HttpCommandExecutor.java:72)<br/>
-                                org.openqa.selenium.remote.service.DriverCommandExecutor.&lt;init&gt;(DriverCommandExecutor.java:63)<br/>
-                                org.openqa.selenium.chrome.ChromeDriverCommandExecutor.&lt;init&gt;(ChromeDriverCommandExecutor.java:40)<br/>
-                                org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:174)<br/>
-                                com.qualiprobdd.e2etests.util.ChromeDriverManager.createDriver(ChromeDriverManager.java:79)<br/>
-                                com.qualiprobdd.e2etests.util.DriverManager.getDriver(DriverManager.java:26)<br/>
-                                com.qualiprobdd.e2etests.util.Setup.setup(Setup.java:50)<br/>
-                                sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br/>
-                                sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br/>
-                                sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br/>
-                                java.lang.reflect.Method.invoke(Method.java:498)<br/>
-                                cucumber.runtime.Utils$1.call(Utils.java:40)<br/>
-                                cucumber.runtime.Timeout.timeout(Timeout.java:16)<br/>
-                                cucumber.runtime.Utils.invoke(Utils.java:34)<br/>
-                                cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)<br/>
-                                cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)<br/>
-                                cucumber.runtime.Runtime.runHooks(Runtime.java:212)<br/>
-                                cucumber.runtime.Runtime.runBeforeHooks(Runtime.java:202)<br/>
-                                cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:40)<br/>
-                                cucumber.runtime.model.CucumberScenarioOutline.run(CucumberScenarioOutline.java:46)<br/>
-                                cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)<br/>
-                                cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:63)<br/>
-                                cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)<br/>
-                                sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br/>
-                                sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br/>
-                                sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br/>
-                                java.lang.reflect.Method.invoke(Method.java:498)<br/>
-                                org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)<br/>
-                                org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)<br/>
-                                org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)<br/>
-                                org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)<br/>
-                                org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)<br/>
-                                org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)<br/>
-                                org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)<br/>
-                                org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)<br/>
-                                java.util.ArrayList.forEach(ArrayList.java:1259)<br/>
-                                org.testng.TestRunner.privateRun(TestRunner.java:764)<br/>
-                                org.testng.TestRunner.run(TestRunner.java:585)<br/>
-                                org.testng.SuiteRunner.runTest(SuiteRunner.java:384)<br/>
-                                org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)<br/>
-                                org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)<br/>
-                                org.testng.SuiteRunner.run(SuiteRunner.java:286)<br/>
-                                org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)<br/>
-                                org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)<br/>
-                                org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)<br/>
-                                org.testng.TestNG.runSuitesLocally(TestNG.java:1140)<br/>
-                                org.testng.TestNG.runSuites(TestNG.java:1069)<br/>
-                                org.testng.TestNG.run(TestNG.java:1037)<br/>
-                                com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)<br/>
-                                com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)<br/>
-                        </div>
-                        <b>Caus&#x00E9;s par: </b>
-                        <a href="javascript:toggleElement('exception-2', 'block')"
-                           title="Click to expand/collapse">
-                            java.lang.ClassNotFoundException: org.apache.commons.logging.LogFactory
-                        </a>
-                        <br/>
-                        <div class="stackTrace" id="exception-2">
-                                java.net.URLClassLoader.findClass(URLClassLoader.java:382)<br/>
-                                java.lang.ClassLoader.loadClass(ClassLoader.java:418)<br/>
-                                sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:355)<br/>
-                                java.lang.ClassLoader.loadClass(ClassLoader.java:351)<br/>
-                                org.apache.http.conn.ssl.AbstractVerifier.&lt;init&gt;(AbstractVerifier.java:61)<br/>
-                                org.apache.http.conn.ssl.AllowAllHostnameVerifier.&lt;init&gt;(AllowAllHostnameVerifier.java:44)<br/>
-                                org.apache.http.conn.ssl.AllowAllHostnameVerifier.&lt;clinit&gt;(AllowAllHostnameVerifier.java:46)<br/>
-                                org.apache.http.conn.ssl.SSLConnectionSocketFactory.&lt;clinit&gt;(SSLConnectionSocketFactory.java:146)<br/>
-                                org.openqa.selenium.remote.internal.HttpClientFactory.getClientConnectionManager(HttpClientFactory.java:71)<br/>
-                                org.openqa.selenium.remote.internal.HttpClientFactory.&lt;init&gt;(HttpClientFactory.java:57)<br/>
-                                org.openqa.selenium.remote.internal.HttpClientFactory.&lt;init&gt;(HttpClientFactory.java:60)<br/>
-                                org.openqa.selenium.remote.internal.ApacheHttpClient$Factory.getDefaultHttpClientFactory(ApacheHttpClient.java:242)<br/>
-                                org.openqa.selenium.remote.internal.ApacheHttpClient$Factory.&lt;init&gt;(ApacheHttpClient.java:219)<br/>
-                                org.openqa.selenium.remote.HttpCommandExecutor.getDefaultClientFactory(HttpCommandExecutor.java:93)<br/>
-                                org.openqa.selenium.remote.HttpCommandExecutor.&lt;init&gt;(HttpCommandExecutor.java:72)<br/>
-                                org.openqa.selenium.remote.service.DriverCommandExecutor.&lt;init&gt;(DriverCommandExecutor.java:63)<br/>
-                                org.openqa.selenium.chrome.ChromeDriverCommandExecutor.&lt;init&gt;(ChromeDriverCommandExecutor.java:40)<br/>
-                                org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:174)<br/>
-                                com.qualiprobdd.e2etests.util.ChromeDriverManager.createDriver(ChromeDriverManager.java:79)<br/>
-                                com.qualiprobdd.e2etests.util.DriverManager.getDriver(DriverManager.java:26)<br/>
-                                com.qualiprobdd.e2etests.util.Setup.setup(Setup.java:50)<br/>
-                                sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br/>
-                                sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br/>
-                                sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br/>
-                                java.lang.reflect.Method.invoke(Method.java:498)<br/>
-                                cucumber.runtime.Utils$1.call(Utils.java:40)<br/>
-                                cucumber.runtime.Timeout.timeout(Timeout.java:16)<br/>
-                                cucumber.runtime.Utils.invoke(Utils.java:34)<br/>
-                                cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)<br/>
-                                cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)<br/>
-                                cucumber.runtime.Runtime.runHooks(Runtime.java:212)<br/>
-                                cucumber.runtime.Runtime.runBeforeHooks(Runtime.java:202)<br/>
-                                cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:40)<br/>
-                                cucumber.runtime.model.CucumberScenarioOutline.run(CucumberScenarioOutline.java:46)<br/>
-                                cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)<br/>
-                                cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:63)<br/>
-                                cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)<br/>
-                                sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br/>
-                                sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br/>
-                                sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br/>
-                                java.lang.reflect.Method.invoke(Method.java:498)<br/>
-                                org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)<br/>
-                                org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)<br/>
-                                org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)<br/>
-                                org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)<br/>
-                                org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)<br/>
-                                org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)<br/>
-                                org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)<br/>
-                                org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)<br/>
-                                java.util.ArrayList.forEach(ArrayList.java:1259)<br/>
-                                org.testng.TestRunner.privateRun(TestRunner.java:764)<br/>
-                                org.testng.TestRunner.run(TestRunner.java:585)<br/>
-                                org.testng.SuiteRunner.runTest(SuiteRunner.java:384)<br/>
-                                org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)<br/>
-                                org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)<br/>
-                                org.testng.SuiteRunner.run(SuiteRunner.java:286)<br/>
-                                org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)<br/>
-                                org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)<br/>
-                                org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)<br/>
-                                org.testng.TestNG.runSuitesLocally(TestNG.java:1140)<br/>
-                                org.testng.TestNG.runSuites(TestNG.java:1069)<br/>
-                                org.testng.TestNG.run(TestNG.java:1037)<br/>
-                                com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)<br/>
-                                com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)<br/>
-                        </div>
-                </div>
         </td>
     </tr>
     </table>
-
-
 
 <script type="text/javascript" src="reportng.js"></script>
 </body>

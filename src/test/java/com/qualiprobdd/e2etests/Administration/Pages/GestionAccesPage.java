@@ -22,6 +22,13 @@ public   final  static   String  sexEmp="ctl00_ContentPlaceHolder1_sex";
     public   static   final  String formation  ="ctl00_ContentPlaceHolder1_Formint";
     public  static  final  String  garde="ctl00_ContentPlaceHolder1_TB_grade";
     public   static   final   String  titre="ctl00_ContentPlaceHolder1_TB_titleGrade";
+    public  static  final String AjoutFnEmp="ctl00_ContentPlaceHolder1_Button11";
+    public  static final String  tabFnEmp="ctl00_ContentPlaceHolder1_fonctioon";
+    @FindBy(how = How.ID, using = tabFnEmp)
+    public static WebElement wtabFn;
+
+    @FindBy(how = How.ID, using = AjoutFnEmp)
+    public static WebElement wAjoutFnEmp;
     @FindBy(how = How.ID, using = titre)
     public static WebElement wtitre;
     @FindBy(how = How.ID, using = garde)

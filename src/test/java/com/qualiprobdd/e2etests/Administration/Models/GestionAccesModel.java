@@ -216,7 +216,10 @@ public class GestionAccesModel {
     }
 
 
-    public static void ajouter_une_fonction() throws Throwable {
+    public static void ajouter_une_fonction(WebDriver driver) throws Throwable {
+        Thread.sleep(200);
+        JavascriptExecutor jse=(JavascriptExecutor)driver;
+        GestionAccesPage.wAjoutFnEmp.click();
 
     }
 
