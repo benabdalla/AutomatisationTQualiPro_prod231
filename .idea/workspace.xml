@@ -1,0 +1,618 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="5e6b8372-af74-425d-841f-34bc604c4a50" name="Default Changelist" comment="add suiteXmlFiles parametre">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_cucumber_create_meta_2_0_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_cucumber_cucumber_core_6_9_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_cucumber_cucumber_expressions_10_3_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_cucumber_cucumber_gherkin_6_9_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_cucumber_cucumber_gherkin_messages_6_9_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_cucumber_cucumber_plugin_6_9_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_cucumber_datatable_3_5_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_cucumber_docstring_6_9_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_cucumber_html_formatter_9_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_cucumber_messages_13_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/surefire-reports/xml" afterDir="true" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_cucumber_cucumber_core_5_3_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_cucumber_cucumber_expressions_8_3_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_cucumber_cucumber_gherkin_5_3_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_cucumber_cucumber_gherkin_vintage_5_3_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_cucumber_cucumber_plugin_5_3_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_cucumber_cucumber_testng_5_3_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_cucumber_datatable_3_3_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_cucumber_docstring_5_3_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_cucumber_messages_13_2_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_cucumber_tag_expressions_2_0_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_cucumber_tag_expressions_3_0_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_cucumber_tag_expressions_3_0_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/ExportVisibilité.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/ExportVisibilité.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/champAmasquer.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/champAmasquer.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/testData/TestData.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/resources/testData/TestData.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/qualiprobdd/e2etests/ReclamationClient/Models/ReclamationClientModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/qualiprobdd/e2etests/ReclamationClient/Models/ReclamationClientModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/qualiprobdd/e2etests/ReclamationClient/Pages/ReclamationClientPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/qualiprobdd/e2etests/ReclamationClient/Pages/ReclamationClientPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/qualiprobdd/e2etests/ReclamationClient/StepDefs/ReclamationClientStepDef.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/qualiprobdd/e2etests/ReclamationClient/StepDefs/ReclamationClientStepDef.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-html-report/report.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-html-report/report.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-reports/Création_d_un_questionnaire_satisfaction_client.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-reports/Création_d_un_questionnaire_satisfaction_client.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-reports/Création_d_une_enquête_client.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-reports/Création_d_une_enquête_client.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-reports/En_tant_que_decideur_je_souhaite_definir_les_traitements_a_faire_ainsi_que_les_responsables_affectées.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-reports/En_tant_que_decideur_je_souhaite_definir_les_traitements_a_faire_ainsi_que_les_responsables_affectées.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-reports/En_tant_que_responsable_approbation_je_souhaite_cloturer_la_reclamation.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-reports/En_tant_que_responsable_approbation_je_souhaite_cloturer_la_reclamation.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-reports/En_tant_que_responsable_suivi_je_souhaite_decider_le_passage_vers_l_approbation.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-reports/En_tant_que_responsable_suivi_je_souhaite_decider_le_passage_vers_l_approbation.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-reports/En_tant_que_responsable_traitement_je_souhaite_decrire_les_details_de_traitement.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-reports/En_tant_que_responsable_traitement_je_souhaite_decrire_les_details_de_traitement.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-reports/Qualipro-En_tant_qu_utilisateur_je_veux_créer_une_fiche_audit_avec_constat.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-reports/Qualipro-En_tant_qu_utilisateur_je_veux_créer_une_fiche_audit_avec_constat.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-reports/Qualipro-_Test_Ajouter_fiche_Réclamation_client.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-reports/Qualipro-_Test_Ajouter_fiche_Réclamation_client.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-reports/enregistrement_des_réponse_d_un_client.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-reports/enregistrement_des_réponse_d_un_client.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-reports/report.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-reports/report.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/Surefire suite/Surefire test.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/Surefire suite/Surefire test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/Surefire suite/Surefire test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/Surefire suite/Surefire test.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.qualiprobdd.e2etests.Test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.qualiprobdd.e2etests.Test.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.qualiprobdd.e2etests.Test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.qualiprobdd.e2etests.Test.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/emailable-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/emailable-report.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/html/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/html/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/html/suite0_test0_results.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/html/suite0_test0_results.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-results.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/testng-results.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/qualiprobdd/e2etests/ActionReportingRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/qualiprobdd/e2etests/ActionReportingRunner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/qualiprobdd/e2etests/ActionSimplifiéeRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/qualiprobdd/e2etests/ActionSimplifiéeRunner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/qualiprobdd/e2etests/AuditRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/qualiprobdd/e2etests/AuditRunner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/qualiprobdd/e2etests/AuthentificationRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/qualiprobdd/e2etests/AuthentificationRunner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/qualiprobdd/e2etests/DemandeActionRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/qualiprobdd/e2etests/DemandeActionRunner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/qualiprobdd/e2etests/DemandeFormationRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/qualiprobdd/e2etests/DemandeFormationRunner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/qualiprobdd/e2etests/DocPlusieursResponsablesRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/qualiprobdd/e2etests/DocPlusieursResponsablesRunner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/qualiprobdd/e2etests/DocSpiraleReportingRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/qualiprobdd/e2etests/DocSpiraleReportingRunner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/qualiprobdd/e2etests/DocumentSpiraleRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/qualiprobdd/e2etests/DocumentSpiraleRunner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/qualiprobdd/e2etests/DocumentationReportingRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/qualiprobdd/e2etests/DocumentationReportingRunner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/qualiprobdd/e2etests/DocumentationRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/qualiprobdd/e2etests/DocumentationRunner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/qualiprobdd/e2etests/EvalFournisseurRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/qualiprobdd/e2etests/EvalFournisseurRunner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/qualiprobdd/e2etests/FormationRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/qualiprobdd/e2etests/FormationRunner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/qualiprobdd/e2etests/IncidentEnvRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/qualiprobdd/e2etests/IncidentEnvRunner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/qualiprobdd/e2etests/IncidentSecRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/qualiprobdd/e2etests/IncidentSecRunner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/qualiprobdd/e2etests/IndicateurRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/qualiprobdd/e2etests/IndicateurRunner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/qualiprobdd/e2etests/ModeleActionRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/qualiprobdd/e2etests/ModeleActionRunner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/qualiprobdd/e2etests/PNCReportingRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/qualiprobdd/e2etests/PNCReportingRunner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/qualiprobdd/e2etests/PNCRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/qualiprobdd/e2etests/PNCRunner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/qualiprobdd/e2etests/ReclamationClient/Models/ReclamationClientModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/qualiprobdd/e2etests/ReclamationClient/Models/ReclamationClientModel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/qualiprobdd/e2etests/ReclamationClient/Pages/ReclamationClientPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/qualiprobdd/e2etests/ReclamationClient/Pages/ReclamationClientPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/qualiprobdd/e2etests/ReclamationClient/StepDefs/ReclamationClientStepDef.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/qualiprobdd/e2etests/ReclamationClient/StepDefs/ReclamationClientStepDef.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/qualiprobdd/e2etests/ReclamationClientRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/qualiprobdd/e2etests/ReclamationClientRunner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/qualiprobdd/e2etests/ReunionRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/qualiprobdd/e2etests/ReunionRunner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/qualiprobdd/e2etests/SatisfactionClientRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/qualiprobdd/e2etests/SatisfactionClientRunner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/qualiprobdd/e2etests/SatisfactionPersonnelRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/qualiprobdd/e2etests/SatisfactionPersonnelRunner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/qualiprobdd/e2etests/TypeRéunionRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/qualiprobdd/e2etests/TypeRéunionRunner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/qualiprobdd/e2etests/audit/models/ModuleAuditsModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/qualiprobdd/e2etests/audit/models/ModuleAuditsModel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/qualiprobdd/e2etests/audit/pages/ModuleAuditsPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/qualiprobdd/e2etests/audit/pages/ModuleAuditsPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/qualiprobdd/e2etests/moduleAction/models/DemandeActionModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/qualiprobdd/e2etests/moduleAction/models/DemandeActionModel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/qualiprobdd/e2etests/util/Setup.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/qualiprobdd/e2etests/util/Setup.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/html/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/html/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/html/suite0_groups.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/html/suite0_groups.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/html/suite0_test0_results.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/html/suite0_test0_results.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="alwaysUpdateSnapshots" value="true" />
+        <option name="mavenHome" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.2.3\plugins\maven\lib\maven3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="MessagesViewTool">
+    <option name="defaultListState">
+      <MessageListState>
+        <option name="autoscrollToSource" value="true" />
+        <option name="info" value="true" />
+        <option name="warnings" value="true" />
+      </MessageListState>
+    </option>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="showPreview" value="true" />
+  </component>
+  <component name="ProjectId" id="1kQ5BvdLmHQuPLXpWVjlb5TcWZj" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$MAVEN_REPOSITORY$/log4j/log4j/1.2.14" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="$" />
+    </key>
+  </component>
+  <component name="RunManager" selected="TestNG.E:/qualipro/trunk/AutomatisationTQualiPro_prod231/CreationEmp.xml">
+    <configuration name="Scenario: Création d une fiche incident environnemental" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/specs/features/Sécurité/IncidentSec.feature" />
+      <option name="GLUE" value="com.qualiprobdd.e2etests.authentification.stepdefs com.qualiprobdd.e2etests.Environnement.StepDefs com.qualiprobdd.e2etests.util com.qualiprobdd.e2etests.Sécurité.Stepdefs com.qualiprobdd.e2etests.Formation.Stepdefs" />
+      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
+      <module name="Quali_ProWEB_23-SVN" />
+      <option name="NAME_FILTER" value="^Création d une fiche incident environnemental$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --name &quot;^Création d une fiche incident environnemental$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Création d une fiche incident environnemental" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cucumber.api.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: Qualipro- Test créer un nouveau employé" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/specs/features/Administration/GestionAccés.feature" />
+      <option name="GLUE" value="com.qualiprobdd.e2etests.authentification.stepdefs com.qualiprobdd.e2etests.util com.qualiprobdd.e2etests.Formation.Stepdefs" />
+      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
+      <module name="Quali_ProWEB_23-SVN" />
+      <option name="NAME_FILTER" value="^Qualipro\- Test créer un nouveau employé$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm3SMFormatter --name &quot;^Qualipro\- Test créer un nouveau employé$&quot;" />
+      <shortenClasspath name="NONE" />
+      <option name="SUGGESTED_NAME" value="Scenario: Qualipro- Test créer un nouveau employé" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cucumber.api.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
+      <option name="FILE_PATH" value="E:\qualipro\trunk\AutomatisationTQualiPro_prod231\src\test\java\com\qualiprobdd\e2etests\features" />
+      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="E:/qualipro/trunk/AutomatisationTQualiPro_prod231/Action_EN.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Quali_ProWEB_23-SVN" />
+      <useClassPathOnly />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/Action_EN.xml" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="E:/qualipro/trunk/AutomatisationTQualiPro_prod231/CreationEmp.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Quali_ProWEB_23-SVN" />
+      <useClassPathOnly />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/CreationEmp.xml" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="E:/qualipro/trunk/AutomatisationTQualiPro_prod231/Documentation_EN.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Quali_ProWEB_23-SVN" />
+      <useClassPathOnly />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/Documentation_EN.xml" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EmpRunner" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Quali_ProWEB_23-SVN" />
+      <useClassPathOnly />
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="com.qualiprobdd.e2etests.EmpRunner" />
+      <option name="METHOD_NAME" value="" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="TestNG">
+      <useClassPathOnly />
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Cucumber Java.Scenario: Création d une fiche incident environnemental" />
+      <item itemvalue="Cucumber Java.Scenario: Qualipro- Test créer un nouveau employé" />
+      <item itemvalue="TestNG.E:/qualipro/trunk/AutomatisationTQualiPro_prod231/Action_EN.xml" />
+      <item itemvalue="TestNG.E:/qualipro/trunk/AutomatisationTQualiPro_prod231/CreationEmp.xml" />
+      <item itemvalue="TestNG.E:/qualipro/trunk/AutomatisationTQualiPro_prod231/Documentation_EN.xml" />
+      <item itemvalue="TestNG.EmpRunner" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.E:/qualipro/trunk/AutomatisationTQualiPro_prod231/CreationEmp.xml" />
+        <item itemvalue="TestNG.E:/qualipro/trunk/AutomatisationTQualiPro_prod231/Action_EN.xml" />
+        <item itemvalue="Cucumber Java.Scenario: Qualipro- Test créer un nouveau employé" />
+        <item itemvalue="TestNG.EmpRunner" />
+        <item itemvalue="TestNG.E:/qualipro/trunk/AutomatisationTQualiPro_prod231/Documentation_EN.xml" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration" cleanupOnStartRun="true">
+    <configuration>C:\Users\mootaz.benabdallah\AppData\Roaming\Subversion</configuration>
+    <supportedVersion>125</supportedVersion>
+  </component>
+  <component name="Talios.JiraConfigurationComponent" enableIssueTracking="false" autoRefresh="false" useExternalBrowser="false" refreshTimeout="0" annotateissues="false">
+    <servers />
+    <columns>
+      <column id="created" position="0" width="-1" />
+      <column id="key" position="1" width="-1" />
+      <column id="component" position="2" width="-1" />
+      <column id="title" position="3" width="-1" />
+      <column id="type" position="4" width="-1" />
+      <column id="priority" position="5" width="-1" />
+      <column id="status" position="6" width="-1" />
+      <column id="resolution" position="7" width="-1" />
+      <column id="assignee" position="8" width="-1" />
+      <column id="reporter" position="9" width="-1" />
+      <column id="updated" position="10" width="-1" />
+      <column id="dueDate" position="11" width="-1" />
+      <column id="version" position="12" width="-1" />
+      <column id="fixVersion" position="13" width="-1" />
+    </columns>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5e6b8372-af74-425d-841f-34bc604c4a50" name="Default Changelist" comment="" />
+      <created>1605619848591</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1605619848591</updated>
+    </task>
+    <task id="LOCAL-00001">
+      <created>1605633581390</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1605633581390</updated>
+    </task>
+    <task id="LOCAL-00002">
+      <created>1605810633728</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1605810633728</updated>
+    </task>
+    <task id="LOCAL-00003">
+      <created>1605811567115</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1605811567115</updated>
+    </task>
+    <task id="LOCAL-00004" summary="add suiteXmlFiles in pom configuration tag">
+      <created>1605867840602</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1605867840602</updated>
+    </task>
+    <task id="LOCAL-00005" summary="add">
+      <created>1606991615026</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1606991615026</updated>
+    </task>
+    <task id="LOCAL-00006" summary="add tag">
+      <created>1606991782633</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1606991782633</updated>
+    </task>
+    <task id="LOCAL-00007" summary="add a background">
+      <created>1607079163839</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1607079163839</updated>
+    </task>
+    <task id="LOCAL-00008" summary="add suiteXmlFiles parametre">
+      <created>1607079586768</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1607079586768</updated>
+    </task>
+    <task id="LOCAL-00009" summary="add  wait">
+      <created>1607359109758</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1607359109758</updated>
+    </task>
+    <task id="LOCAL-00010" summary="add suiteXmlFiles parametre">
+      <created>1607446450053</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1607446450053</updated>
+    </task>
+    <task id="LOCAL-00011" summary="add  methods-date">
+      <created>1607507554992</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1607507554992</updated>
+    </task>
+    <task id="LOCAL-00012" summary="add suiteXmlFiles parametre">
+      <created>1607531125020</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1607531125020</updated>
+    </task>
+    <task id="LOCAL-00013" summary="update   docmentation">
+      <created>1607629613651</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1607629613651</updated>
+    </task>
+    <task id="LOCAL-00014" summary="add tags  audit">
+      <created>1608138110248</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1608138110248</updated>
+    </task>
+    <task id="LOCAL-00015" summary="verfication   des 4 indicateur  audit">
+      <created>1608630215629</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1608630215629</updated>
+    </task>
+    <task id="LOCAL-00016" summary="add   thread">
+      <created>1608656355201</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1608656355201</updated>
+    </task>
+    <task id="LOCAL-00017" summary="add   step">
+      <created>1608656402509</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1608656402509</updated>
+    </task>
+    <task id="LOCAL-00018" summary="add  delete">
+      <created>1608710514533</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1608710514534</updated>
+    </task>
+    <task id="LOCAL-00019" summary="add Thread">
+      <created>1608710588233</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1608710588233</updated>
+    </task>
+    <task id="LOCAL-00020" summary="add   thread">
+      <created>1608795845402</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1608795845441</updated>
+    </task>
+    <task id="LOCAL-00021" summary="add screenshot">
+      <created>1608796917868</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1608796917868</updated>
+    </task>
+    <task id="LOCAL-00022" summary="add suiteXmlFiles parametre">
+      <created>1611245934181</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1611245934182</updated>
+    </task>
+    <task id="LOCAL-00023" summary="add tag">
+      <created>1611249040643</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1611249040643</updated>
+    </task>
+    <task id="LOCAL-00024">
+      <created>1611305800229</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1611305800229</updated>
+    </task>
+    <task id="LOCAL-00025">
+      <created>1611309444797</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1611309444797</updated>
+    </task>
+    <task id="LOCAL-00026">
+      <created>1611564853739</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1611564853739</updated>
+    </task>
+    <task id="LOCAL-00027">
+      <created>1611565062923</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1611565062923</updated>
+    </task>
+    <task id="LOCAL-00028" summary="add suiteXmlFiles parametre">
+      <created>1611843926602</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1611843926603</updated>
+    </task>
+    <task id="LOCAL-00029">
+      <created>1611909557777</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1611909557777</updated>
+    </task>
+    <task id="LOCAL-00030">
+      <created>1611917155674</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1611917155674</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
+    <servers />
+  </component>
+  <component name="UsagesViewTool">
+    <version id="1" />
+    <tabs />
+    <default_view_options>
+      <options category_option="false" module_option="true" model_option="true" root_option="true" path_option="false" count_option="true" info_option="true" view_searched_nodes_option="true" group_searched_nodes_option="true" autoscroll_option="false" />
+    </default_view_options>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add suiteXmlFiles in pom configuration tag" />
+    <MESSAGE value="add" />
+    <MESSAGE value="add a background" />
+    <MESSAGE value="add  wait" />
+    <MESSAGE value="add  methods-date" />
+    <MESSAGE value="update   docmentation" />
+    <MESSAGE value="add tags  audit" />
+    <MESSAGE value="verfication   des 4 indicateur  audit" />
+    <MESSAGE value="add   step" />
+    <MESSAGE value="add  delete" />
+    <MESSAGE value="add Thread" />
+    <MESSAGE value="add   thread" />
+    <MESSAGE value="add screenshot" />
+    <MESSAGE value="add tag" />
+    <MESSAGE value="add suiteXmlFiles parametre" />
+    <option name="LAST_COMMIT_MESSAGE" value="" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/qualiprobdd/e2etests/ReclamationClientRunner.java</url>
+          <line>14</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/qualiprobdd/e2etests/EmpRunner.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="cucumber.runtime.CucumberException" package="cucumber.runtime" />
+          <option name="timeStamp" value="3" />
+        </breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/com/qualiprobdd/e2etests/metrologie/model/ModuleMetrologieModel.java</url>
+          <line>317</line>
+          <properties class="com.qualiprobdd.e2etests.metrologie.model.ModuleMetrologieModel">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Quali_ProWEB_23_SVN$IndicateurFormuleRunner.ic" NAME="IndicateurFormuleRunner Coverage Results" MODIFIED="1611243098668" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.qualiprobdd.e2etests.*</FILTER>
+    </SUITE>
+  </component>
+</project>

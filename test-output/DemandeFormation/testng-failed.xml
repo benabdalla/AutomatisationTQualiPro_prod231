@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [DemandeFormation]">
+  <test thread-count="5" name="FicheDemandeFormation(failed)">
+    <parameter name="myName" value="true"/>
+    <parameter name="groups" value="Comma"/>
+    <parameter name="language" value="fr-FR"/>
+    <parameter name="excludegroups" value="Comma"/>
+    <classes>
+      <class name="com.qualiprobdd.e2etests.DemandeFormationRunner">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="feature" invocation-numbers="0"/>
+          <include name="writeExtentReport"/>
+          <include name="tearDownClass"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.qualiprobdd.e2etests.DemandeFormationRunner -->
+    </classes>
+  </test> <!-- FicheDemandeFormation(failed) -->
+</suite> <!-- Failed suite [DemandeFormation] -->

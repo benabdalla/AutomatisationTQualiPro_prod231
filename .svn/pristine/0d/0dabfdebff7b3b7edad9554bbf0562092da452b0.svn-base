@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [TypeRéunion]">
+  <test thread-count="5" name="FicheTypeRéunion(failed)">
+    <parameter name="myName" value="true"/>
+    <parameter name="groups" value="Comma"/>
+    <parameter name="language" value="fr-FR"/>
+    <parameter name="excludegroups" value="Comma"/>
+    <classes>
+      <class name="com.qualiprobdd.e2etests.TypeRéunionRunner">
+        <methods>
+          <include name="setup"/>
+          <include name="setUpClass"/>
+          <include name="feature" invocation-numbers="0"/>
+          <include name="writeExtentReport"/>
+          <include name="tearDownClass"/>
+        </methods>
+      </class> <!-- com.qualiprobdd.e2etests.TypeRéunionRunner -->
+    </classes>
+  </test> <!-- FicheTypeRéunion(failed) -->
+</suite> <!-- Failed suite [TypeRéunion] -->

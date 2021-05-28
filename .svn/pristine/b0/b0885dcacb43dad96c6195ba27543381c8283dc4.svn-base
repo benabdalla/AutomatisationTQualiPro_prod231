@@ -1,0 +1,135 @@
+# Created on 2019-03-01T16:40:05.956
+TestSet has not finished before stream error has appeared >> initializing exit by non-null configuration: DEFAULT
+java.io.EOFException
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at org.apache.maven.surefire.booter.MasterProcessCommand.decode(MasterProcessCommand.java:115)
+	at org.apache.maven.surefire.booter.CommandReader$CommandRunnable.run(CommandReader.java:391)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+# Created on 2019-03-01T16:40:06.579
+Unexpected IOException with stream: 	at org.testng.TestRunner.run(TestRunner.java:505)
+
+# Created on 2019-03-01T16:40:06.581
+Unexpected IOException with stream: 
+
+
+# Created on 2019-03-01T16:40:06.582
+Unexpected IOException with stream: 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+
+# Created on 2019-03-01T16:40:06.583
+Unexpected IOException with stream: 
+
+
+# Created on 2019-03-01T16:40:06.583
+Unexpected IOException with stream: 	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+
+# Created on 2019-03-01T16:40:06.584
+Unexpected IOException with stream: 
+
+
+# Created on 2019-03-01T16:40:06.586
+Unexpected IOException with stream: 	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+
+# Created on 2019-03-01T16:40:06.587
+Unexpected IOException with stream: 
+
+
+# Created on 2019-03-01T16:40:06.588
+Unexpected IOException with stream: 	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+
+# Created on 2019-03-01T16:40:06.588
+Unexpected IOException with stream: 
+
+
+# Created on 2019-03-01T16:40:06.589
+Unexpected IOException with stream: 	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+
+# Created on 2019-03-01T16:40:06.590
+Unexpected IOException with stream: 
+
+
+# Created on 2019-03-01T16:40:06.592
+Unexpected IOException with stream: 	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+
+# Created on 2019-03-01T16:40:06.593
+Unexpected IOException with stream: 
+
+
+# Created on 2019-03-01T16:40:06.594
+Unexpected IOException with stream: 	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+
+# Created on 2019-03-01T16:40:06.595
+Unexpected IOException with stream: 
+
+
+# Created on 2019-03-01T16:40:06.596
+Unexpected IOException with stream: 	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+
+# Created on 2019-03-01T16:40:06.598
+Unexpected IOException with stream: 
+
+
+# Created on 2019-03-01T16:40:06.599
+Unexpected IOException with stream: 	at org.testng.TestNG.runSuites(TestNG.java:1049)
+
+# Created on 2019-03-01T16:40:06.600
+Unexpected IOException with stream: 
+
+
+# Created on 2019-03-01T16:40:06.601
+Unexpected IOException with stream: 	at org.testng.TestNG.run(TestNG.java:1017)
+
+# Created on 2019-03-01T16:40:06.602
+Unexpected IOException with stream: 
+
+
+# Created on 2019-03-01T16:40:06.603
+Unexpected IOException with stream: 	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+
+# Created on 2019-03-01T16:40:06.604
+Unexpected IOException with stream: 
+
+
+# Created on 2019-03-01T16:40:06.605
+Unexpected IOException with stream: 	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+
+# Created on 2019-03-01T16:40:06.606
+Unexpected IOException with stream: 
+
+
+# Created on 2019-03-01T16:40:06.606
+Unexpected IOException with stream: 	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+
+# Created on 2019-03-01T16:40:06.608
+Unexpected IOException with stream: 
+
+
+# Created on 2019-03-01T16:40:06.609
+Unexpected IOException with stream: 	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:379)
+
+# Created on 2019-03-01T16:40:06.610
+Unexpected IOException with stream: 
+
+
+# Created on 2019-03-01T16:40:06.611
+Unexpected IOException with stream: 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:340)
+
+# Created on 2019-03-01T16:40:06.612
+Unexpected IOException with stream: 
+
+
+# Created on 2019-03-01T16:40:06.613
+Unexpected IOException with stream: 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125)
+
+# Created on 2019-03-01T16:40:06.614
+Unexpected IOException with stream: 
+
+
+# Created on 2019-03-01T16:40:06.615
+Unexpected IOException with stream: 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:413)
+
+# Created on 2019-03-01T16:40:06.616
+Unexpected IOException with stream: 
+
+

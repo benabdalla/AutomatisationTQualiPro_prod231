@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Regression" parallel="none">
+  
+  <test name="Test">
+  <parameter name="myName"  value="true"/>
+   <parameter name="excludegroups"  value="Comma"/>
+   <parameter name="groups"  value="Comma"/>
+   <!--parameter name="language"  value="${test.language}"/--> 
+   	<parameter name="language"  value="en-US"/>
+   	<parameter name="browsername"  value="FireFox"/>
+    <classes>
+    <class name="com.qualiprobdd.e2etests.AuthentificationRunner"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
+  

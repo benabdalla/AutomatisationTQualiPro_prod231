@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [ActionSimp]">
+  <test thread-count="5" name="Test(failed)">
+    <parameter name="myName" value="true"/>
+    <parameter name="groups" value="Comma"/>
+    <parameter name="language" value="en-US"/>
+    <parameter name="excludegroups" value="Comma"/>
+    <classes>
+      <class name="com.qualiprobdd.e2etests.ActionSimplifiéeRunner">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="feature" invocation-numbers="0"/>
+          <include name="setup"/>
+          <include name="tearDownClass"/>
+          <include name="writeExtentReport"/>
+        </methods>
+      </class> <!-- com.qualiprobdd.e2etests.ActionSimplifiéeRunner -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [ActionSimp] -->

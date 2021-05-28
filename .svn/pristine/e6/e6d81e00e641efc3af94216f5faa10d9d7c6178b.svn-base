@@ -1,0 +1,5 @@
+package com.qualiprobdd.e2etests.Administration.Models;
+
+public class GestionAccesModel {
+
+}

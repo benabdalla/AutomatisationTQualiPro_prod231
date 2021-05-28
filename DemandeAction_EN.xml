@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="DemandeAction" parallel="none">
+  <test name="Test">
+  <parameter name="myName"  value="true"/>
+   <parameter name="excludegroups"  value="Comma"/>
+   <parameter name="groups"  value="Comma"/>
+      <parameter name="language" value="fr-FR"/>
+   <parameter name="browsername"  value="CHROME"/> 
+  
+    <classes>
+      <class name="com.qualiprobdd.e2etests.DemandeActionRunner"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

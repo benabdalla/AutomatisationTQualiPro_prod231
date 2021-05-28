@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="3" time="610.205115">
+<testcase classname="Qualipro- Test fiche Action" name="Creation fiche Action" time="79.939406">
+<system-out><![CDATA[Given Ouvrir le site QualiProWeb............................................passed
+And saisir Login et PW......................................................passed
+And cliquer sur ouvrir une session..........................................passed
+When Consulter Action.......................................................passed
+And cliquer sur ajouter Action détaillée....................................passed
+And saisir 1 action.........................................................passed
+And Ajouter Source..........................................................passed
+And Saisir Date Création....................................................passed
+And Saisir A l origine de l action..........................................passed
+And Saisir Désignation......................................................passed
+And choisir Type Action.....................................................passed
+And Saisir Description problème/objet.......................................passed
+And choisir Produit.........................................................passed
+And choisir Types de causes.................................................passed
+And Saisir Causes possibles.................................................passed
+And saisir Objectif.........................................................passed
+And saisir référence Audit..................................................passed
+And choisir Site............................................................passed
+And Choisir Processus.......................................................passed
+And choisir Activité........................................................passed
+And choisir Direction.......................................................passed
+And choisir service.........................................................passed
+And choisir un responsable de clôture.......................................passed
+When cliquer sur valider Action.............................................passed
+Then Fiche Action ajouté....................................................passed
+When choisir plusieurs responsables de suivi................................passed
+Then cliquer sur ajouter sous action........................................passed
+When saisir désignation sous action.........................................passed
+And saisir responsable de réalisation.......................................passed
+And saisir délais de réalisation............................................passed
+And choisir un responsable de suivi.........................................passed
+And choisir délais de suivi.................................................passed
+And choisir gravité action..................................................passed
+And choisir Priorité SA.....................................................passed
+And saisir cout previ SA....................................................passed
+And saisir Risque SA........................................................passed
+When cliquer sur valider sous action........................................passed
+Then sous action ajouté a la liste des sous actions.........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Qualipro- Test fiche Action" name="Qualipro- En tant que responsable, je souhaite traiter et suivre l action avec des taux différents" time="278.203383">
+<system-out><![CDATA[Given Ouvrir le site QualiProWeb............................................passed
+And saisir Login et PW......................................................passed
+And cliquer sur ouvrir une session..........................................passed
+And saisir 1 action.........................................................passed
+When Consulter action a traiter.............................................passed
+And Réaliser action avec 50.................................................passed
+Then Vérifier etat action realisé...........................................passed
+And Consulter action a suivre...............................................passed
+Then vérifier taux réalisation..............................................passed
+When suivre action avec 30 et 70............................................passed
+Then Vérifier etat action suivi.............................................passed
+And Clôturée Action.........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Qualipro- Test fiche Action" name="Qualipro- En tant que responsable, je souhaite traiter et suivre l action avec des taux différents 2" time="252.062326">
+<system-out><![CDATA[Given Ouvrir le site QualiProWeb............................................passed
+And saisir Login et PW......................................................passed
+And cliquer sur ouvrir une session..........................................passed
+And saisir 1 action.........................................................passed
+When Consulter action a traiter.............................................passed
+And Réaliser action avec 100................................................passed
+Then Vérifier etat action realisé...........................................passed
+And Consulter action a suivre...............................................passed
+Then vérifier taux réalisation..............................................passed
+When suivre action avec 100 et 100..........................................passed
+Then Vérifier etat action suivi.............................................passed
+And Clôturée Action.........................................................passed
+]]></system-out>
+</testcase>
+</testsuite>

@@ -1,0 +1,14 @@
+<h2>Methods run, sorted chronologically</h2><h3>&gt;&gt; means before, &lt;&lt; means after</h3><p/><br/><em>Reunion</em><p/><small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table border="1">
+<tr><th>Time</th><th>Delta (ms)</th><th>Suite<br>configuration</th><th>Test<br>configuration</th><th>Class<br>configuration</th><th>Groups<br>configuration</th><th>Method<br>configuration</th><th>Test<br>method</th><th>Thread</th><th>Instances</th></tr>
+<tr bgcolor="fe8984">  <td>20/10/02 07:45:31</td>   <td>0</td> <td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;AbstractTestNGCucumberTests.setUpClass()[pri:0, instance:com.qualiprobdd.e2etests.ReunionRunner@36b4cef0]">&gt;&gt;setUpClass</td> 
+<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>  <td>main@292917034</td>   <td></td> </tr>
+<tr bgcolor="ef968d">  <td>20/10/02 07:45:33</td>   <td>2104</td> <td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;ReunionRunner.setup(java.lang.String, java.lang.String)[pri:0, instance:com.qualiprobdd.e2etests.ReunionRunner@36b4cef0]">&gt;&gt;setup</td> 
+<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>  <td>main@292917034</td>   <td></td> </tr>
+<tr bgcolor="fe8984">  <td>20/10/02 07:45:34</td>   <td>2571</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.qualiprobdd.e2etests.ReunionRunner@36b4cef0]">feature</td> 
+  <td>main@292917034</td>   <td></td> </tr>
+<tr bgcolor="ef968d">  <td>20/10/02 07:49:00</td>   <td>208419</td> <td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;ReunionRunner.writeExtentReport()[pri:0, instance:com.qualiprobdd.e2etests.ReunionRunner@36b4cef0]">&lt;&lt;writeExtentReport</td> 
+<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>  <td>main@292917034</td>   <td></td> </tr>
+<tr bgcolor="fe8984">  <td>20/10/02 07:49:00</td>   <td>208470</td> <td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;AbstractTestNGCucumberTests.tearDownClass()[pri:0, instance:com.qualiprobdd.e2etests.ReunionRunner@36b4cef0]">&lt;&lt;tearDownClass</td> 
+<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>  <td>main@292917034</td>   <td></td> </tr>
+</table>

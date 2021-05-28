@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [ReclamationClient]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="FicheReclamationClient(failed)">
+    <parameter name="myName" value="true"/>
+    <parameter name="groups" value="Comma"/>
+    <parameter name="language" value="en-US"/>
+    <parameter name="browsername" value="CHROME"/>
+    <parameter name="excludegroups" value="Comma"/>
+    <classes>
+      <class name="com.qualiprobdd.e2etests.ReclamationClientRunner">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="writeExtentReport"/>
+          <include name="feature" invocation-numbers="0"/>
+          <include name="setup"/>
+          <include name="tearDownClass"/>
+        </methods>
+      </class> <!-- com.qualiprobdd.e2etests.ReclamationClientRunner -->
+    </classes>
+  </test> <!-- FicheReclamationClient(failed) -->
+</suite> <!-- Failed suite [ReclamationClient] -->

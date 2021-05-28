@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [DocumentationSpirale]">
+  <test thread-count="5" name="FicheDocumentationSpirale(failed)">
+    <parameter name="myName" value="true"/>
+    <parameter name="groups" value="Comma"/>
+    <parameter name="language" value="fr-FR"/>
+    <parameter name="excludegroups" value="Comma"/>
+    <classes>
+      <class name="com.qualiprobdd.e2etests.DocSpiraleReportingRunner">
+        <methods>
+          <include name="setup"/>
+          <include name="setUpClass"/>
+          <include name="feature" invocation-numbers="0"/>
+          <include name="writeExtentReport"/>
+          <include name="tearDownClass"/>
+        </methods>
+      </class> <!-- com.qualiprobdd.e2etests.DocSpiraleReportingRunner -->
+    </classes>
+  </test> <!-- FicheDocumentationSpirale(failed) -->
+</suite> <!-- Failed suite [DocumentationSpirale] -->
