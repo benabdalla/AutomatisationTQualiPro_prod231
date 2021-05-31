@@ -6,15 +6,17 @@ import com.qualiprobdd.e2etests.Administration.Pages.GestionAccesPage;
 import com.qualiprobdd.e2etests.util.Common;
 import com.qualiprobdd.e2etests.util.ExcelUtils;
 
-import org.openqa.selenium.Cookie;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
+import cucumber.runtime.CucumberException;
+import org.openqa.selenium.*;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.NoSuchElementException;
 import java.util.Random;
 
 
@@ -218,10 +220,32 @@ public class GestionAccesModel {
 
     public static void ajouter_une_fonction(WebDriver driver) throws Throwable {
         Thread.sleep(200);
-        JavascriptExecutor jse=(JavascriptExecutor)driver;
+        JavascriptExecutor jse = (JavascriptExecutor) driver;
         GestionAccesPage.wAjoutFnEmp.click();
+        Boolean finBoucle = true;
+
+        int i = GestionAccesPage.wtabFn.findElements(By.tagName("tr")).size() - 1;
+
+        System.out.println(" size= " + i);
+
+
+
+        for (int j = i; j > 0; j--) {
+            Thread.sleep(200);
+            System.out.println(" j= " + j);
+
+            GestionAccesPage.wtabFn
+                    .findElement(By.xpath("//*[@id=\"ctl00_ContentPlaceHolder1_fonctioon_wrapper\"]/div[2]/div/table/tbody/tr[" + j + "]/td[1]"))
+                    .click();
+
+
+        }
+        JavascriptExecutor js =(JavascriptExecutor) driver;
+        js.executeScript("arguments[0].click()",GestionAccesPage.wvaliderFan);
+
 
     }
+
 
 
     public static void valider_fiche_Employé() throws Throwable {

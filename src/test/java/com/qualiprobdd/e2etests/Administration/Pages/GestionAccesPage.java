@@ -24,6 +24,9 @@ public   final  static   String  sexEmp="ctl00_ContentPlaceHolder1_sex";
     public   static   final   String  titre="ctl00_ContentPlaceHolder1_TB_titleGrade";
     public  static  final String AjoutFnEmp="ctl00_ContentPlaceHolder1_Button11";
     public  static final String  tabFnEmp="ctl00_ContentPlaceHolder1_fonctioon";
+    public static  final String validerFan="//*[@id=\"ctl00_ContentPlaceHolder1_fonctioon\"]/tbody/tr[8]/td[1]";
+    @FindBy(how = How.ID, using = validerFan)
+    public static WebElement wvaliderFan;
     @FindBy(how = How.ID, using = tabFnEmp)
     public static WebElement wtabFn;
 

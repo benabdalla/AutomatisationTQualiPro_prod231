@@ -187,7 +187,7 @@ formatter.examples({
   "keyword": "Examples"
 });
 formatter.before({
-  "duration": 2989316600,
+  "duration": 1789861100,
   "status": "passed"
 });
 formatter.scenario({
@@ -351,7 +351,7 @@ formatter.match({
   "location": "AuthentificationStepDefinition.ouvrirQualiProWeb()"
 });
 formatter.result({
-  "duration": 6600252100,
+  "duration": 2917012300,
   "status": "passed"
 });
 formatter.match({
@@ -372,21 +372,21 @@ formatter.match({
   "location": "AuthentificationStepDefinition.connecter_en_tant_que_de_l_du(int,int,String)"
 });
 formatter.result({
-  "duration": 22272239900,
+  "duration": 11045111500,
   "status": "passed"
 });
 formatter.match({
   "location": "GestionAccesStepDef.consulter_sous_module_Employés()"
 });
 formatter.result({
-  "duration": 25188589000,
+  "duration": 5515864400,
   "status": "passed"
 });
 formatter.match({
   "location": "GestionAccesStepDef.cliquer_sur_ajouter_fiche_employé()"
 });
 formatter.result({
-  "duration": 159943200,
+  "duration": 97941900,
   "status": "passed"
 });
 formatter.match({
@@ -399,151 +399,151 @@ formatter.match({
   "location": "GestionAccesStepDef.saisir_matricule(int)"
 });
 formatter.result({
-  "duration": 849026400,
+  "duration": 710639800,
   "status": "passed"
 });
 formatter.match({
   "location": "GestionAccesStepDef.saisir_NomPrenom_Employé()"
 });
 formatter.result({
-  "duration": 669958000,
+  "duration": 674895300,
   "status": "passed"
 });
 formatter.match({
   "location": "GestionAccesStepDef.cliquer_sur_valider_matricule()"
 });
 formatter.result({
-  "duration": 1042525400,
+  "duration": 1072804100,
   "status": "passed"
 });
 formatter.match({
   "location": "GestionAccesStepDef.saisir_date_de_naissance()"
 });
 formatter.result({
-  "duration": 1038649700,
+  "duration": 655602200,
   "status": "passed"
 });
 formatter.match({
   "location": "GestionAccesStepDef.saisir_N_CIN()"
 });
 formatter.result({
-  "duration": 325561000,
+  "duration": 337483800,
   "status": "passed"
 });
 formatter.match({
   "location": "GestionAccesStepDef.saisir_date_de_recrutement()"
 });
 formatter.result({
-  "duration": 543867900,
+  "duration": 561563000,
   "status": "passed"
 });
 formatter.match({
   "location": "GestionAccesStepDef.choisir_Site_employe()"
 });
 formatter.result({
-  "duration": 28200,
+  "duration": 28600,
   "status": "passed"
 });
 formatter.match({
   "location": "GestionAccesStepDef.choisir_Processus_employe()"
 });
 formatter.result({
-  "duration": 34500,
+  "duration": 14800,
   "status": "passed"
 });
 formatter.match({
   "location": "GestionAccesStepDef.choisir_Activite_employe()"
 });
 formatter.result({
-  "duration": 24200,
+  "duration": 12200,
   "status": "passed"
 });
 formatter.match({
   "location": "GestionAccesStepDef.choisir_Direction_employe()"
 });
 formatter.result({
-  "duration": 52700,
+  "duration": 23700,
   "status": "passed"
 });
 formatter.match({
   "location": "GestionAccesStepDef.choisir_saisir_Service_employe()"
 });
 formatter.result({
-  "duration": 34100,
+  "duration": 11900,
   "status": "passed"
 });
 formatter.match({
   "location": "GestionAccesStepDef.saisir_telephone()"
 });
 formatter.result({
-  "duration": 317486000,
+  "duration": 322930200,
   "status": "passed"
 });
 formatter.match({
   "location": "GestionAccesStepDef.choisir_Etat_civil()"
 });
 formatter.result({
-  "duration": 217281600,
+  "duration": 155572200,
   "status": "passed"
 });
 formatter.match({
   "location": "GestionAccesStepDef.choisir_sexe()"
 });
 formatter.result({
-  "duration": 148315100,
+  "duration": 149688500,
   "status": "passed"
 });
 formatter.match({
   "location": "GestionAccesStepDef.saisir_Adresse_Mail()"
 });
 formatter.result({
-  "duration": 105800,
+  "duration": 121600,
   "status": "passed"
 });
 formatter.match({
   "location": "GestionAccesStepDef.saisir_Formation_initiale()"
 });
 formatter.result({
-  "duration": 524802500,
+  "duration": 404308600,
   "status": "passed"
 });
 formatter.match({
   "location": "GestionAccesStepDef.saisir_Grade()"
 });
 formatter.result({
-  "duration": 407809100,
+  "duration": 362303300,
   "status": "passed"
 });
 formatter.match({
   "location": "GestionAccesStepDef.saisir_titre()"
 });
 formatter.result({
-  "duration": 394658400,
+  "duration": 357265000,
   "status": "passed"
 });
 formatter.match({
   "location": "GestionAccesStepDef.choisir_type_de_travail()"
 });
 formatter.result({
-  "duration": 42500,
+  "duration": 19900,
   "status": "passed"
 });
 formatter.match({
   "location": "GestionAccesStepDef.ajouter_une_fonction()"
 });
 formatter.result({
-  "duration": 22100,
+  "duration": 3622002400,
   "status": "passed"
 });
 formatter.match({
   "location": "GestionAccesStepDef.valider_fiche_Employé()"
 });
 formatter.result({
-  "duration": 14900,
+  "duration": 22300,
   "status": "passed"
 });
 formatter.after({
-  "duration": 59600,
+  "duration": 58900,
   "status": "passed"
 });
 });

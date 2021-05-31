@@ -4,14 +4,14 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="63,761">
+           time="30,806">
     <properties></properties>
 
 
 
             <testcase
                 name="feature"
-                time="63,761"
+                time="30,806"
                 classname="com.qualiprobdd.e2etests.EmpRunner">
             </testcase>
 </testsuite>
