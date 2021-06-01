@@ -13,9 +13,8 @@ import java.util.List;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
-import cucumber.api.DataTable;
-
-import cucumber.api.java.en.*;
+import io.cucumber.datatable.DataTable;
+import io.cucumber.java.en.*;
 ;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;

@@ -1,13 +1,13 @@
 <component name="libraryTable">
-  <library name="Maven: io.cucumber:cucumber-expressions:8.3.1">
+  <library name="Maven: com.google.inject:guice:4.2.0">
     <CLASSES>
-      <root url="jar://$MAVEN_REPOSITORY$/io/cucumber/cucumber-expressions/8.3.1/cucumber-expressions-8.3.1.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/google/inject/guice/4.2.0/guice-4.2.0.jar!/" />
     </CLASSES>
     <JAVADOC>
-      <root url="jar://$MAVEN_REPOSITORY$/io/cucumber/cucumber-expressions/8.3.1/cucumber-expressions-8.3.1-javadoc.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/google/inject/guice/4.2.0/guice-4.2.0-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
-      <root url="jar://$MAVEN_REPOSITORY$/io/cucumber/cucumber-expressions/8.3.1/cucumber-expressions-8.3.1-sources.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/google/inject/guice/4.2.0/guice-4.2.0-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

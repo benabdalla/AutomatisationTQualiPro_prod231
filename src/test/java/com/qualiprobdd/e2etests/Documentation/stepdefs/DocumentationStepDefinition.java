@@ -8,7 +8,7 @@ import java.util.ArrayList;
 
 import java.util.List;
 
-import cucumber.api.java.en.*;
+import io.cucumber.java.en.*;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;

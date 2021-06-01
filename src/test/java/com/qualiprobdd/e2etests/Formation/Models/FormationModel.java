@@ -14,8 +14,7 @@ import java.text.DecimalFormat;
 import java.text.SimpleDateFormat;
 
 import com.qualiprobdd.e2etests.moduleAction.pages.FicheActionPage;
-import cucumber.api.java.en.Then;
-import cucumber.api.java.en.When;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.Cookie;
 import org.openqa.selenium.JavascriptExecutor;
@@ -34,6 +33,7 @@ import com.qualiprobdd.e2etests.authentification.models.AuthentificationModel;
 import com.qualiprobdd.e2etests.util.Common;
 import com.qualiprobdd.e2etests.util.ExcelUtils;
 import com.qualiprobdd.e2etests.util.RandomValue;
+import io.cucumber.java.*;
 
 public class FormationModel {
 	static String Demandeur, utilisateurs, NumFormation;

@@ -1,17 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuite name="FicheEmp"
            tests="1"
-           failures="0"
+           failures="1"
            errors="0"
            skipped="0"
-           time="30,806">
+           time="36,956">
     <properties></properties>
 
-
-
             <testcase
-                name="feature"
-                time="30,806"
+                name="runScenario"
+                time="36,956"
                 classname="com.qualiprobdd.e2etests.EmpRunner">
-            </testcase>
+
+            <failure type="org.openqa.selenium.NoSuchElementException" message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#ctl00_ContentPlaceHolder1_datenais&quot;}
+  (Session info: chrome=90.0.4430.212)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.8.0&apos;, revision: &apos;924c4067df&apos;, time: &apos;2017-11-30T11:20:39.408Z&apos;
+System info: host: &apos;DESKTOP-E6OO20B&apos;, ip: &apos;192.168.75.2&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.212, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\FATMA~1.CHA\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:52454}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 03aa397e7a6ff3d3643de66db2b3326e
+*** Element info: {Using=id, value=ctl00_ContentPlaceHolder1_datenais}">
+                <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#ctl00_ContentPlaceHolder1_datenais"}
+  (Session info: chrome=90.0.4430.212)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.8.0', revision: '924c4067df', time: '2017-11-30T11:20:39.408Z'
+System info: host: 'DESKTOP-E6OO20B', ip: '192.168.75.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.212, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\FATMA~1.CHA\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:52454}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 03aa397e7a6ff3d3643de66db2b3326e
+*** Element info: {Using=id, value=ctl00_ContentPlaceHolder1_datenais}
+                java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:417)org.openqa.selenium.By$ById.findElement(By.java:218)org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)jdk.proxy2/jdk.proxy2.$Proxy24.getWrappedElement(Unknown Source)org.openqa.selenium.remote.internal.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:51)com.google.common.collect.Iterators$6.transform(Iterators.java:783)com.google.common.collect.TransformedIterator.next(TransformedIterator.java:47)com.google.common.collect.Iterators.addAll(Iterators.java:356)com.google.common.collect.Lists.newArrayList(Lists.java:143)com.google.common.collect.Lists.newArrayList(Lists.java:130)org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:535)com.qualiprobdd.e2etests.Administration.Models.GestionAccesModel.saisir_date_de_naissance(GestionAccesModel.java:82)com.qualiprobdd.e2etests.Administration.SteDefs.GestionAccesStepDef.saisir_date_de_naissance(GestionAccesStepDef.java:75)✽.saisir date de naissance(file:///E:/qualipro/trunk/AutomatisationTQualiPro_prod231/src/specs/features/Administration/GestionAccés.feature:13)
+]]>
+            </failure>
+    </testcase>
+
+
 </testsuite>

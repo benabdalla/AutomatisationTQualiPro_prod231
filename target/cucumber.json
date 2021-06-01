@@ -3,14 +3,15 @@
     "line": 2,
     "elements": [
       {
+        "start_timestamp": "2021-06-01T10:21:26.540Z",
         "before": [
           {
             "result": {
-              "duration": 1789861100,
+              "duration": 1274074800,
               "status": "passed"
             },
             "match": {
-              "location": "Setup.setup()"
+              "location": "com.qualiprobdd.e2etests.util.Setup.setup()"
             }
           }
         ],
@@ -21,11 +22,11 @@
         "after": [
           {
             "result": {
-              "duration": 58900,
+              "duration": 102937800,
               "status": "passed"
             },
             "match": {
-              "location": "Setup.afterScenario(Scenario)"
+              "location": "com.qualiprobdd.e2etests.util.Setup.afterScenario(io.cucumber.java.Scenario)"
             }
           }
         ],
@@ -34,19 +35,19 @@
         "steps": [
           {
             "result": {
-              "duration": 2917012300,
+              "duration": 5090542500,
               "status": "passed"
             },
             "line": 6,
             "name": "Ouvrir le site QualiProWeb",
             "match": {
-              "location": "AuthentificationStepDefinition.ouvrirQualiProWeb()"
+              "location": "com.qualiprobdd.e2etests.authentification.stepdefs.AuthentificationStepDefinition.ouvrirQualiProWeb()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 11045111500,
+              "duration": 21871631400,
               "status": "passed"
             },
             "line": 7,
@@ -66,42 +67,37 @@
                   "offset": 36
                 }
               ],
-              "location": "AuthentificationStepDefinition.connecter_en_tant_que_de_l_du(int,int,String)"
+              "location": "com.qualiprobdd.e2etests.authentification.stepdefs.AuthentificationStepDefinition.connecter_en_tant_que_de_l_du(int,int,java.lang.String)"
             },
-            "matchedColumns": [
-              0,
-              1,
-              2
-            ],
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 5515864400,
+              "duration": 5421466500,
               "status": "passed"
             },
             "line": 8,
             "name": "consulter sous module Employés",
             "match": {
-              "location": "GestionAccesStepDef.consulter_sous_module_Employés()"
+              "location": "com.qualiprobdd.e2etests.Administration.SteDefs.GestionAccesStepDef.consulter_sous_module_Employés()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 97941900,
+              "duration": 139371600,
               "status": "passed"
             },
             "line": 9,
             "name": "cliquer sur ajouter fiche employé",
             "match": {
-              "location": "GestionAccesStepDef.cliquer_sur_ajouter_fiche_employé()"
+              "location": "com.qualiprobdd.e2etests.Administration.SteDefs.GestionAccesStepDef.cliquer_sur_ajouter_fiche_employé()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 710639800,
+              "duration": 638843300,
               "status": "passed"
             },
             "line": 10,
@@ -113,267 +109,240 @@
                   "offset": 17
                 }
               ],
-              "location": "GestionAccesStepDef.saisir_matricule(int)"
+              "location": "com.qualiprobdd.e2etests.Administration.SteDefs.GestionAccesStepDef.saisir_matricule(int)"
             },
-            "matchedColumns": [
-              3
-            ],
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 674895300,
+              "duration": 623568000,
               "status": "passed"
             },
             "line": 11,
             "name": "saisir NomPrenom Employé",
             "match": {
-              "location": "GestionAccesStepDef.saisir_NomPrenom_Employé()"
+              "location": "com.qualiprobdd.e2etests.Administration.SteDefs.GestionAccesStepDef.saisir_NomPrenom_Employé()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 1072804100,
+              "duration": 1022188500,
               "status": "passed"
             },
             "line": 12,
             "name": "cliquer sur valider matricule",
             "match": {
-              "location": "GestionAccesStepDef.cliquer_sur_valider_matricule()"
+              "location": "com.qualiprobdd.e2etests.Administration.SteDefs.GestionAccesStepDef.cliquer_sur_valider_matricule()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 655602200,
-              "status": "passed"
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#ctl00_ContentPlaceHolder1_datenais\"}\n  (Session info: chrome\u003d90.0.4430.212)\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.8.0\u0027, revision: \u0027924c4067df\u0027, time: \u00272017-11-30T11:20:39.408Z\u0027\nSystem info: host: \u0027DESKTOP-E6OO20B\u0027, ip: \u0027192.168.75.2\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002716.0.1\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.212, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\\Users\\FATMA~1.CHA\\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:52454}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 03aa397e7a6ff3d3643de66db2b3326e\n*** Element info: {Using\u003did, value\u003dctl00_ContentPlaceHolder1_datenais}\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:417)\r\n\tat org.openqa.selenium.By$ById.findElement(By.java:218)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat jdk.proxy2/jdk.proxy2.$Proxy24.getWrappedElement(Unknown Source)\r\n\tat org.openqa.selenium.remote.internal.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:51)\r\n\tat com.google.common.collect.Iterators$6.transform(Iterators.java:783)\r\n\tat com.google.common.collect.TransformedIterator.next(TransformedIterator.java:47)\r\n\tat com.google.common.collect.Iterators.addAll(Iterators.java:356)\r\n\tat com.google.common.collect.Lists.newArrayList(Lists.java:143)\r\n\tat com.google.common.collect.Lists.newArrayList(Lists.java:130)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:535)\r\n\tat com.qualiprobdd.e2etests.Administration.Models.GestionAccesModel.saisir_date_de_naissance(GestionAccesModel.java:82)\r\n\tat com.qualiprobdd.e2etests.Administration.SteDefs.GestionAccesStepDef.saisir_date_de_naissance(GestionAccesStepDef.java:75)\r\n\tat ✽.saisir date de naissance(file:///E:/qualipro/trunk/AutomatisationTQualiPro_prod231/src/specs/features/Administration/GestionAccés.feature:13)\r\n",
+              "duration": 56370700,
+              "status": "failed"
             },
             "line": 13,
             "name": "saisir date de naissance",
             "match": {
-              "location": "GestionAccesStepDef.saisir_date_de_naissance()"
+              "location": "com.qualiprobdd.e2etests.Administration.SteDefs.GestionAccesStepDef.saisir_date_de_naissance()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 337483800,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 14,
             "name": "saisir N°CIN",
             "match": {
-              "location": "GestionAccesStepDef.saisir_N_CIN()"
+              "location": "com.qualiprobdd.e2etests.Administration.SteDefs.GestionAccesStepDef.saisir_N_CIN()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 561563000,
-              "status": "passed"
+              "status": "skipped"
             },
-            "comments": [
-              {
-                "line": 15,
-                "value": "# And  saisir date dexpiration"
-              }
-            ],
             "line": 16,
             "name": "saisir date de recrutement",
             "match": {
-              "location": "GestionAccesStepDef.saisir_date_de_recrutement()"
+              "location": "com.qualiprobdd.e2etests.Administration.SteDefs.GestionAccesStepDef.saisir_date_de_recrutement()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 28600,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 17,
             "name": "choisir Site employe",
             "match": {
-              "location": "GestionAccesStepDef.choisir_Site_employe()"
+              "location": "com.qualiprobdd.e2etests.Administration.SteDefs.GestionAccesStepDef.choisir_Site_employe()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 14800,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 18,
             "name": "choisir Processus employe",
             "match": {
-              "location": "GestionAccesStepDef.choisir_Processus_employe()"
+              "location": "com.qualiprobdd.e2etests.Administration.SteDefs.GestionAccesStepDef.choisir_Processus_employe()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 12200,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 19,
             "name": "Choisir Activite employe",
             "match": {
-              "location": "GestionAccesStepDef.choisir_Activite_employe()"
+              "location": "com.qualiprobdd.e2etests.Administration.SteDefs.GestionAccesStepDef.choisir_Activite_employe()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 23700,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 20,
             "name": "Choisir Direction employe",
             "match": {
-              "location": "GestionAccesStepDef.choisir_Direction_employe()"
+              "location": "com.qualiprobdd.e2etests.Administration.SteDefs.GestionAccesStepDef.choisir_Direction_employe()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 11900,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 21,
             "name": "Choisir saisir Service employe",
             "match": {
-              "location": "GestionAccesStepDef.choisir_saisir_Service_employe()"
+              "location": "com.qualiprobdd.e2etests.Administration.SteDefs.GestionAccesStepDef.choisir_saisir_Service_employe()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 322930200,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 22,
             "name": "saisir telephone",
             "match": {
-              "location": "GestionAccesStepDef.saisir_telephone()"
+              "location": "com.qualiprobdd.e2etests.Administration.SteDefs.GestionAccesStepDef.saisir_telephone()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 155572200,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 23,
             "name": "Choisir Etat civil",
             "match": {
-              "location": "GestionAccesStepDef.choisir_Etat_civil()"
+              "location": "com.qualiprobdd.e2etests.Administration.SteDefs.GestionAccesStepDef.choisir_Etat_civil()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 149688500,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 24,
             "name": "Choisir sexe",
             "match": {
-              "location": "GestionAccesStepDef.choisir_sexe()"
+              "location": "com.qualiprobdd.e2etests.Administration.SteDefs.GestionAccesStepDef.choisir_sexe()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 121600,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 25,
             "name": "saisir Adresse Mail",
             "match": {
-              "location": "GestionAccesStepDef.saisir_Adresse_Mail()"
+              "location": "com.qualiprobdd.e2etests.Administration.SteDefs.GestionAccesStepDef.saisir_Adresse_Mail()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 404308600,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 26,
             "name": "saisir Formation initiale",
             "match": {
-              "location": "GestionAccesStepDef.saisir_Formation_initiale()"
+              "location": "com.qualiprobdd.e2etests.Administration.SteDefs.GestionAccesStepDef.saisir_Formation_initiale()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 362303300,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 27,
             "name": "saisir Grade",
             "match": {
-              "location": "GestionAccesStepDef.saisir_Grade()"
+              "location": "com.qualiprobdd.e2etests.Administration.SteDefs.GestionAccesStepDef.saisir_Grade()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 357265000,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 28,
             "name": "Saisir titre",
             "match": {
-              "location": "GestionAccesStepDef.saisir_titre()"
+              "location": "com.qualiprobdd.e2etests.Administration.SteDefs.GestionAccesStepDef.saisir_titre()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 19900,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 29,
             "name": "Choisir type de travail",
             "match": {
-              "location": "GestionAccesStepDef.choisir_type_de_travail()"
+              "location": "com.qualiprobdd.e2etests.Administration.SteDefs.GestionAccesStepDef.choisir_type_de_travail()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 3622002400,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 30,
             "name": "Ajouter une fonction",
             "match": {
-              "location": "GestionAccesStepDef.ajouter_une_fonction()"
+              "location": "com.qualiprobdd.e2etests.Administration.SteDefs.GestionAccesStepDef.ajouter_une_fonction()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 22300,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 31,
             "name": "Valider fiche Employé",
             "match": {
-              "location": "GestionAccesStepDef.valider_fiche_Employé()"
+              "location": "com.qualiprobdd.e2etests.Administration.SteDefs.GestionAccesStepDef.valider_fiche_Employé()"
             },
             "keyword": "And "
           }
         ],
         "tags": [
           {
-            "line": 1,
             "name": "@GestionAcces"
           },
           {
-            "line": 4,
             "name": "@AjoutEmployé"
           }
         ]
@@ -383,11 +352,15 @@
     "description": "",
     "id": "gestion-des-accès-sur-qualipro",
     "keyword": "Feature",
-    "uri": "src/specs/features/Administration/GestionAccés.feature",
+    "uri": "file:src/specs/features/Administration/GestionAcc%C3%A9s.feature",
     "tags": [
       {
-        "line": 1,
-        "name": "@GestionAcces"
+        "name": "@GestionAcces",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
       }
     ]
   }

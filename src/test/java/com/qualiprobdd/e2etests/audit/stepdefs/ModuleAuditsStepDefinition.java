@@ -14,8 +14,7 @@ import com.qualiprobdd.e2etests.moduleAction.models.FicheActionModele;
 import com.qualiprobdd.e2etests.moduleAction.pages.FicheActionPage;
 import com.qualiprobdd.e2etests.util.*;
 
-
-import cucumber.api.java.en.*;
+import io.cucumber.java.en.*;
 
 import org.apache.tools.ant.taskdefs.Java;
 import org.openqa.selenium.By;
