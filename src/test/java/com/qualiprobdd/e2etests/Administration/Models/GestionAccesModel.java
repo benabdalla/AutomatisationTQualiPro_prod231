@@ -6,7 +6,7 @@ import com.qualiprobdd.e2etests.Administration.Pages.GestionAccesPage;
 import com.qualiprobdd.e2etests.util.Common;
 import com.qualiprobdd.e2etests.util.ExcelUtils;
 
-import cucumber.runtime.CucumberException;
+import io.cucumber.java.en.When;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
@@ -247,6 +247,13 @@ public class GestionAccesModel {
     }
 
 
+    public static void Paramétrage_employé(WebDriver driver) throws Throwable {
+
+    }
+
+    public static void ajouter_group_de_travail_de_employé(WebDriver driver) throws Throwable {
+
+    }
 
     public static void valider_fiche_Employé() throws Throwable {
 
