@@ -6,8 +6,7 @@ import com.qualiprobdd.e2etests.util.Common;
 import com.qualiprobdd.e2etests.util.ExcelUtils;
 import com.qualiprobdd.e2etests.util.RTFUtil;
 import com.qualiprobdd.e2etests.util.Setup;
-import cucumber.api.java.en.*;
-
+import io.cucumber.java.en.*;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;

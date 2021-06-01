@@ -1,7 +1,5 @@
 package com.qualiprobdd.e2etests.PNC.stepdefs;
-import cucumber.api.java.en.*;
-
-import org.apache.tools.ant.taskdefs.Java;
+import io.cucumber.java.en.*;
 import org.testng.AssertJUnit;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Cookie;

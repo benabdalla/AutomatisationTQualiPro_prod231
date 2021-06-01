@@ -13,7 +13,7 @@ import java.util.List;
 import java.util.Random;
 
 import com.gargoylesoftware.htmlunit.javascript.background.JavaScriptExecutor;
-import gherkin.lexer.Th;
+
 import org.apache.tools.ant.taskdefs.Java;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Cookie;

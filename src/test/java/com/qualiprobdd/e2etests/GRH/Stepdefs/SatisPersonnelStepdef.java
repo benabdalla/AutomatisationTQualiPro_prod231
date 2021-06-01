@@ -5,8 +5,7 @@ import static org.testng.Assert.assertTrue;
 
 import java.util.List;
 import java.util.concurrent.TimeUnit;
-
-import cucumber.api.java.en.*;
+import io.cucumber.java.en.*;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;

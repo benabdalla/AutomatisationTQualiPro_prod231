@@ -1,7 +1,7 @@
 package com.qualiprobdd.e2etests.Risque.StepDefs;
 
 import java.util.concurrent.TimeUnit;
-import cucumber.api.java.en.*;
+import io.cucumber.java.en.*;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;

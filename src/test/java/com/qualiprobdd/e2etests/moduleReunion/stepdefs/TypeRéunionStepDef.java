@@ -8,7 +8,7 @@ import com.qualiprobdd.e2etests.moduleReunion.pages.ModuleReunionPage;
 import com.qualiprobdd.e2etests.moduleReunion.pages.typeréunionpage;
 import com.qualiprobdd.e2etests.util.Setup;
 
-import cucumber.api.java.en.*;
+import io.cucumber.java.en.*;
 
 
 public class TypeRéunionStepDef {

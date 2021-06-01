@@ -3,8 +3,7 @@ package com.qualiprobdd.e2etests.indicateur.stepdefs;
 
 import static org.testng.Assert.assertTrue;
 
-import java.text.DecimalFormat;
-import cucumber.api.java.en.*;
+import io.cucumber.java.en.*;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;

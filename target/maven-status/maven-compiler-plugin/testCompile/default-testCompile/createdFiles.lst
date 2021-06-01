@@ -79,6 +79,7 @@ com\qualiprobdd\e2etests\agenda\Page\PageSommerAgenda.class
 com\qualiprobdd\e2etests\moduleAction\pages\ModeleActionPage.class
 com\qualiprobdd\e2etests\DocumentSpiraleRunner.class
 com\qualiprobdd\e2etests\GRH\Pages\SatisPersonnelPage.class
+com\qualiprobdd\e2etests\EmpRunner.class
 com\qualiprobdd\e2etests\audit\pages\ModuleAuditsPage.class
 com\qualiprobdd\e2etests\PNCRunner.class
 com\qualiprobdd\e2etests\audit\stepdefs\ModuleAuditsStepDefinition.class

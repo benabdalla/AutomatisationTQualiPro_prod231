@@ -13,9 +13,7 @@ import java.util.List;
 import java.util.Random;
 
 import com.qualiprobdd.e2etests.ReclamationClient.Pages.ReclamationClientPage;
-import cucumber.api.java.en.When;
-import gherkin.lexer.Th;
-import org.apache.tools.ant.taskdefs.Java;
+import io.cucumber.java.en.*;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Cookie;
 import org.openqa.selenium.JavascriptExecutor;

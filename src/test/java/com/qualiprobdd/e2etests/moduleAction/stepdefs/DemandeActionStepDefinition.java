@@ -13,7 +13,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
-import cucumber.api.java.en.*;
+import io.cucumber.java.en.*;
 import java.util.concurrent.TimeUnit;
 
 @Test
