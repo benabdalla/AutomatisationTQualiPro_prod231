@@ -7,6 +7,7 @@ import com.qualiprobdd.e2etests.util.Common;
 import com.qualiprobdd.e2etests.util.ExcelUtils;
 
 import cucumber.runtime.CucumberException;
+import org.apache.poi.ss.formula.functions.T;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
@@ -38,7 +39,7 @@ public class GestionAccesModel {
 
 
 
-        GestionAccesPage.wmatEmp.sendKeys(mat);
+        GestionAccesPage.wmatEmp.sendKeys(mat+"abd12");
 
     }
 
@@ -51,7 +52,7 @@ public class GestionAccesModel {
 
 
 
-        GestionAccesPage.wnomPren.sendKeys(np);
+        GestionAccesPage.wnomPren.sendKeys(np+"abd123");
 
     }
 
@@ -245,8 +246,51 @@ public class GestionAccesModel {
 
 
     }
+    public static void Paramétrage_employé(WebDriver driver) throws Throwable {
+        JavascriptExecutor jse  =(JavascriptExecutor) driver;
+        jse.executeScript("arguments[0].click()",GestionAccesPage.wpartEmp);
+        Thread.sleep(1000);
+        JavascriptExecutor jse2  =(JavascriptExecutor) driver;
+        jse2.executeScript("arguments[0].click()",GestionAccesPage.wbtnAudti);
+        Thread.sleep(1000);
+
+        JavascriptExecutor jse3  =(JavascriptExecutor) driver;
+        jse3.executeScript("arguments[0].click()",GestionAccesPage.wbtnSup);
+        Thread.sleep(1000);
+
+        JavascriptExecutor jse4  =(JavascriptExecutor) driver;
+        jse4.executeScript("arguments[0].click()",GestionAccesPage.wbtnRRh);
 
 
+    }
+    public static void ajouter_group_de_travail_de_employé(WebDriver  driver) throws InterruptedException {
+        JavascriptExecutor jse4  =(JavascriptExecutor) driver;
+        jse4.executeScript("arguments[0].click()",GestionAccesPage.wbtnGroup);
+        int i = GestionAccesPage.wtabgroupEmp.findElements(By.tagName("tr")).size() - 1;
+//*[@id="ctl00_ContentPlaceHolder1_GridViewabc_wrapper"]/div[2]/div/table/tbody/tr[1]/td[1]
+        System.out.println(" size= " + i);
+
+
+
+        for (int j = i; j > 0; j--) {
+            Thread.sleep(200);
+            System.out.println(" j= " + j);
+
+            GestionAccesPage.wtabgroupEmp
+                    .findElement(By.xpath("//*[@id=\"ctl00_ContentPlaceHolder1_GridViewabc_wrapper\"]/div[2]/div/table/tbody/tr["+j+"]/td[1]"))
+                    .click();
+
+
+        }
+        JavascriptExecutor js =(JavascriptExecutor) driver;
+        js.executeScript("arguments[0].click()",GestionAccesPage.wvalidGroup);
+        Thread.sleep(200);
+        JavascriptExecutor js1 =(JavascriptExecutor) driver;
+        js1.executeScript("arguments[0].click()",GestionAccesPage.btnvalidEmp);
+        Thread.sleep(200);
+        JavascriptExecutor js2 =(JavascriptExecutor) driver;
+        js2.executeScript("arguments[0].click()",GestionAccesPage.wretour);
+    }
 
     public static void valider_fiche_Employé() throws Throwable {
 

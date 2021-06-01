@@ -163,7 +163,15 @@ public   static   int  emp=0;
     public void ajouter_une_fonction() throws Throwable {
         GestionAccesModel.ajouter_une_fonction(driver);
     }
+    @When("^Paramétrage employé$")
+    public void Paramétrage_employé() throws Throwable {
+        GestionAccesModel.Paramétrage_employé(driver);
+    }
 
+    @When("^ajouter group de travail de employé$")
+    public void ajouter_group_de_travail_de_employé() throws Throwable {
+        GestionAccesModel.ajouter_group_de_travail_de_employé(driver);
+    }
     @When("^Valider fiche Employé$")
     public void valider_fiche_Employé() throws Throwable {
         GestionAccesModel.valider_fiche_Employé();

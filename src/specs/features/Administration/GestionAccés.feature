@@ -28,6 +28,8 @@ Feature: Gestion des accès sur Qualipro
     And  Saisir titre
     And  Choisir type de travail
     And  Ajouter une fonction
+    And  Paramétrage employé
+    And ajouter group de travail de employé
     And  Valider fiche Employé
 
 
