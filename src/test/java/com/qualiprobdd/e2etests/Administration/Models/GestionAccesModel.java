@@ -248,11 +248,33 @@ public class GestionAccesModel {
 
 
     public static void Paramétrage_employé(WebDriver driver) throws Throwable {
-
+        JavascriptExecutor jse = (JavascriptExecutor)driver;
+        jse.executeScript("arguments[0].click()", new Object[]{GestionAccesPage.wpartEmp});
+        Thread.sleep(1000L);
+        JavascriptExecutor jse2 = (JavascriptExecutor)driver;
+        jse2.executeScript("arguments[0].click()", new Object[]{GestionAccesPage.wbtnAudti});
+        Thread.sleep(1000L);
+        JavascriptExecutor jse3 = (JavascriptExecutor)driver;
+        jse3.executeScript("arguments[0].click()", new Object[]{GestionAccesPage.wbtnSup});
+        Thread.sleep(1000L);
+        JavascriptExecutor jse4 = (JavascriptExecutor)driver;
+        jse4.executeScript("arguments[0].click()", new Object[]{GestionAccesPage.wbtnRRh});
     }
 
-    public static void ajouter_group_de_travail_de_employé(WebDriver driver) throws Throwable {
+    public static void ajouter_group_de_travail_de_employé(WebDriver driver) throws InterruptedException {
+        JavascriptExecutor jse4 = (JavascriptExecutor)driver;
+        jse4.executeScript("arguments[0].click()", new Object[]{GestionAccesPage.wbtnGroup});
+        int i = GestionAccesPage.wtabgroupEmp.findElements(By.tagName("tr")).size() - 1;
+        System.out.println(" size= " + i);
 
+        for(int j = i; j > 0; --j) {
+            Thread.sleep(200L);
+            System.out.println(" j= " + j);
+            GestionAccesPage.wtabFn.findElement(By.xpath("//*[@id=\"ctl00_ContentPlaceHolder1_GridViewabc_wrapper\"]/div[2]/div/table/tbody/tr[" + j + "]/td[1]")).click();
+        }
+
+        JavascriptExecutor js = (JavascriptExecutor)driver;
+        js.executeScript("arguments[0].click()", new Object[]{GestionAccesPage.wvalidGroup});
     }
 
     public static void valider_fiche_Employé() throws Throwable {
