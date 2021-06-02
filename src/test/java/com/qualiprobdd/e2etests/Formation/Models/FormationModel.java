@@ -2,6 +2,7 @@ package com.qualiprobdd.e2etests.Formation.Models;
 
 
 import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
@@ -13,8 +14,7 @@ import java.text.DateFormat;
 import java.text.DecimalFormat;
 import java.text.SimpleDateFormat;
 
-import com.qualiprobdd.e2etests.moduleAction.pages.FicheActionPage;
-
+import com.qualiprobdd.e2etests.Formation.Pages.FormationPage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Cookie;
 import org.openqa.selenium.JavascriptExecutor;
@@ -26,21 +26,19 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import com.qualiprobdd.e2etests.Documentation.pages.DocumentationPage;
-import com.qualiprobdd.e2etests.Formation.Pages.FormationPage;
-import com.qualiprobdd.e2etests.PNC.pages.ModulePNCPage;
 import com.qualiprobdd.e2etests.authentification.models.AuthentificationModel;
 import com.qualiprobdd.e2etests.util.Common;
 import com.qualiprobdd.e2etests.util.ExcelUtils;
 import com.qualiprobdd.e2etests.util.RandomValue;
-import io.cucumber.java.*;
+import org.testng.Assert;
 
 public class FormationModel {
 	static String Demandeur, utilisateurs, NumFormation;
 	static boolean participe;
-	private static String Path = "resources/testData/TestData.xlsx";
+	private static String
+			Path = "resources/testData/TestData.xlsx";
 
-//développe_par_FATMA_CHAOUACHI
+//*****************************développe_par_FATMA_CHAOUACHI
 
 	public static void consulter_sous_module_Types_de_thèmes(WebDriver driver) throws Throwable {
 
@@ -57,185 +55,266 @@ public class FormationModel {
 
 	public static void saisir_un_Type_de_thème(int row) throws Throwable {
 		Thread.sleep(2000);
-		String st = "Type de thème " + LocalDateTime.now().toString();
-		ExcelUtils.setExcelFile(Path, "Action");
+
+		String st =LocalDateTime.now().toString();
+		System.out.println("Type de thème st1 =  "+st);
+
+		ExcelUtils.setExcelFile(Path, "Formation");
 		ExcelUtils.setCellData1(st, row, 16, Path);
 		FormationPage.wsaisir_un_Type_de_thème.sendKeys(st);
 
 	}
+	public static void cliquer_sur_valider10  (WebDriver driver) throws Throwable {
+		Thread.sleep(1000L);
+		FormationPage.wcliquer_sur_valider10.click();
+
+	}
 	
-	public static void vérifier_Type_de_thème_ajouté() throws Throwable {
+	public static void vérifier_Type_de_thème_ajouté(int row ) throws Throwable {
+		FormationPage.wcliquer_sur_le_bouton_retour_Type_thème.click();
+		ExcelUtils.setExcelFile(Path, "Formation");
+		String st = ExcelUtils.getCellData1(row, 16);
+		System.out.println(st+"Type de thème st2 =  ");
+
+		Thread.sleep(2000);
+		FormationPage.wremplir_le_champ.sendKeys(st);
+		FormationPage.wcliquer_sur_le_bouton_Rechercher_Type_de_Thème.click();
+		String st11=FormationPage.wTab_type_de_thème.findElement(By.xpath("//*[@id=\"ctl00_ContentPlaceHolder1_GridView1_wrapper\"]/div[2]/div/table/tbody/tr[1]/td[2]")).getText();
+		System.out.println(st11+"Type de thème st11 =  ");
+
+		//Assert.assertEquals(st,st11);
+
+		Thread.sleep(1000);
 
 	}
 	
 	public static void consulter_sous_module_Types_de_formation(WebDriver driver) throws Throwable {
-		Thread.sleep(1000L);
-		//FicheActionPage.menuID.click();
-		JavascriptExecutor executor = (JavascriptExecutor) driver;
-		executor.executeScript("arguments[0].click()", FicheActionPage.menuID);
-		Thread.sleep(200L);
-		Common.AccéderModule(12, 0, 0, driver);
-		Common.AccéderModule(12, 2, 0, driver);
+
 		Common.AccéderModule(12, 2, 9, driver);
 
 	}
 
-	public static void cliquer_sur_ajouter_Types_de_formation() throws Throwable {
-
-
-	}
-	
-	public static void saisir_un_Type_de_formation() throws Throwable {
-		//FormationPage.wsaisir_un_Type_de_thème.sendkey("  ");
-
-
-	}
-	
-	public static void cliquer_sur_le_bouton_radio_Avec_évaluation_à_chaud() throws Throwable {
-
-	}
-
-	public static void vérifier_Type_de_formation_Avec_évaluation_à_chaud_ajouté() throws Throwable {
-
-	}
-
-	public static void consulter_sous_module_Sociétés(WebDriver driver) throws Throwable {
+	public static void cliquer_sur_ajouter_Types_de_formation(WebDriver driver) throws Throwable {
 		Thread.sleep(1000L);
-		//FicheActionPage.menuID.click();
-		JavascriptExecutor executor = (JavascriptExecutor) driver;
-		executor.executeScript("arguments[0].click()", FicheActionPage.menuID);
-		Thread.sleep(200L);
-		Common.AccéderModule(12, 0, 0, driver);
-		Common.AccéderModule(12, 2, 0, driver);
-		Common.AccéderModule(12, 2, 8, driver);
+		FormationPage.wajouter_Types_de_formation.click();
 
+	}
+	
+	public static void saisir_un_Type_de_formation (int row) throws Throwable {
+		Thread.sleep(2000);
+		String st = " formation auto" + LocalDateTime.now().toString();
+		System.out.println("st1 =  "+st);
+		ExcelUtils.setExcelFile(Path, "Formation");
+		ExcelUtils.setCellData1(st, row, 3, Path);
+		FormationPage.wsaisir_un_Type_de_formation.sendKeys(st);
+
+
+	}
+	
+	public static void cliquer_sur_le_bouton_radio_Avec_évaluation_à_chaud(WebDriver driver) throws Throwable {
+		Thread.sleep(1000L);
+		FormationPage.wcliquer_sur_le_bouton_radio_Avec_évaluation_chaud.click();
+	}
+
+	public static void cliquer_sur_valider_Types_de_formation (WebDriver driver) throws Throwable {
+		Thread.sleep(1000L);
+		FormationPage.wcliquer_sur_valider_Types_de_formation.click();
+	}
+	//*****************************
+	public static void consulter_sous_module_Sociétés(WebDriver driver) throws Throwable {
+
+		Common.AccéderModule(12, 2, 8, driver);
 	}
 
 
 	public static void cliquer_sur_ajouter_une_Société() throws Throwable {
-
-	}
-
-
-	public static void saisir_une_Société() throws Throwable {
-
-	}
-
-
-	public static void vérifier_une_Société_ajoutée() throws Throwable {
-
-	}
-
-
-	public static void consulter_sous_module_Type_de_critère_d_évaluation(WebDriver driver) throws Throwable {
 		Thread.sleep(1000L);
-		//FicheActionPage.menuID.click();
-		JavascriptExecutor executor = (JavascriptExecutor) driver;
-		executor.executeScript("arguments[0].click()", FicheActionPage.menuID);
-		Thread.sleep(200L);
-		Common.AccéderModule(12, 0, 0, driver);
-		Common.AccéderModule(12, 2, 0, driver);
-		Common.AccéderModule(12, 2, 6, driver);
-
+		FormationPage.wajouter_une_société .click();
 	}
+
+
+	public static void saisir_une_Société(int row) throws Throwable {
+		Thread.sleep(2000);
+		String st = "SOCIETE AUTO" + LocalDateTime.now().toString();
+		System.out.println("SOCIETE st14 =  "+st);
+
+		ExcelUtils.setExcelFile(Path, "Formation");
+		ExcelUtils.setCellData1(st, row, 6, Path);
+		FormationPage.wsaisir_une_Société.sendKeys(st);
 	
-	public static void cliquer_sur_ajouter_un_Type_de_critère_d_évaluation() throws Throwable {
-
 	}
 
 
-	public static void saisir_un_Type_de_critère_d_évaluation() throws Throwable {
-
-	}
-
-	public static void vérifier_un_Type_de_critère_d_évaluation_ajouté() throws Throwable {
-
-	}
-	
-	public static void consulter_sous_module_critères_d_évaluation() throws Throwable {
-
-	}
-	
-	public static void cliquer_sur_ajouter_un_critère_d_évaluation() throws Throwable {
-
-	}
-
-	public static void saisir_un_critère_d_évaluation() throws Throwable {
-
-	}
-
-
-	public static void saisir_un_Coefficient() throws Throwable {
-
-	}
-	
-	public static void sélectionner_un_Type_de_critère_d_évaluation() throws Throwable {
-		//a ne pas oublier le bouton valider du pop up
-
-	}
-	
-	public static void vérifier_un_critères_d_évaluation_ajouté() throws Throwable {
-
-	}
-
-
-	public static void consulter_sous_module_Thèmes(WebDriver driver) throws Throwable {
+	public static void cliquer_sur_valider_Société() throws Throwable {
 		Thread.sleep(1000L);
-		//FicheActionPage.menuID.click();
-		JavascriptExecutor executor = (JavascriptExecutor) driver;
-		executor.executeScript("arguments[0].click()", FicheActionPage.menuID);
-		Thread.sleep(200L);
-		Common.AccéderModule(12, 0, 0, driver);
-		Common.AccéderModule(12, 2, 0, driver);
+		FormationPage.wcliquer_sur_valider_Société .click();
+	}
+
+
+	public static void vérifier_une_Société_ajoutée(int row) throws Throwable {
+		FormationPage.wBoutton_retour_société.click();
+		ExcelUtils.setExcelFile(Path, "Formation");
+		String st = ExcelUtils.getCellData1(row, 6);
+		System.out.println(st+"SOCIETE st13 =  ");
+
+		Thread.sleep(2000);
+		FormationPage.wremplir_le_champ_société.sendKeys(st);
+		FormationPage.wRechercher_société.click();
+		String st11=FormationPage.wTab_société.findElement(By.xpath("//*[@id=\"ctl00_ContentPlaceHolder1_GridView1\"]/tbody/tr[1]/td[2]")).getText();
+		System.out.println(st11+"SOCIETE st13 =  ");
+
+		//Assert.assertEquals(st,st11);
+
+		Thread.sleep(1000);
+	}
+
+//*****************************************
+
+	public static void consulter_sous_module_type_de_critère_d_évaluation(WebDriver driver ) throws Throwable {
+				Common.AccéderModule(12, 2, 7, driver);
+	}
+
+
+	public static void cliquer_sur_ajouter_type_de_critère_d_évaluation() throws Throwable {
+		Thread.sleep(1000L);
+		FormationPage.wajouter_type_de_critère_d_évaluation.click();
+	}
+
+	public static void saisir_type_de_critère_d_évaluation(int row) throws Throwable {
+		Thread.sleep(2000);
+		String st = "Type de critére" + LocalDateTime.now().toString();
+		System.out.println("SOCIETE st15 =  "+st);
+
+		ExcelUtils.setExcelFile(Path, "Formation");
+		ExcelUtils.setCellData1(st, row, 17, Path);
+		FormationPage.wsaisir_type_de_critère_d_évaluation.sendKeys(st);
+
+	}
+
+
+	public static void cliquer_sur_valider_type_de_critère_d_évaluation() throws Throwable {
+		Thread.sleep(1000L);
+		FormationPage.wcliquer_sur_valider_type_de_critère_d_évaluation.click();
+	}
+
+
+	public static void vérifier_type_de_critère_d_évaluation_ajoutée(int row) throws Throwable {
+		FormationPage.wBoutton_retour_type_de_critère_d_évaluation.click();
+		ExcelUtils.setExcelFile(Path, "Formation");
+		
+		String st = ExcelUtils.getCellData1(row, 17);
+		System.out.println(st+"SOCIETE st18 =");
+
+		Thread.sleep(2000);
+		FormationPage.wremplir_le_champ_type_de_critère_d_évaluation.sendKeys(st);
+		FormationPage.wRechercher_type_de_critère_d_évaluation.click();
+		String st11=FormationPage.wTab_type_de_critère_d_évaluation.findElement(By.xpath("//*[@id=\"ctl00_ContentPlaceHolder1_GridView1\"]/tbody/tr[1]/td[2]")).getText();
+		System.out.println(st11+"SOCIETE st18 =");
+//Boolean  ok  =st.equals(st11+"  ");
+		//Assert.assertTrue(ok,"rahi   mrgla  ");
+
+		Thread.sleep(1000);
+	}
+	public static void consulter_sous_module_thèmes_de_formation(WebDriver driver) throws Throwable {
+
 		Common.AccéderModule(12, 2, 5, driver);
-
-	}
-	
-	public static void cliquer_sur_ajouter_Thème() throws Throwable {
-
-	}
-	
-	public static void saisir_un_Thème() throws Throwable {
-
-	}
-	
-	public static void sélectionner_un_Type_Thème() throws Throwable {
-
 	}
 
-
-	public static void cliquer_sur_ajouter_qualifications() throws Throwable {
-
-	}
-	
-	public static void choisir_une_qualification() throws Throwable {
-
-	}
-
-	public static void consulter_sous_module_Organismes_de_formation(WebDriver driver) throws Throwable {
+	public static void cliquer_sur_ajouter_thèmes_de_formation() throws Throwable {
 		Thread.sleep(1000L);
-		//FicheActionPage.menuID.click();
-		JavascriptExecutor executor = (JavascriptExecutor) driver;
-		executor.executeScript("arguments[0].click()", FicheActionPage.menuID);
-		Thread.sleep(200L);
-		Common.AccéderModule(12, 0, 0, driver);
-		Common.AccéderModule(12, 2, 0, driver);
+		FormationPage.wcliquer_sur_ajouter_thèmes_de_formation.click();
+	}
+
+	public static void saisir_thèmes_de_formation(int  row) throws Throwable {
+		Thread.sleep(2000);
+		String st = "Théme AUTO" + LocalDateTime.now().toString();
+		System.out.println("Théme AUTO =  "+st);
+
+		ExcelUtils.setExcelFile(Path, "Formation");
+		ExcelUtils.setCellData1(st, row, 2, Path);
+		FormationPage.wsaisir_thèmes_de_formation.sendKeys(st);
+
+	}
+
+	public static void choisir_un_type_de_Thème(int row) throws Throwable {
+
+	Select select=new Select(FormationPage.wchoisir_un_type_de_Thème);
+		ExcelUtils.setExcelFile(Path, "Formation");
+		String st=ExcelUtils.getCellData1( row, 16);
+		System.out.println(" verifier"+st);
+	select.selectByVisibleText(st);
+	}
+
+	public static  void cliquer_sur_valider_thèmes_de_formation() throws Throwable {
+		FormationPage.wcliquer_sur_valider_thèmes_de_formation.click();
+	}
+
+
+	public static void vérifier_thèmes_de_formation_ajoutée(int row) throws Throwable {
+		FormationPage.wBoutton_retour_thèmes_de_formation.click();
+		ExcelUtils.setExcelFile(Path, "Formation");
+		String st = ExcelUtils.getCellData1(row, 2); 
+		System.out.println(st+"Théme AUTO st20 =");
+
+		Thread.sleep(2000);
+		FormationPage.wremplir_le_champ_thèmes_de_formation.sendKeys(st);
+		FormationPage.wRechercher_thèmes_de_formation.click();
+		String st11=FormationPage.wTab_thèmes_de_formation.findElement(By.xpath("//*[@id=\"ctl00_ContentPlaceHolder1_GridView1_wrapper\"]/div[2]/div")).getText();
+		System.out.println(st11+"Théme AUTO st20 =");
+
+
+		Thread.sleep(1000);
+
+	}
+	
+	public static void consulter_sous_module_Organisme(WebDriver driver) throws Throwable {
+
 		Common.AccéderModule(12, 2, 4, driver);
-
 	}
 
 	
-	public static void cliquer_sur_ajouter_Organismes() throws Throwable {
-
-	}
-	
-	public static void saisir_Organisme_de_Formation() throws Throwable {
-
+	public static void cliquer_sur_ajouter_Organisme_de_Formation() throws Throwable {
+		Thread.sleep(1000L);
+		FormationPage.wcliquer_sur_ajouter_Organisme_de_Formation.click();
 	}
 
-	public static void vérifier_Organisme_de_Formation_ajouté() throws Throwable {
 
+	public static void saisir_Organisme_de_Formation(int row) throws Throwable {
+		Thread.sleep(2000);
+		String st = "ORGANISME AUTO" + LocalDateTime.now().toString();
+		System.out.println("ORGANISME AUTO =  "+st);
+
+		ExcelUtils.setExcelFile(Path, "Formation");
+		ExcelUtils.setCellData1(st, row, 7, Path);
+		FormationPage.wsaisir_Organisme_de_Formation.sendKeys(st);
 	}
+
+
+	public static void cliquer_sur_valider_Organisme_de_Formation() throws Throwable {
+		FormationPage.wcliquer_sur_valider_Organisme_de_Formation.click();
+	}
+
+
+	public static void vérifier_Organisme_de_Formation_ajoutée(int row) throws Throwable {
+		Thread.sleep(1000);
+		//FormationPage.wBoutton_retour_Organisme_de_Formation.click();
+		ExcelUtils.setExcelFile(Path, "Formation");
+		String st = ExcelUtils.getCellData1(row, 7);
+		System.out.println(st+"ORGANISME AUTO st28 =");
+
+		Thread.sleep(2000);
+		FormationPage.wremplir_le_champ_Organisme_de_Formation.sendKeys(st);
+		FormationPage.wRechercher_Organisme_de_Formation.click();
+		String st11= FormationPage.wTab_Organisme_de_Formation.findElement(By.xpath("//*[@id=\"ctl00_ContentPlaceHolder1_GridView1\"]/tbody/tr[1]/td[2]")).getText();
+		System.out.println(st11+"ORGANISME AUTO st28 =");
+
+
+		Thread.sleep(1000);
+	}
+
+
+
+
 	//Fin_dev_par_FATMA_CHAOUACHI
 
 
@@ -1127,7 +1206,6 @@ JavascriptExecutor executor4 = (JavascriptExecutor) driver;
 			      return false;
 			    }
 	      }
-	
 
 
 

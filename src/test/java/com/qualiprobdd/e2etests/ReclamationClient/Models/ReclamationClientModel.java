@@ -2,7 +2,6 @@ package com.qualiprobdd.e2etests.ReclamationClient.Models;
 
 import static org.testng.Assert.assertTrue;
 
-import java.io.File;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.time.LocalDate;
@@ -27,12 +26,8 @@ import com.qualiprobdd.e2etests.util.AbstractPage;
 import com.qualiprobdd.e2etests.util.Common;
 import com.qualiprobdd.e2etests.util.ExcelUtils;
 import com.qualiprobdd.e2etests.util.RandomValue;
-import com.qualiprobdd.e2etests.Environnement.pages.IncidentPage;
-import com.qualiprobdd.e2etests.Formation.Pages.FormationPage;
 import com.qualiprobdd.e2etests.ReclamationClient.Pages.ReclamationClientPage;
 import com.qualiprobdd.e2etests.authentification.models.AuthentificationModel;
-import com.qualiprobdd.e2etests.moduleAction.pages.FicheActionPage;
-import com.qualiprobdd.e2etests.moduleReunion.pages.ModuleReunionPage;
 
 
 public class ReclamationClientModel {

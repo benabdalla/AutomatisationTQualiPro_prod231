@@ -143,79 +143,147 @@ public class FormationPage {
 	final static String saisir_un_Type_de_thème ="ctl00_ContentPlaceHolder1_Text_stype";
 	final static String Ajouter_un_Type_de_thème ="ctl00_ContentPlaceHolder1_Ajouter_Ajouter";
 	final static String Saisir_un_Type_de_thème ="ctl00_ContentPlaceHolder1_Text_stype";
-	final static String cliquer_sur_valider = "ctl00_ContentPlaceHolder1_LinkButton11";
+	final static String cliquer_sur_valider10 = "ctl00_ContentPlaceHolder1_LinkButton11";
+	final static String cliquer_sur_le_bouton_retour_Type_thème ="ctl00_ContentPlaceHolder1_LinkButton12";
+	final static String remplir_le_champ ="ctl00_ContentPlaceHolder1_Text_ftype";
+	final static String cliquer_sur_le_bouton_Rechercher_Type_de_Thème = "ctl00_ContentPlaceHolder1_Label49";
+	final static String Tab_type_de_thème ="ctl00_ContentPlaceHolder1_GridView1";
 
    //Types_de_formation
 	final static String ajouter_Types_de_formation ="ctl00_ContentPlaceHolder1_Ajouter_Ajouter";
 	final static String saisir_un_Type_de_formation ="ctl00_ContentPlaceHolder1_Text_stype";
 	final static String cliquer_sur_le_bouton_radio_Avec_évaluation_chaud ="ctl00_ContentPlaceHolder1_RadioButtonListEval_0";
-//	final static String cliquer_sur_valider = "ctl00_ContentPlaceHolder1_LinkButton11";
-	
+	final static String cliquer_sur_valider_Types_de_formation = "ctl00_ContentPlaceHolder1_LinkButton11";
 	//Société
 	final static String ajouter_une_société  ="ctl00_ContentPlaceHolder1_Ajouter_Ajouter";
 	final static String saisir_une_Société ="ctl00_ContentPlaceHolder1_Text_cof";
-//	final static String cliquer_sur_valider ="ctl00_ContentPlaceHolder1_LinkButton11";
+	final static String cliquer_sur_valider_Société ="ctl00_ContentPlaceHolder1_LinkButton11";
+	final static String Boutton_retour_société ="ctl00_ContentPlaceHolder1_LinkButton12";
+	final static String remplir_le_champ_société ="ctl00_ContentPlaceHolder1_Text_fsoc";
+	final static String Rechercher_société ="ctl00_ContentPlaceHolder1_Label49";
+	final static String Tab_société ="ctl00_ContentPlaceHolder1_GridView1";
+	//types de critère d'évaluation
+	final static String ajouter_type_de_critère_d_évaluation  ="ctl00_ContentPlaceHolder1_Ajouter";
+	final static String saisir_type_de_critère_d_évaluation ="ctl00_ContentPlaceHolder1_Text_stype";
+	final static String cliquer_sur_valider_type_de_critère_d_évaluation ="ctl00_ContentPlaceHolder1_LinkButton11";
+	final static String Boutton_retour_type_de_critère_d_évaluation ="ctl00_ContentPlaceHolder1_LinkButton12";
+	final static String remplir_le_champ_type_de_critère_d_évaluation="ctl00_ContentPlaceHolder1_Text_ftype";
+	final static String Rechercher_type_de_critère_d_évaluation ="ctl00_ContentPlaceHolder1_Filtre_Rechercher";
+	final static String Tab_type_de_critère_d_évaluation ="ctl00_ContentPlaceHolder1_GridView1";
+	//Thème de formation
+	final static String cliquer_sur_ajouter_thèmes_de_formation ="ctl00_ContentPlaceHolder1_Ajouter";
+	final static String saisir_thèmes_de_formation ="ctl00_ContentPlaceHolder1_Text_sthem";
+	final static String choisir_un_type_de_Thème ="ctl00_ContentPlaceHolder1_List_Typt";
+	final static String cliquer_sur_valider_thèmes_de_formation ="ctl00_ContentPlaceHolder1_LinkButton11";
+	final static String Boutton_retour_thèmes_de_formation ="ctl00_ContentPlaceHolder1_LinkButton12";
+	final static String remplir_le_champ_thèmes_de_formation ="ctl00_ContentPlaceHolder1_Text_ftheme";
+	final static String Rechercher_thèmes_de_formation ="ctl00_ContentPlaceHolder1_Label49";
+	final static String Tab_thèmes_de_formation ="ctl00_ContentPlaceHolder1_GridView1";
+ //organisme
+	final static String cliquer_sur_ajouter_Organisme_de_Formation="ctl00_ContentPlaceHolder1_Ajouter";
+	final static String saisir_Organisme_de_Formation ="ctl00_ContentPlaceHolder1_Text_cof";
+	final static String cliquer_sur_valider_Organisme_de_Formation ="ctl00_ContentPlaceHolder1_LinkButton11";
+	final static String Boutton_retour_Organisme_de_Formation ="ctl00_ContentPlaceHolder1_LinkButton12";
+	final static String remplir_le_champ_Organisme_de_Formation ="ctl00_ContentPlaceHolder1_Text_fsoc";
+	final static String Rechercher_Organisme_de_Formation ="ctl00_ContentPlaceHolder1_Label49";
+	final static String Tab_Organisme_de_Formation ="ctl00_ContentPlaceHolder1_GridView1";
 
-    //Type de critére d'évaluation 
-	final static String ajouter_un_Type_de_critère_évaluation = "ctl00_ContentPlaceHolder1_Ajouter_Ajouter";
-	final static String saisir_un_Type_de_critère_évaluation ="ctl00_ContentPlaceHolder1_Text_stype";
-	//final static String cliquer_sur_valider  ="ctl00_ContentPlaceHolder1_LinkButton11";
 
-	//Critéres d'évaluation
-	final static String ajouter_un_critère_évaluation ="ctl00_ContentPlaceHolder1_Ajouter_Ajouter";
-	final static String saisir_un_critère_évaluation ="ctl00_ContentPlaceHolder1_Text_crit";
-	final static String saisir_un_Coefficient ="ctl00_ContentPlaceHolder1_Text_cof";
-	final static String Sélectionner_un_Type_de_critère_évaluation = "ctl00_ContentPlaceHolder1_fList_typt";
-
-
-	//Thèmes
-	final static String ajouter_un_thème ="ctl00_ContentPlaceHolder1_Ajouter_Ajouter";
-	final static String saisir_un_Thème ="ctl00_ContentPlaceHolder1_Text_sthem";
-	final static String Sélectionner_un_Type_Thème ="ctl00_ContentPlaceHolder1_List_Typt";
-
-	final static String cliquer_sur_le_panel_qualification ="ctl00_ContentPlaceHolder1_Label_ListeQ";
-	final static String cliquer_sur_ajouter_qualifications ="ctl00_ContentPlaceHolder1_Ajouter_resp";
-	final static String choisir_une_qualification ="ctl00_ContentPlaceHolder1_GridView3_ctl02_CheckBox1";
-
-	final static String Fermer_pop_up ="//a[@id='ctl00_ContentPlaceHolder1_LinkButton8']/span";
-
+	
 
 	@FindBy(how = How.ID, using =  saisir_un_Type_de_thème)
 	public static WebElement wsaisir_un_Type_de_thème;
 	@FindBy(how = How.ID, using =  Ajouter_un_Type_de_thème )
 	public static WebElement wAjouter_un_Type_de_thème ;
-	@FindBy(how = How.ID, using = cliquer_sur_valider  )
-	public static WebElement wcliquer_sur_valider;
-	@FindBy(how = How.ID, using =  ajouter_Types_de_formation )
+	@FindBy(how = How.ID, using = cliquer_sur_valider10  )
+	public static WebElement wcliquer_sur_valider10 ;
+
+	@FindBy(how = How.ID, using = cliquer_sur_le_bouton_retour_Type_thème)
+	public static WebElement wcliquer_sur_le_bouton_retour_Type_thème ;
+	@FindBy(how = How.ID, using = remplir_le_champ)
+	public static WebElement wremplir_le_champ ;
+	@FindBy(how = How.ID, using = cliquer_sur_le_bouton_Rechercher_Type_de_Thème)
+	public static WebElement wcliquer_sur_le_bouton_Rechercher_Type_de_Thème ;
+	@FindBy(how = How.ID, using = Tab_type_de_thème)
+	public static WebElement wTab_type_de_thème;
+	
+
+	@FindBy(how = How.ID, using =  ajouter_Types_de_formation)
 	public static WebElement wajouter_Types_de_formation;
-	@FindBy(how = How.ID, using = saisir_un_Type_de_formation   )
+	@FindBy(how = How.ID, using = saisir_un_Type_de_formation)
 	public static WebElement  wsaisir_un_Type_de_formation ;
-	@FindBy(how = How.ID, using =  cliquer_sur_le_bouton_radio_Avec_évaluation_chaud  )
+	@FindBy(how = How.ID, using =  cliquer_sur_le_bouton_radio_Avec_évaluation_chaud)
 	public static WebElement wcliquer_sur_le_bouton_radio_Avec_évaluation_chaud;
+	@FindBy(how = How.ID, using = cliquer_sur_valider_Types_de_formation)
+	public static WebElement wcliquer_sur_valider_Types_de_formation ;
 
-	@FindBy(how = How.ID, using = ajouter_une_société   )
+
+	@FindBy(how = How.ID, using = ajouter_une_société)
 	public static WebElement wajouter_une_société ;
-	@FindBy(how = How.ID, using = saisir_une_Société  )
+	@FindBy(how = How.ID, using = saisir_une_Société)
 	public static WebElement wsaisir_une_Société ;
+	@FindBy(how = How.ID, using = cliquer_sur_valider_Société)
+	public static WebElement wcliquer_sur_valider_Société ;
+	@FindBy(how = How.ID, using = Boutton_retour_société)
+	public static WebElement wBoutton_retour_société;
+	@FindBy(how = How.ID, using =  remplir_le_champ_société)
+	public static WebElement wremplir_le_champ_société ;
+	@FindBy(how = How.ID, using = Rechercher_société)
+	public static WebElement wRechercher_société;
+	@FindBy(how = How.ID, using = Tab_société)
+	public static WebElement wTab_société;
 
-	@FindBy(how = How.ID, using =  ajouter_un_Type_de_critère_évaluation )
-	public static WebElement wajouter_un_Type_de_critère_évaluation;
-	@FindBy(how = How.ID, using =  ajouter_un_thème  )
-	public static WebElement wajouter_un_thème ;
-	@FindBy(how = How.ID, using = saisir_un_Thème  )
-	public static WebElement wsaisir_un_Thème;
-	@FindBy(how = How.ID, using = Sélectionner_un_Type_Thème  )
-	public static WebElement wSélectionner_un_Type_Thème;
+	@FindBy(how = How.ID, using = ajouter_type_de_critère_d_évaluation)
+	public static WebElement wajouter_type_de_critère_d_évaluation ;
+	@FindBy(how = How.ID, using = saisir_type_de_critère_d_évaluation)
+	public static WebElement wsaisir_type_de_critère_d_évaluation ;
+	@FindBy(how = How.ID, using = cliquer_sur_valider_type_de_critère_d_évaluation)
+	public static WebElement wcliquer_sur_valider_type_de_critère_d_évaluation;
+	@FindBy(how = How.ID, using =  Boutton_retour_type_de_critère_d_évaluation)
+	public static WebElement wBoutton_retour_type_de_critère_d_évaluation;
+	@FindBy(how = How.ID, using = remplir_le_champ_type_de_critère_d_évaluation)
+	public static WebElement wremplir_le_champ_type_de_critère_d_évaluation ;
+	@FindBy(how = How.ID, using =  Rechercher_type_de_critère_d_évaluation)
+	public static WebElement  wRechercher_type_de_critère_d_évaluation;
+	@FindBy(how = How.ID, using =  Tab_type_de_critère_d_évaluation)
+	public static WebElement  wTab_type_de_critère_d_évaluation;
+
+	@FindBy(how = How.ID, using = cliquer_sur_ajouter_thèmes_de_formation )
+	public static WebElement wcliquer_sur_ajouter_thèmes_de_formation ;
+	@FindBy(how = How.ID, using = saisir_thèmes_de_formation )
+	public static WebElement wsaisir_thèmes_de_formation  ;
+	@FindBy(how = How.ID, using = choisir_un_type_de_Thème  )
+	public static WebElement wchoisir_un_type_de_Thème  ;
+	@FindBy(how = How.ID, using = cliquer_sur_valider_thèmes_de_formation )
+	public static WebElement wcliquer_sur_valider_thèmes_de_formation ;
+	@FindBy(how = How.ID, using = Boutton_retour_thèmes_de_formation )
+	public static WebElement wBoutton_retour_thèmes_de_formation ;
+	@FindBy(how = How.ID, using = remplir_le_champ_thèmes_de_formation )
+	public static WebElement wremplir_le_champ_thèmes_de_formation ;
+	@FindBy(how = How.ID, using = Tab_thèmes_de_formation )
+	public static WebElement  wTab_thèmes_de_formation;
+	@FindBy(how = How.ID, using = Rechercher_thèmes_de_formation )
+	public static WebElement wRechercher_thèmes_de_formation;
 	
-	@FindBy(how = How.ID, using = cliquer_sur_le_panel_qualification   )
-	public static WebElement wcliquer_sur_le_panel_qualification ;
-	@FindBy(how = How.ID, using = cliquer_sur_ajouter_qualifications  )
-	public static WebElement wcliquer_sur_ajouter_qualifications;
-	@FindBy(how = How.ID, using = choisir_une_qualification )
-	public static WebElement wchoisir_une_qualification;
-	
-	@FindBy(how = How.ID, using = Fermer_pop_up  )
-	public static WebElement wFermer_pop_up;
+	@FindBy(how = How.ID, using = cliquer_sur_ajouter_Organisme_de_Formation )
+	public static WebElement wcliquer_sur_ajouter_Organisme_de_Formation;
+	@FindBy(how = How.ID, using = saisir_Organisme_de_Formation  )
+	public static WebElement wsaisir_Organisme_de_Formation;
+	@FindBy(how = How.ID, using = cliquer_sur_valider_Organisme_de_Formation )
+	public static WebElement wcliquer_sur_valider_Organisme_de_Formation;
+	@FindBy(how = How.ID, using =  Boutton_retour_Organisme_de_Formation )
+	public static WebElement wBoutton_retour_Organisme_de_Formation;
+	@FindBy(how = How.ID, using = remplir_le_champ_Organisme_de_Formation )
+	public static WebElement wremplir_le_champ_Organisme_de_Formation;
+	@FindBy(how = How.ID, using = Rechercher_Organisme_de_Formation )
+	public static WebElement wRechercher_Organisme_de_Formation;
+	@FindBy(how = How.ID, using = Tab_Organisme_de_Formation )
+	public static WebElement wTab_Organisme_de_Formation;
+
+
+
+
+
 	//FIN_DEV_FATMA_CHAOUACHI
 
 

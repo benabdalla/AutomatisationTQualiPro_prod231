@@ -2,10 +2,11 @@
 
 import java.util.concurrent.TimeUnit;
 
+
 import com.qualiprobdd.e2etests.Formation.Models.FormationModel;
-import io.cucumber.java.en.*;
-
-
+import com.qualiprobdd.e2etests.Formation.Pages.FormationPage;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
@@ -17,15 +18,12 @@ import org.openqa.selenium.NoSuchElementException;
 
 import com.qualiprobdd.e2etests.Formation.Models.DemandeFormationModel;
 
-import com.qualiprobdd.e2etests.Formation.Pages.FormationPage;
-
 import com.qualiprobdd.e2etests.util.Common;
 import com.qualiprobdd.e2etests.util.ExcelUtils;
 import com.qualiprobdd.e2etests.util.Setup;
-import com.qualiprobdd.e2etests.Formation.Models.FormationModel.*;
 
 
-public class FormationStepDef {
+																															  public class FormationStepDef {
 	public WebDriver driver;
 	private static String Path = "resources/testData/TestData.xlsx";
 	boolean Eval_Formateur;
@@ -37,6 +35,7 @@ public class FormationStepDef {
 		 PageFactory.initElements(driver, FormationPage.class);
 	}
 	//développe_par_FATMA_CHAOUACHI
+
 
 	@When("^consulter sous module Types de thèmes$")
 	public void consulter_sous_module_Types_de_thèmes() throws Throwable {
@@ -55,158 +54,165 @@ public class FormationStepDef {
 		FormationModel.saisir_un_Type_de_thème(row);
 
 	}
-
-	@Then("^vérifier Type de thème ajouté$")
-	public void vérifier_Type_de_thème_ajouté() throws Throwable {
-
+	@When("^cliquer sur valider10$")
+	public void cliquer_sur_valider10 () throws Throwable {
+		FormationModel.cliquer_sur_valider10 (driver);
 
 	}
 
+	@Then("^vérifier Type de thème ajouté$")
+	public void vérifier_Type_de_thème_ajouté() throws Throwable {
+		FormationModel.vérifier_Type_de_thème_ajouté( row);
+	}
+//************************************************************
 	@When("^consulter sous module Types de formation$")
 	public void consulter_sous_module_Types_de_formation() throws Throwable {
-
+		FormationModel.consulter_sous_module_Types_de_formation (driver);
 	}
 
 	@When("^cliquer sur ajouter Types de formation$")
 	public void cliquer_sur_ajouter_Types_de_formation() throws Throwable {
-
+		FormationModel.cliquer_sur_ajouter_Types_de_formation (driver);
 	}
 
 	@When("^saisir un Type de formation$")
 	public void saisir_un_Type_de_formation() throws Throwable {
-
+		FormationModel.saisir_un_Type_de_formation (row);
 	}
 
 	@When("^cliquer sur le bouton radio Avec évaluation à chaud$")
 	public void cliquer_sur_le_bouton_radio_Avec_évaluation_à_chaud() throws Throwable {
-
+		FormationModel.cliquer_sur_le_bouton_radio_Avec_évaluation_à_chaud (driver);
 	}
-
-	@Then("^vérifier Type de formation Avec évaluation à chaud ajouté$")
-	public void vérifier_Type_de_formation_Avec_évaluation_à_chaud_ajouté() throws Throwable {
-
+	@When("^cliquer sur valider Types de formation$")
+	public void cliquer_sur_valider_Types_de_formation() throws Throwable {
+		FormationModel.cliquer_sur_valider_Types_de_formation (driver);
 	}
-
 	@When("^consulter sous module Sociétés$")
 	public void consulter_sous_module_Sociétés() throws Throwable {
-
+		FormationModel.consulter_sous_module_Sociétés (driver);
 	}
 
 	@When("^cliquer sur ajouter une Société$")
 	public void cliquer_sur_ajouter_une_Société() throws Throwable {
-
+		FormationModel.cliquer_sur_ajouter_une_Société ();
 	}
 
 	@When("^saisir une Société$")
 	public void saisir_une_Société() throws Throwable {
+		FormationModel.saisir_une_Société ( row);
+	}
 
+	@When("^cliquer sur valider Société$")
+	public void cliquer_sur_valider_Société() throws Throwable {
+		FormationModel.cliquer_sur_valider_Société ();
 	}
 
 	@Then("^vérifier une Société ajoutée$")
 	public void vérifier_une_Société_ajoutée() throws Throwable {
+		FormationModel.vérifier_une_Société_ajoutée(row);
+	}
+//**********************************************************
+	@When("^consulter sous module type de critère d'évaluation$")
+	public void consulter_sous_module_type_de_critère_d_évaluation() throws Throwable {
+		FormationModel.consulter_sous_module_type_de_critère_d_évaluation (driver);
+	}
+
+	@When("^cliquer sur ajouter  type de critère d'évaluation$")
+	public void cliquer_sur_ajouter_type_de_critère_d_évaluation() throws Throwable {
+		// Write code here that turns the phrase above into concrete actions
+
+
+		FormationModel.cliquer_sur_ajouter_type_de_critère_d_évaluation ();
+	}
+
+	@When("^saisir type de critère d'évaluation$")
+	public void saisir_type_de_critère_d_évaluation() throws Throwable {
+		FormationModel.saisir_type_de_critère_d_évaluation (row);
+	}
+
+
+	@When("^cliquer sur valider type de critère d'évaluation$")
+	public void cliquer_sur_valider_type_de_critère_d_évaluation() throws Throwable {
+		FormationModel.cliquer_sur_valider_type_de_critère_d_évaluation ();
+	}
+
+	@Then("^vérifier type de critère d'évaluation ajoutée$")
+	public void vérifier_type_de_critère_d_évaluation_ajoutée() throws Throwable {
+		FormationModel.vérifier_type_de_critère_d_évaluation_ajoutée(row);
+	}
+	@When("^consulter sous module thèmes de formation$")
+	public void consulter_sous_module_thèmes_de_formation() throws Throwable {
+		FormationModel.consulter_sous_module_thèmes_de_formation (driver);
 
 	}
 
-	@When("^consulter sous module Type de critère d'évaluation$")
-	public void consulter_sous_module_Type_de_critère_d_évaluation() throws Throwable {
-
+	@When("^cliquer sur ajouter  thèmes de formation$")
+	public void cliquer_sur_ajouter_thèmes_de_formation() throws Throwable {
+		FormationModel.cliquer_sur_ajouter_thèmes_de_formation() ;
 	}
 
-	@When("^cliquer sur ajouter un Type de critère d'évaluation$")
-	public void cliquer_sur_ajouter_un_Type_de_critère_d_évaluation() throws Throwable {
-
+	@When("^saisir thèmes de formation$")
+	public void saisir_thèmes_de_formation() throws Throwable {
+		FormationModel.saisir_thèmes_de_formation (row);
+	}
+	@When("^choisir un type de Thème$")
+	public void choisir_un_type_de_Thème() throws Throwable {
+		FormationModel.choisir_un_type_de_Thème (row);
 	}
 
-	@When("^saisir un Type de critère d'évaluation$")
-	public void saisir_un_Type_de_critère_d_évaluation() throws Throwable {
-
+	@When("^cliquer sur valider thèmes de formation$")
+	public void cliquer_sur_valider_thèmes_de_formation() throws Throwable {
+		FormationModel.cliquer_sur_valider_thèmes_de_formation ();
 	}
 
-	@Then("^vérifier un Type de critère d'évaluation ajouté$")
-	public void vérifier_un_Type_de_critère_d_évaluation_ajouté() throws Throwable {
-
+	@Then("^vérifier thèmes de formation ajoutée$")
+	public void vérifier_thèmes_de_formation_ajoutée() throws Throwable {
+		FormationModel.vérifier_thèmes_de_formation_ajoutée (row);
 	}
 
-	@When("^consulter sous module critères d'évaluation$")
-	public void consulter_sous_module_critères_d_évaluation() throws Throwable {
 
+	@When("^consulter sous module Organisme$")
+	public void consulter_sous_module_Organisme() throws Throwable {
+		FormationModel.consulter_sous_module_Organisme (driver);
 	}
 
-	@When("^cliquer sur ajouter un critère d'évaluation$")
-	public void cliquer_sur_ajouter_un_critère_d_évaluation() throws Throwable {
+	@When("^cliquer sur ajouter  Organisme de Formation$")
+	public void cliquer_sur_ajouter_Organisme_de_Formation() throws Throwable {
 
-	}
 
-	@When("^saisir un critère d'évaluation$")
-	public void saisir_un_critère_d_évaluation() throws Throwable {
-
-	}
-
-	@When("^saisir un Coefficient$")
-	public void saisir_un_Coefficient() throws Throwable {
-
-	}
-
-	@When("^Sélectionner un Type de critère d'évaluation$")
-	public void sélectionner_un_Type_de_critère_d_évaluation() throws Throwable {
-
-	}
-
-	@Then("^vérifier un critères d'évaluation ajouté$")
-	public void vérifier_un_critères_d_évaluation_ajouté() throws Throwable {
-
-	}
-
-	@When("^consulter sous module Thèmes$")
-	public void consulter_sous_module_Thèmes() throws Throwable {
-
-	}
-
-	@When("^cliquer sur ajouter Thème$")
-	public void cliquer_sur_ajouter_Thème() throws Throwable {
-
-	}
-
-	@When("^saisir un Thème$")
-	public void saisir_un_Thème() throws Throwable {
-
-	}
-
-	@When("^Sélectionner un Type Thème$")
-	public void sélectionner_un_Type_Thème() throws Throwable {
-
-	}
-
-	@When("^cliquer sur ajouter qualifications$")
-	public void cliquer_sur_ajouter_qualifications() throws Throwable {
-
-	}
-
-	@When("^choisir une qualification$")
-	public void choisir_une_qualification() throws Throwable {
-
-	}
-
-	@When("^consulter sous module Organismes de formation$")
-	public void consulter_sous_module_Organismes_de_formation() throws Throwable {
-
-	}
-	
-
-	@When("^cliquer sur ajouter Organismes$")
-	public void cliquer_sur_ajouter_Organismes() throws Throwable {
-
+		FormationModel.cliquer_sur_ajouter_Organisme_de_Formation ();
 	}
 
 	@When("^saisir Organisme de Formation$")
 	public void saisir_Organisme_de_Formation() throws Throwable {
-
+		FormationModel.saisir_Organisme_de_Formation (row);
 	}
 
-	@Then("^vérifier Organisme de Formation ajouté$")
-	public void vérifier_Organisme_de_Formation_ajouté() throws Throwable {
-
+	@When("^cliquer sur valider Organisme de Formation$")
+	public void cliquer_sur_valider_Organisme_de_Formation() throws Throwable {
+		FormationModel.cliquer_sur_valider_Organisme_de_Formation ();
 	}
+
+
+	@Then("^vérifier Organisme de Formation ajoutée$")
+	public void vérifier_Organisme_de_Formation_ajoutée() throws Throwable {
+		FormationModel.vérifier_Organisme_de_Formation_ajoutée (row);
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	//Fin_dev_par_FATMA_CHAOUACHI
 
 	@When("^cliquer sur paramétrage formation$")
@@ -552,10 +558,6 @@ public void verifier_evaluation_traite_de(int arg1) throws Throwable {
 	String Nfiche=ExcelUtils.getCellData(arg1,11);
 	FormationModel.verifier_evaluation_afroid(Nfiche,driver);
 }
-
-
-
-
 
 
 

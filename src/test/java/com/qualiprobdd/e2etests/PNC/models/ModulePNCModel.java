@@ -12,24 +12,17 @@ import java.util.Date;
 import java.util.List;
 import java.util.Random;
 
-import com.gargoylesoftware.htmlunit.javascript.background.JavaScriptExecutor;
-
-import org.apache.tools.ant.taskdefs.Java;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Cookie;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import com.qualiprobdd.e2etests.Formation.Pages.FormationPage;
 import com.qualiprobdd.e2etests.PNC.pages.ModulePNCPage;
-import com.qualiprobdd.e2etests.ReclamationClient.Pages.ReclamationClientPage;
-import com.qualiprobdd.e2etests.moduleAction.pages.FicheActionPage;
 import com.qualiprobdd.e2etests.util.Common;
 import com.qualiprobdd.e2etests.util.ExcelUtils;
 import com.qualiprobdd.e2etests.util.RandomValue;

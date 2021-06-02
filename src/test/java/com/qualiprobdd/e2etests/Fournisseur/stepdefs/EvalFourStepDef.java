@@ -3,6 +3,7 @@ package com.qualiprobdd.e2etests.Fournisseur.stepdefs;
 import static org.testng.Assert.assertTrue;
 
 
+import com.qualiprobdd.e2etests.Formation.Models.FormationModel;
 import io.cucumber.java.en.*;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
@@ -11,7 +12,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
 
-import com.qualiprobdd.e2etests.Formation.Models.FormationModel;
 import com.qualiprobdd.e2etests.Fournisseur.models.EvalFourModel;
 import com.qualiprobdd.e2etests.Fournisseur.pages.EvalFourPage;
 import com.qualiprobdd.e2etests.util.Common;

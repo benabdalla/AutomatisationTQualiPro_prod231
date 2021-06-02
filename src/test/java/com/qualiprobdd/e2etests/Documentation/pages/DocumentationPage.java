@@ -92,6 +92,8 @@ public class DocumentationPage extends AbstractPage {
 	final  static   String  DocPdf="maskedImage";
 
 
+
+
 	@FindBy(how = How.ID, using =DocPdf)
 	public static WebElement wDocPdf;
 	@FindBy(how = How.ID, using = fichierRedac)

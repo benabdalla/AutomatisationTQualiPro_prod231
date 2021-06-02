@@ -16,10 +16,10 @@ import org.testng.annotations.Parameters;
 	@CucumberOptions(
 					strict = true,
 					features = { "src/specs/features/Formation/Formation.feature" }, 
-					plugin = {"html:target/cucumber-html-report", "json:target/cucumber.json", "junit:target/cucumber.xml",
-					"com.cucumber.listener.ExtentCucumberFormatter:target/cucumber-reports/report.html" },
+					plugin = {"html:target/cucumber-html-report", "json:target/cucumber.json", "junit:target/cucumber.xml"},
 					monochrome =true,
-					tags= {"@FicheFormation,@RéalisationFormation,@EvaluationAchaud,@EvaluationFormateur,@EvaluationAfroidMono"},
+			tags = {"@Paramétrage_module_formation"},
+					//tags= {"@FicheFormation,@RéalisationFormation,@EvaluationAchaud,@EvaluationFormateur,@EvaluationAfroidMono"},
 							//",@RéalisationFormation,@EvaluationAchaud,@EvaluationFormateur,@EvaluationAfroidMono"},
 					dryRun= false
 	)

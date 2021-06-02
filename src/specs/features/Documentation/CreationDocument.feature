@@ -147,6 +147,21 @@ Feature: Qualipro- Test demande de création document
     And Envoyer au superviseur
     And Supprimer les fichiers temporaires de l infrastructure
 
+    #Type document
+    @Type_document
+    Scenario Outline: Qualipro- type document
+    Given Ouvrir le site QualiProWeb
+    And saisir Login et PW
+    And cliquer sur ouvrir une session
+    When Consulter Type document
+    And cliquer sur boutton ajouter
+    And Saisir Type_document_paramétrage
+    And sélectionner nature
+    And Saisir une périodicité
+    And cliquer sur la case à cocher PDF
+    And cliquer sur valider type document
+    Then Vérifier que le type document ajouté
     Examples:
       | Type document |
       | 1             |
+

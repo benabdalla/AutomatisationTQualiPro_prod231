@@ -14,26 +14,15 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
-import org.openqa.selenium.support.ui.WebDriverWait;
-import org.sikuli.script.FindFailed;
-import org.sikuli.script.Pattern;
-import org.sikuli.script.Screen;
 
 import com.qualiprobdd.e2etests.Documentation.models.DocumentationModele;
 import com.qualiprobdd.e2etests.Documentation.pages.DocumentationPage;
-import com.qualiprobdd.e2etests.Formation.Pages.FormationPage;
 import com.qualiprobdd.e2etests.authentification.pages.AuthentificationPage;
 import com.qualiprobdd.e2etests.util.Setup;
 import com.qualiprobdd.e2etests.util.Common;
-import com.qualiprobdd.e2etests.util.ExcelUtils;
-import com.qualiprobdd.e2etests.util.RTFUtil;
 
 
 public class DocumentationStepDefinition {
@@ -710,4 +699,48 @@ public class DocumentationStepDefinition {
     public void consulter_boite_superviseur() throws Throwable {
         driver.findElement(By.id("ctl00_ContentPlaceHolder1_Nbr_DocEncours")).click();
     }
+
+    //ADD BY FATMA CHAOUACHI
+
+    @When("Consulter Type document")
+    public void consulter_Type_document() {
+
+    }
+
+    @When("cliquer sur boutton ajouter")
+    public void cliquer_sur_boutton_ajouter() {
+
+    }
+
+    @When("Saisir Type_document_paramétrage")
+    public void saisir_Type_document_paramétrage() {
+
+    }
+
+    @When("sélectionner nature")
+    public void sélectionner_nature() {
+
+    }
+
+    @When("Saisir une périodicité")
+    public void saisir_une_périodicité() {
+
+    }
+
+    @When("cliquer sur la case à cocher PDF")
+    public void cliquer_sur_la_case_à_cocher_PDF() {
+
+    }
+
+    @When("cliquer sur valider type document")
+    public void cliquer_sur_valider_type_document() {
+
+    }
+
+    @Then("Vérifier que le type document ajouté")
+    public void vérifier_que_le_type_document_ajouté() {
+
+    }
+
+
 }
