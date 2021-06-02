@@ -34,9 +34,33 @@ public   final  static   String  sexEmp="ctl00_ContentPlaceHolder1_sex";
     public   static  final  String validGroup="ctl00_ContentPlaceHolder1_LinkButton5";
     public  static  final  String btnvalidEmp="ctl00_ContentPlaceHolder1_LinkButton17";
     public  static  final  String   rechmat="ctl00_ContentPlaceHolder1_matp";
-    public  static  final  String rechnp="";
+    public  static  final  String rechnp="ctl00_ContentPlaceHolder1_nomp";
     public  static  final  String retour="ctl00_ContentPlaceHolder1_LinkButton18";
-    public  static  final  String btnreche="";
+    public  static  final  String btnreche="ctl00_ContentPlaceHolder1_Rechercher_Filtre";
+    public   static final String tabEmp="ctl00_ContentPlaceHolder1_GridView1p";
+    public  static  final  String administareur="ctl00_LinkButton1";
+    public  static  final  String gestDroit="ctl00_ContentPlaceHolder1_LinkButton_acces";
+    public   static  final   String Employe="ctl00_ContentPlaceHolder1_select_Employé";
+    public  static final String FiltEmp="ctl00_ContentPlaceHolder1_gr_employe_filter";
+    public  static  final String  tabAccEmp="ctl00_ContentPlaceHolder1_gr_employe";
+
+    @FindBy(how = How.ID, using =Employe )
+    public static WebElement wEmploye;
+    @FindBy(how = How.ID, using =FiltEmp )
+    public static WebElement wFiltEmp;
+    @FindBy(how = How.ID, using =gestDroit )
+    public static WebElement wgestDroit;
+    @FindBy(how = How.ID, using =administareur )
+    public static WebElement wadministareur;
+
+    @FindBy(how = How.ID, using =btnreche )
+    public static WebElement wbtnreche;
+    @FindBy(how = How.ID, using =rechnp )
+    public static WebElement wrechnp;
+    @FindBy(how = How.ID, using =rechmat )
+    public static WebElement wrechmat;
+    @FindBy(how = How.ID, using =tabEmp )
+    public static WebElement wtabEmp;
     @FindBy(how = How.ID, using =retour )
     public static WebElement wretour;
     @FindBy(how = How.ID, using =btnvalidEmp )

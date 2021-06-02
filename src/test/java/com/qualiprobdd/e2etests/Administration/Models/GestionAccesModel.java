@@ -11,6 +11,7 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
@@ -272,17 +273,31 @@ public class GestionAccesModel {
             System.out.println(" j= " + j);
             GestionAccesPage.wtabFn.findElement(By.xpath("//*[@id=\"ctl00_ContentPlaceHolder1_GridViewabc_wrapper\"]/div[2]/div/table/tbody/tr[" + j + "]/td[1]")).click();
         }
-
         JavascriptExecutor js = (JavascriptExecutor)driver;
         js.executeScript("arguments[0].click()", new Object[]{GestionAccesPage.wvalidGroup});
+        JavascriptExecutor js1 = (JavascriptExecutor)driver;
+        js1.executeScript("arguments[0].click()", new Object[]{GestionAccesPage.wbtnvalidEmp});
+
+        JavascriptExecutor js2 = (JavascriptExecutor)driver;
+        js2.executeScript("arguments[0].click()", GestionAccesPage.wretour);
     }
 
-    public static void valider_fiche_Employé() throws Throwable {
+    public static void valider_fiche_Employé(int arg1,WebDriver driver) throws Throwable {
 
+        ExcelUtils.setExcelFile(Path, "Input");
+            String  mat=ExcelUtils.getCellData(arg1,1);
+
+            Thread.sleep(500);
+            GestionAccesPage.wrechmat.sendKeys(mat);
+            Thread.sleep(500);
+            GestionAccesPage.wrechnp.sendKeys(mat);
+        JavascriptExecutor js2 = (JavascriptExecutor)driver;
+        js2.executeScript("arguments[0].click()", GestionAccesPage.btnreche);
+        Assert.assertTrue(GestionAccesPage.wtabEmp.findElements(By.tagName("tr")).size()>0,"empoyee  non exsiste ");
     }
-
 
     public static  void consulter_menu_Administration() throws Throwable {
+
 
     }
 

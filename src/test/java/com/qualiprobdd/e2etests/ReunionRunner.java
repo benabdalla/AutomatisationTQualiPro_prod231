@@ -9,9 +9,9 @@ import io.cucumber.testng.CucumberOptions;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
-import org.testng.annotations.Test;
 
-import com.cucumber.listener.Reporter;
+
+
 
 
 
@@ -37,7 +37,7 @@ dryRun= false,
     } 
 	@AfterClass
 	public static void writeExtentReport() {
-		Reporter.loadXMLConfig(new File("resources/configs/extent-config.xml"));
+		//Reporter.loadXMLConfig(new File("resources/configs/extent-config.xml"));
 
 	}
 	

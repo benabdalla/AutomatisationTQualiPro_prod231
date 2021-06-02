@@ -77,6 +77,8 @@ Feature: Qualipro- Test fiche audit
       | example |
       | 1       |
 
+
+
   @ReporterAudit
   Scenario Outline: Qualipro-En tant qu utilisateur je veux reporter un audit existant
     Given Ouvrir le site QualiProWeb
