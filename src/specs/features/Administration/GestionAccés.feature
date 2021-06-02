@@ -36,6 +36,10 @@ Feature: Gestion des accès sur Qualipro
     Examples:
       | responsable | exemple | module  | employe |
       | 1          | 14     | "Input" | 1       |
+      | 2        | 14     | "Input" | 1       |
+      | 3         | 14     | "Input" | 1       |
+      | 4         | 14     | "Input" | 1       |
+
 
   @AppliquerDroitsAccesParModule
   Scenario Outline: Qualipro- Test créer un nouveau employé

@@ -16,7 +16,6 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 
 
-import com.cucumber.listener.Reporter;
 import com.google.common.base.Predicate;
 import com.google.common.io.Files;
 
@@ -83,7 +82,7 @@ public class Setup {
 				Files.copy(sourcePath, destinationPath);
 
 				//This attach the specified screenshot to the test
-				Reporter.addScreenCaptureFromPath(destinationPath.toString());
+				//Reporter.addScreenCaptureFromPath(destinationPath.toString());
 
 
 			} catch (IOException e) {

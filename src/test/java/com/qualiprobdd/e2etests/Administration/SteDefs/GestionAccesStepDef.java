@@ -172,7 +172,7 @@ public   static   int  emp=0;
     }
     @When("^Valider fiche Employé$")
     public void valider_fiche_Employé() throws Throwable {
-        GestionAccesModel.valider_fiche_Employé();
+        GestionAccesModel.valider_fiche_Employé(emp,driver);
     }
 
     @When("^Consulter menu Administration$")
