@@ -9,7 +9,6 @@ Feature: Reporting-Environnement
         When Consulter Reporting Environnement
         And Cliquer sur Etat Aspect
         And Sélectionner Aspect
-        And Saisir Activité/Service
         And sélectionner site
         And sélectionner facteur
         And saisir date

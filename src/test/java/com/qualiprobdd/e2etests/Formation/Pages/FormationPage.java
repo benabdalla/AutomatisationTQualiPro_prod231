@@ -1,5 +1,6 @@
 package com.qualiprobdd.e2etests.Formation.Pages;
 
+import net.codestory.simplelenium.DomElement;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
@@ -534,4 +535,5 @@ public class FormationPage {
 	public static WebElement VldObjFroidId;
 	@FindBy(how = How.ID, using =QTT_EVAL_FROID_ID)
 	public static WebElement QttEvalFroidId;
+
 }

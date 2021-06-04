@@ -1,11 +1,34 @@
 package com.qualiprobdd.e2etests.Environnement.StepDefs;
 
+import com.qualiprobdd.e2etests.Environnement.models.ReportingEnvironnementModel;
+import com.qualiprobdd.e2etests.Environnement.pages.ReportingEnvironnementPage;
+import com.qualiprobdd.e2etests.agenda.Page.PageSommerAgenda;
+import com.qualiprobdd.e2etests.moduleAction.pages.FicheActionPage;
+import com.qualiprobdd.e2etests.util.Common;
+import com.qualiprobdd.e2etests.util.Setup;
 import io.cucumber.java.en.When;
 import io.cucumber.java.en.Then;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.PageFactory;
 
 public class ReportingEnvironnementStepDef {
+    public WebDriver driver;
+    private static String Path = "resources/testData/TestData.xlsx";
+
+
+    private Common common = new Common();
+    public ReportingEnvironnementStepDef() {
+        driver = Setup.driver;
+        PageFactory.initElements(driver, FicheActionPage.class);
+        PageFactory.initElements(driver, ReportingEnvironnementPage.class);
+
+    }
+
     @When("Consulter Reporting Environnement")
-    public void consulter_Reporting_Environnement() {
+    public void consulter_Reporting_Environnement() throws Throwable {
+
+        ReportingEnvironnementModel.consulter_Reporting_Environnement(driver);
+
 
     }
 
@@ -19,10 +42,6 @@ public class ReportingEnvironnementStepDef {
 
     }
 
-    @When("Saisir Activité\\/Service")
-    public void saisir_Activité_Service() {
-
-    }
 
     @When("sélectionner site")
     public void sélectionner_site() {

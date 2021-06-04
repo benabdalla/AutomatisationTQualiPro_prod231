@@ -568,10 +568,11 @@ public class ModuleReunionStepDefinition {
 
 	@When("^consulter reporting$")
 	public void consulter_reporting() throws Throwable {
-		Point coordinates = driver.findElement(By.xpath("//*[@id=\"menu_rep\"]/div/div/ul/li/a")).getLocation();
+		/*Point coordinates = driver.findElement(By.xpath("#menu_rep > div > div > ul > li > a > img")).getLocation();
 		Robot robot = new Robot();
-		robot.mouseMove(coordinates.getX(), coordinates.getY() + 120);
+		robot.mouseMove(coordinates.getX(), coordinates.getY() + 120);*/
 		Thread.sleep(2000L);
+		driver.findElement(By.cssSelector("#menu_rep > div > div > ul > li > a > img")).click();
 
 	}
 

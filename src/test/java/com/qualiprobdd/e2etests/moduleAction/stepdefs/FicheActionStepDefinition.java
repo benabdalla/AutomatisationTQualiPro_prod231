@@ -1,6 +1,7 @@
 package com.qualiprobdd.e2etests.moduleAction.stepdefs;
 
 
+import com.qualiprobdd.e2etests.Environnement.pages.ReportingEnvironnementPage;
 import com.qualiprobdd.e2etests.agenda.Page.PageSommerAgenda;
 import com.qualiprobdd.e2etests.moduleAction.models.FicheActionModele;
 import com.qualiprobdd.e2etests.moduleAction.pages.FicheActionPage;
@@ -996,24 +997,16 @@ System.err.println("element   not  found ");
 	
 	@When("^cliquer sur bilan des actions$")
 	public void cliquer_sur_bilan_des_actions() throws Throwable {
-	//	driver.get("http://10.66.245.30/w23/action/rapport/FiltreBilanAction.aspx");
-		//FicheActionPage.wreporting.findElement(By.cssSelector("#menu_rep > div > div > ul > li > a > img")).click();
-		
-		
-		
+
 		  JavascriptExecutor executor = (JavascriptExecutor)driver;
 	      executor.executeScript("arguments[0].click();",FicheActionPage.wreporting.findElement(By.cssSelector("#menu_rep > div > div > ul > li > a > img")) );
 	      JavascriptExecutor executor1 = (JavascriptExecutor)driver;
-	      executor1.executeScript("arguments[0].click();",FicheActionPage.wreporting.findElement(By.cssSelector("#menu_rep > div > div > ul > li > ul > li:nth-child(2) > a")) );
+	      executor1.executeScript("arguments[0].click();",FicheActionPage.wreporting.findElement(By.cssSelector("#menu_rep > div > div > ul > li > ul > li:nth-child(21) > a")) );
 		 JavascriptExecutor executor2 = (JavascriptExecutor)driver;
 	       executor2.executeScript("arguments[0].click();",FicheActionPage.wreporting.findElement(By.cssSelector("#menu_rep > div > div > ul > li > ul > li:nth-child(2) > ul > li:nth-child(1) > a")) );
 		
 		
-		//FicheActionPage.wactionrep.click();
-		 // JavascriptExecutor executor = (JavascriptExecutor)driver;
-	     //   executor.executeScript("arguments[0].click();", );
-	       // FicheActionPage.wreportingAct.click();
-		
+
 		Thread.sleep(1000L);
 		
 	}
