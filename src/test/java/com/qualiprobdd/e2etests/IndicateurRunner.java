@@ -20,7 +20,7 @@ import org.testng.annotations.Test;
 		dryRun= false,
 		//tags = { "@EnregistrmentIndicateur,@SUIVIIndicateurManuel" })
 		//tags = { "@EnregistrmentIndicateur,@SUIVIIndicateurQualipro" })
-		tags = { "@EnregistrmentIndicateur,@SUIVIIndicateurManuel,@SUIVIIndicateurQualipro,@SUIVIIndicateurFormule" }
+		tags = { "@EnregistrmentIndicateur or @SUIVIIndicateurManuel or @SUIVIIndicateurQualipro or @SUIVIIndicateurFormule"}
 		//
 	//	tags = "@EnregistrmentIndicateur"
 			)

@@ -21,7 +21,7 @@ import org.testng.annotations.Test;
 		 },
 		dryRun= false,
 		tags = { "@AuditAvecValidationConstat"})
-	//tags = { "@AuditAvecValidationConstat,@TraitementAction,@VerficationTauxAudit"})
+	//tags = { "@AuditAvecValidationConstat or @TraitementAction or @VerficationTauxAudit"})
 	@Test
 	public class AuditRunner extends AbstractTestNGCucumberTests {
 	@Parameters({"language","browsername"}) 

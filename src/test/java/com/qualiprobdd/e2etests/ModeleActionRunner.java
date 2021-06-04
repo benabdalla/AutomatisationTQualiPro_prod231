@@ -15,7 +15,7 @@ import org.testng.annotations.Parameters;
 		features = { "src/specs/features/moduleAction/ModeleAction.feature" }, 
 		monochrome =true,
 		plugin = {"html:target/cucumber-html-report", "json:target/cucumber.json", "junit:target/cucumber.xml",
-		"com.cucumber.listener.ExtentCucumberFormatter:target/cucumber-reports/report.html" },
+		 },
 		dryRun= false,
 		tags = {"@creationModele"})
 

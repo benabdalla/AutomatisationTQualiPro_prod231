@@ -3,11 +3,11 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2021-06-01T10:21:26.540Z",
+        "start_timestamp": "2021-06-04T10:46:23.810Z",
         "before": [
           {
             "result": {
-              "duration": 1274074800,
+              "duration": 1504000000,
               "status": "passed"
             },
             "match": {
@@ -15,14 +15,14 @@
             }
           }
         ],
-        "line": 36,
-        "name": "Qualipro- Test créer un nouveau employé",
+        "line": 33,
+        "name": "Creation fiche Action",
         "description": "",
-        "id": "gestion-des-accès-sur-qualipro;qualipro--test-créer-un-nouveau-employé;;2",
+        "id": "qualipro--test-fiche-action;creation-fiche-action;;2",
         "after": [
           {
             "result": {
-              "duration": 102937800,
+              "duration": 147000000,
               "status": "passed"
             },
             "match": {
@@ -35,10 +35,10 @@
         "steps": [
           {
             "result": {
-              "duration": 5090542500,
+              "duration": 4740000000,
               "status": "passed"
             },
-            "line": 6,
+            "line": 8,
             "name": "Ouvrir le site QualiProWeb",
             "match": {
               "location": "com.qualiprobdd.e2etests.authentification.stepdefs.AuthentificationStepDefinition.ouvrirQualiProWeb()"
@@ -47,172 +47,152 @@
           },
           {
             "result": {
-              "duration": 21871631400,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "Connecter en tant que 1 de l 14 du \"Input\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "1",
-                  "offset": 22
-                },
-                {
-                  "val": "14",
-                  "offset": 29
-                },
-                {
-                  "val": "Input",
-                  "offset": 36
-                }
-              ],
-              "location": "com.qualiprobdd.e2etests.authentification.stepdefs.AuthentificationStepDefinition.connecter_en_tant_que_de_l_du(int,int,java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 5421466500,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "consulter sous module Employés",
-            "match": {
-              "location": "com.qualiprobdd.e2etests.Administration.SteDefs.GestionAccesStepDef.consulter_sous_module_Employés()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 139371600,
+              "duration": 1158000000,
               "status": "passed"
             },
             "line": 9,
-            "name": "cliquer sur ajouter fiche employé",
+            "name": "saisir Login et PW",
             "match": {
-              "location": "com.qualiprobdd.e2etests.Administration.SteDefs.GestionAccesStepDef.cliquer_sur_ajouter_fiche_employé()"
+              "location": "com.qualiprobdd.e2etests.authentification.stepdefs.AuthentificationStepDefinition.saisirLoginPW()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 638843300,
+              "duration": 25611000000,
               "status": "passed"
             },
             "line": 10,
-            "name": "saisir matricule 1",
+            "name": "cliquer sur ouvrir une session",
+            "match": {
+              "location": "com.qualiprobdd.e2etests.authentification.stepdefs.AuthentificationStepDefinition.clickOuvrirSession()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 10000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "saisir 1 action",
             "match": {
               "arguments": [
                 {
                   "val": "1",
-                  "offset": 17
+                  "offset": 7
                 }
               ],
-              "location": "com.qualiprobdd.e2etests.Administration.SteDefs.GestionAccesStepDef.saisir_matricule(int)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 623568000,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "saisir NomPrenom Employé",
-            "match": {
-              "location": "com.qualiprobdd.e2etests.Administration.SteDefs.GestionAccesStepDef.saisir_NomPrenom_Employé()"
+              "location": "com.qualiprobdd.e2etests.moduleAction.stepdefs.FicheActionStepDefinition.saisir_action(int)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 1022188500,
+              "duration": 4289000000,
               "status": "passed"
             },
             "line": 12,
-            "name": "cliquer sur valider matricule",
+            "name": "consulter  source d\u0027action",
             "match": {
-              "location": "com.qualiprobdd.e2etests.Administration.SteDefs.GestionAccesStepDef.cliquer_sur_valider_matricule()"
+              "location": "com.qualiprobdd.e2etests.moduleAction.stepdefs.FicheActionStepDefinition.consulter_source_d_action()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#ctl00_ContentPlaceHolder1_datenais\"}\n  (Session info: chrome\u003d90.0.4430.212)\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.8.0\u0027, revision: \u0027924c4067df\u0027, time: \u00272017-11-30T11:20:39.408Z\u0027\nSystem info: host: \u0027DESKTOP-E6OO20B\u0027, ip: \u0027192.168.75.2\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002716.0.1\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.212, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\\Users\\FATMA~1.CHA\\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:52454}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 03aa397e7a6ff3d3643de66db2b3326e\n*** Element info: {Using\u003did, value\u003dctl00_ContentPlaceHolder1_datenais}\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:417)\r\n\tat org.openqa.selenium.By$ById.findElement(By.java:218)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat jdk.proxy2/jdk.proxy2.$Proxy24.getWrappedElement(Unknown Source)\r\n\tat org.openqa.selenium.remote.internal.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:51)\r\n\tat com.google.common.collect.Iterators$6.transform(Iterators.java:783)\r\n\tat com.google.common.collect.TransformedIterator.next(TransformedIterator.java:47)\r\n\tat com.google.common.collect.Iterators.addAll(Iterators.java:356)\r\n\tat com.google.common.collect.Lists.newArrayList(Lists.java:143)\r\n\tat com.google.common.collect.Lists.newArrayList(Lists.java:130)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:535)\r\n\tat com.qualiprobdd.e2etests.Administration.Models.GestionAccesModel.saisir_date_de_naissance(GestionAccesModel.java:82)\r\n\tat com.qualiprobdd.e2etests.Administration.SteDefs.GestionAccesStepDef.saisir_date_de_naissance(GestionAccesStepDef.java:75)\r\n\tat ✽.saisir date de naissance(file:///E:/qualipro/trunk/AutomatisationTQualiPro_prod231/src/specs/features/Administration/GestionAccés.feature:13)\r\n",
-              "duration": 56370700,
-              "status": "failed"
+              "duration": 68000000,
+              "status": "passed"
             },
             "line": 13,
-            "name": "saisir date de naissance",
+            "name": "Ajouter   source d\u0027action",
             "match": {
-              "location": "com.qualiprobdd.e2etests.Administration.SteDefs.GestionAccesStepDef.saisir_date_de_naissance()"
+              "location": "com.qualiprobdd.e2etests.moduleAction.stepdefs.FicheActionStepDefinition.ajouter_source_d_action()"
             },
-            "keyword": "When "
+            "keyword": "And "
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 2376000000,
+              "status": "passed"
             },
             "line": 14,
-            "name": "saisir N°CIN",
+            "name": "saisir   source d\u0027action",
             "match": {
-              "location": "com.qualiprobdd.e2etests.Administration.SteDefs.GestionAccesStepDef.saisir_N_CIN()"
+              "location": "com.qualiprobdd.e2etests.moduleAction.stepdefs.FicheActionStepDefinition.saisir_source_d_action()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 778000000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "clique    source d\u0027action",
+            "match": {
+              "location": "com.qualiprobdd.e2etests.moduleAction.stepdefs.FicheActionStepDefinition.clique_source_d_action()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1652000000,
+              "status": "passed"
             },
             "line": 16,
-            "name": "saisir date de recrutement",
+            "name": "verifier   source d\u0027action",
             "match": {
-              "location": "com.qualiprobdd.e2etests.Administration.SteDefs.GestionAccesStepDef.saisir_date_de_recrutement()"
+              "location": "com.qualiprobdd.e2etests.moduleAction.stepdefs.FicheActionStepDefinition.verifier_source_d_action()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 4018000000,
+              "status": "passed"
             },
             "line": 17,
-            "name": "choisir Site employe",
+            "name": "consulter  types d\u0027action",
             "match": {
-              "location": "com.qualiprobdd.e2etests.Administration.SteDefs.GestionAccesStepDef.choisir_Site_employe()"
+              "location": "com.qualiprobdd.e2etests.moduleAction.stepdefs.FicheActionStepDefinition.consulter_types_d_action()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 54000000,
+              "status": "passed"
             },
             "line": 18,
-            "name": "choisir Processus employe",
+            "name": "Ajouter  types d\u0027action",
             "match": {
-              "location": "com.qualiprobdd.e2etests.Administration.SteDefs.GestionAccesStepDef.choisir_Processus_employe()"
+              "location": "com.qualiprobdd.e2etests.moduleAction.stepdefs.FicheActionStepDefinition.ajouter_types_d_action()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 2280000000,
+              "status": "passed"
             },
             "line": 19,
-            "name": "Choisir Activite employe",
+            "name": "saisir  type d\u0027action",
             "match": {
-              "location": "com.qualiprobdd.e2etests.Administration.SteDefs.GestionAccesStepDef.choisir_Activite_employe()"
+              "location": "com.qualiprobdd.e2etests.moduleAction.stepdefs.FicheActionStepDefinition.saisir_type_d_action()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "skipped"
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"input\"}\n  (Session info: chrome\u003d91.0.4472.77)\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.8.0\u0027, revision: \u0027924c4067df\u0027, time: \u00272017-11-30T11:20:39.408Z\u0027\nSystem info: host: \u0027DESKTOP-63DTJNU\u0027, ip: \u0027192.168.56.1\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_291\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.77, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\\Users\\MOOTAZ~1.BEN\\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:65157}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: c1fc366d49e38c2824f4b0aba70a375b\n*** Element info: {Using\u003dtag name, value\u003dinput}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.findElement(RemoteWebElement.java:179)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.findElementByTagName(RemoteWebElement.java:271)\r\n\tat org.openqa.selenium.By$ByTagName.findElement(By.java:334)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.findElement(RemoteWebElement.java:175)\r\n\tat com.qualiprobdd.e2etests.moduleAction.models.FicheActionModele.clique_sur_valider(FicheActionModele.java:67)\r\n\tat com.qualiprobdd.e2etests.moduleAction.stepdefs.FicheActionStepDefinition.clique_sur_valider(FicheActionStepDefinition.java:68)\r\n\tat ✽.clique   sur   valider(file:///E:/qualipro/trunk/AutomatisationTQualiPro_prod231/src/specs/features/moduleAction/Action.feature:20)\r\n",
+              "duration": 2140000000,
+              "status": "failed"
             },
             "line": 20,
-            "name": "Choisir Direction employe",
+            "name": "clique   sur   valider",
             "match": {
-              "location": "com.qualiprobdd.e2etests.Administration.SteDefs.GestionAccesStepDef.choisir_Direction_employe()"
+              "location": "com.qualiprobdd.e2etests.moduleAction.stepdefs.FicheActionStepDefinition.clique_sur_valider()"
             },
             "keyword": "And "
           },
@@ -221,9 +201,9 @@
               "status": "skipped"
             },
             "line": 21,
-            "name": "Choisir saisir Service employe",
+            "name": "verifier  type d\u0027action",
             "match": {
-              "location": "com.qualiprobdd.e2etests.Administration.SteDefs.GestionAccesStepDef.choisir_saisir_Service_employe()"
+              "location": "com.qualiprobdd.e2etests.moduleAction.stepdefs.FicheActionStepDefinition.verifier_type_d_action()"
             },
             "keyword": "And "
           },
@@ -232,9 +212,9 @@
               "status": "skipped"
             },
             "line": 22,
-            "name": "saisir telephone",
+            "name": "ajuter type de causeso",
             "match": {
-              "location": "com.qualiprobdd.e2etests.Administration.SteDefs.GestionAccesStepDef.saisir_telephone()"
+              "location": "com.qualiprobdd.e2etests.moduleAction.stepdefs.FicheActionStepDefinition.ajuter_type_de_causeso()"
             },
             "keyword": "And "
           },
@@ -243,9 +223,9 @@
               "status": "skipped"
             },
             "line": 23,
-            "name": "Choisir Etat civil",
+            "name": "saisir  type   de causes",
             "match": {
-              "location": "com.qualiprobdd.e2etests.Administration.SteDefs.GestionAccesStepDef.choisir_Etat_civil()"
+              "location": "com.qualiprobdd.e2etests.moduleAction.stepdefs.FicheActionStepDefinition.saisir_type_de_causes()"
             },
             "keyword": "And "
           },
@@ -254,9 +234,9 @@
               "status": "skipped"
             },
             "line": 24,
-            "name": "Choisir sexe",
+            "name": "verifier type de causes",
             "match": {
-              "location": "com.qualiprobdd.e2etests.Administration.SteDefs.GestionAccesStepDef.choisir_sexe()"
+              "location": "com.qualiprobdd.e2etests.moduleAction.stepdefs.FicheActionStepDefinition.verifier_type_de_causes()"
             },
             "keyword": "And "
           },
@@ -265,9 +245,9 @@
               "status": "skipped"
             },
             "line": 25,
-            "name": "saisir Adresse Mail",
+            "name": "ajouter  priorité",
             "match": {
-              "location": "com.qualiprobdd.e2etests.Administration.SteDefs.GestionAccesStepDef.saisir_Adresse_Mail()"
+              "location": "com.qualiprobdd.e2etests.moduleAction.stepdefs.FicheActionStepDefinition.ajouter_priorité()"
             },
             "keyword": "And "
           },
@@ -276,9 +256,9 @@
               "status": "skipped"
             },
             "line": 26,
-            "name": "saisir Formation initiale",
+            "name": "saisir  priorité",
             "match": {
-              "location": "com.qualiprobdd.e2etests.Administration.SteDefs.GestionAccesStepDef.saisir_Formation_initiale()"
+              "location": "com.qualiprobdd.e2etests.moduleAction.stepdefs.FicheActionStepDefinition.saisir_priorité()"
             },
             "keyword": "And "
           },
@@ -287,9 +267,9 @@
               "status": "skipped"
             },
             "line": 27,
-            "name": "saisir Grade",
+            "name": "verifier priorité",
             "match": {
-              "location": "com.qualiprobdd.e2etests.Administration.SteDefs.GestionAccesStepDef.saisir_Grade()"
+              "location": "com.qualiprobdd.e2etests.moduleAction.stepdefs.FicheActionStepDefinition.verifier_priorité()"
             },
             "keyword": "And "
           },
@@ -298,9 +278,9 @@
               "status": "skipped"
             },
             "line": 28,
-            "name": "Saisir titre",
+            "name": "ajouter gravité",
             "match": {
-              "location": "com.qualiprobdd.e2etests.Administration.SteDefs.GestionAccesStepDef.saisir_titre()"
+              "location": "com.qualiprobdd.e2etests.moduleAction.stepdefs.FicheActionStepDefinition.ajouter_gravité()"
             },
             "keyword": "And "
           },
@@ -309,9 +289,9 @@
               "status": "skipped"
             },
             "line": 29,
-            "name": "Choisir type de travail",
+            "name": "saisir  gravité",
             "match": {
-              "location": "com.qualiprobdd.e2etests.Administration.SteDefs.GestionAccesStepDef.choisir_type_de_travail()"
+              "location": "com.qualiprobdd.e2etests.moduleAction.stepdefs.FicheActionStepDefinition.saisir_gravité()"
             },
             "keyword": "And "
           },
@@ -320,9 +300,400 @@
               "status": "skipped"
             },
             "line": 30,
-            "name": "Ajouter une fonction",
+            "name": "verifier gravité",
             "match": {
-              "location": "com.qualiprobdd.e2etests.Administration.SteDefs.GestionAccesStepDef.ajouter_une_fonction()"
+              "location": "com.qualiprobdd.e2etests.moduleAction.stepdefs.FicheActionStepDefinition.verifier_gravité()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ModuleAction"
+          },
+          {
+            "name": "@ParemétrageFicheActionDetaille"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-06-04T10:47:14.661Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1309000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.qualiprobdd.e2etests.util.Setup.setup()"
+            }
+          }
+        ],
+        "line": 77,
+        "name": "Creation fiche Action",
+        "description": "",
+        "id": "qualipro--test-fiche-action;creation-fiche-action;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 114000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.qualiprobdd.e2etests.util.Setup.afterScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3595000000,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "Ouvrir le site QualiProWeb",
+            "match": {
+              "location": "com.qualiprobdd.e2etests.authentification.stepdefs.AuthentificationStepDefinition.ouvrirQualiProWeb()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1081000000,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "saisir Login et PW",
+            "match": {
+              "location": "com.qualiprobdd.e2etests.authentification.stepdefs.AuthentificationStepDefinition.saisirLoginPW()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 18539000000,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "cliquer sur ouvrir une session",
+            "match": {
+              "location": "com.qualiprobdd.e2etests.authentification.stepdefs.AuthentificationStepDefinition.clickOuvrirSession()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 9875000000,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "Consulter Action",
+            "match": {
+              "location": "com.qualiprobdd.e2etests.moduleAction.stepdefs.FicheActionStepDefinition.consulter_Action()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4132000000,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "cliquer sur ajouter Action détaillée",
+            "match": {
+              "location": "com.qualiprobdd.e2etests.moduleAction.stepdefs.FicheActionStepDefinition.cliquer_sur_ajouter_Action_détaillée()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "saisir 1 action",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 7
+                }
+              ],
+              "location": "com.qualiprobdd.e2etests.moduleAction.stepdefs.FicheActionStepDefinition.saisir_action(int)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 223000000,
+              "status": "passed"
+            },
+            "line": 43,
+            "name": "Ajouter Source",
+            "match": {
+              "location": "com.qualiprobdd.e2etests.moduleAction.stepdefs.FicheActionStepDefinition.ajouter_Source()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 552000000,
+              "status": "passed"
+            },
+            "line": 44,
+            "name": "Saisir Date Création",
+            "match": {
+              "location": "com.qualiprobdd.e2etests.moduleAction.stepdefs.FicheActionStepDefinition.saisir_Date_Création()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 23000000,
+              "status": "passed"
+            },
+            "line": 45,
+            "name": "Saisir A l origine de l action",
+            "match": {
+              "location": "com.qualiprobdd.e2etests.moduleAction.stepdefs.FicheActionStepDefinition.Saisir_A_l_origine_de_l_action()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2341000000,
+              "status": "passed"
+            },
+            "line": 46,
+            "name": "Saisir Désignation",
+            "match": {
+              "location": "com.qualiprobdd.e2etests.moduleAction.stepdefs.FicheActionStepDefinition.saisir_Désignation()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 308000000,
+              "status": "passed"
+            },
+            "line": 47,
+            "name": "choisir Type Action",
+            "match": {
+              "location": "com.qualiprobdd.e2etests.moduleAction.stepdefs.FicheActionStepDefinition.choisir_Type_Action()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1375000000,
+              "status": "passed"
+            },
+            "line": 48,
+            "name": "Saisir Description problème/objet",
+            "match": {
+              "location": "com.qualiprobdd.e2etests.moduleAction.stepdefs.FicheActionStepDefinition.saisir_Description_problème_objet()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3942000000,
+              "status": "passed"
+            },
+            "line": 49,
+            "name": "choisir Produit",
+            "match": {
+              "location": "com.qualiprobdd.e2etests.moduleAction.stepdefs.FicheActionStepDefinition.choisir_Produit()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2722000000,
+              "status": "passed"
+            },
+            "line": 50,
+            "name": "choisir Types de causes",
+            "match": {
+              "location": "com.qualiprobdd.e2etests.moduleAction.stepdefs.FicheActionStepDefinition.choisir_Types_de_causes()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 113000000,
+              "status": "passed"
+            },
+            "line": 51,
+            "name": "Saisir Causes possibles",
+            "match": {
+              "location": "com.qualiprobdd.e2etests.moduleAction.stepdefs.FicheActionStepDefinition.saisir_Causes_possibles()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 13000000,
+              "status": "passed"
+            },
+            "line": 52,
+            "name": "saisir Objectif",
+            "match": {
+              "location": "com.qualiprobdd.e2etests.moduleAction.stepdefs.FicheActionStepDefinition.saisir_Objectif()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 153000000,
+              "status": "passed"
+            },
+            "line": 53,
+            "name": "saisir référence Audit",
+            "match": {
+              "location": "com.qualiprobdd.e2etests.moduleAction.stepdefs.FicheActionStepDefinition.saisir_référence_Audit()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 199000000,
+              "status": "passed"
+            },
+            "line": 54,
+            "name": "choisir Site",
+            "match": {
+              "location": "com.qualiprobdd.e2etests.moduleAction.stepdefs.FicheActionStepDefinition.choisir_Site()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1367000000,
+              "status": "passed"
+            },
+            "line": 55,
+            "name": "Choisir Processus",
+            "match": {
+              "location": "com.qualiprobdd.e2etests.moduleAction.stepdefs.FicheActionStepDefinition.choisir_Processus()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 258000000,
+              "status": "passed"
+            },
+            "line": 56,
+            "name": "choisir Activité",
+            "match": {
+              "location": "com.qualiprobdd.e2etests.moduleAction.stepdefs.FicheActionStepDefinition.choisir_Activité()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 235000000,
+              "status": "passed"
+            },
+            "line": 57,
+            "name": "choisir Direction",
+            "match": {
+              "location": "com.qualiprobdd.e2etests.moduleAction.stepdefs.FicheActionStepDefinition.choisir_Direction()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 238000000,
+              "status": "passed"
+            },
+            "line": 58,
+            "name": "choisir service",
+            "match": {
+              "location": "com.qualiprobdd.e2etests.moduleAction.stepdefs.FicheActionStepDefinition.choisir_service()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 204000000,
+              "status": "passed"
+            },
+            "line": 59,
+            "name": "choisir un responsable de clôture",
+            "match": {
+              "location": "com.qualiprobdd.e2etests.moduleAction.stepdefs.FicheActionStepDefinition.choisir_un_responsable_de_clôture()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 558000000,
+              "status": "passed"
+            },
+            "line": 60,
+            "name": "cliquer sur valider Action",
+            "match": {
+              "location": "com.qualiprobdd.e2etests.moduleAction.stepdefs.FicheActionStepDefinition.cliquer_sur_valider_Action()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: expected [true] but found [false]\r\n\tat org.testng.Assert.fail(Assert.java:99)\r\n\tat org.testng.Assert.failNotEquals(Assert.java:1037)\r\n\tat org.testng.Assert.assertTrue(Assert.java:45)\r\n\tat org.testng.Assert.assertTrue(Assert.java:55)\r\n\tat com.qualiprobdd.e2etests.moduleAction.stepdefs.FicheActionStepDefinition.fiche_Action_ajouté(FicheActionStepDefinition.java:367)\r\n\tat ✽.Fiche Action ajouté(file:///E:/qualipro/trunk/AutomatisationTQualiPro_prod231/src/specs/features/moduleAction/Action.feature:61)\r\n",
+              "duration": 1041000000,
+              "status": "failed"
+            },
+            "line": 61,
+            "name": "Fiche Action ajouté",
+            "match": {
+              "location": "com.qualiprobdd.e2etests.moduleAction.stepdefs.FicheActionStepDefinition.fiche_Action_ajouté()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 62,
+            "name": "choisir plusieurs responsables de suivi",
+            "match": {
+              "location": "com.qualiprobdd.e2etests.moduleAction.stepdefs.FicheActionStepDefinition.choisir_plusieurs_responsables_de_suivi()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 63,
+            "name": "cliquer sur ajouter sous action",
+            "match": {
+              "location": "com.qualiprobdd.e2etests.moduleAction.stepdefs.FicheActionStepDefinition.cliquer_sur_ajouter_sous_action()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 64,
+            "name": "saisir désignation sous action",
+            "match": {
+              "location": "com.qualiprobdd.e2etests.moduleAction.stepdefs.FicheActionStepDefinition.saisir_désignation_sous_action()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 65,
+            "name": "saisir responsable de réalisation",
+            "match": {
+              "location": "com.qualiprobdd.e2etests.moduleAction.stepdefs.FicheActionStepDefinition.saisir_responsable_de_réalisation()"
             },
             "keyword": "And "
           },
@@ -330,32 +701,700 @@
             "result": {
               "status": "skipped"
             },
-            "line": 31,
-            "name": "Valider fiche Employé",
+            "line": 66,
+            "name": "saisir délais de réalisation",
             "match": {
-              "location": "com.qualiprobdd.e2etests.Administration.SteDefs.GestionAccesStepDef.valider_fiche_Employé()"
+              "location": "com.qualiprobdd.e2etests.moduleAction.stepdefs.FicheActionStepDefinition.saisir_délais_de_réalisation()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 67,
+            "name": "choisir un responsable de suivi",
+            "match": {
+              "location": "com.qualiprobdd.e2etests.moduleAction.stepdefs.FicheActionStepDefinition.choisir_un_responsable_de_suivi()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 68,
+            "name": "choisir délais de suivi",
+            "match": {
+              "location": "com.qualiprobdd.e2etests.moduleAction.stepdefs.FicheActionStepDefinition.choisir_délais_de_suivi()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 69,
+            "name": "choisir gravité action",
+            "match": {
+              "location": "com.qualiprobdd.e2etests.moduleAction.stepdefs.FicheActionStepDefinition.choisir_gravité_action()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 70,
+            "name": "choisir Priorité SA",
+            "match": {
+              "location": "com.qualiprobdd.e2etests.moduleAction.stepdefs.FicheActionStepDefinition.choisir_Priorité_SA()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 71,
+            "name": "saisir cout previ SA",
+            "match": {
+              "location": "com.qualiprobdd.e2etests.moduleAction.stepdefs.FicheActionStepDefinition.saisir_cout_previ_SA()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 72,
+            "name": "saisir Risque SA",
+            "match": {
+              "location": "com.qualiprobdd.e2etests.moduleAction.stepdefs.FicheActionStepDefinition.saisir_Risque_SA()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 73,
+            "name": "cliquer sur valider sous action",
+            "match": {
+              "location": "com.qualiprobdd.e2etests.moduleAction.stepdefs.FicheActionStepDefinition.cliquer_sur_valider_sous_action()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 74,
+            "name": "sous action ajouté a la liste des sous actions",
+            "match": {
+              "location": "com.qualiprobdd.e2etests.moduleAction.stepdefs.FicheActionStepDefinition.sous_action_ajouté_a_la_liste_des_sous_actions()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ModuleAction"
+          },
+          {
+            "name": "@FicheActionDetaille"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-06-04T10:48:09.179Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1156000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.qualiprobdd.e2etests.util.Setup.setup()"
+            }
+          }
+        ],
+        "line": 99,
+        "name": "Qualipro- En tant que responsable, je souhaite traiter et suivre l action avec des taux différents",
+        "description": "",
+        "id": "qualipro--test-fiche-action;qualipro--en-tant-que-responsable--je-souhaite-traiter-et-suivre-l-action-avec-des-taux-différents;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 88000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.qualiprobdd.e2etests.util.Setup.afterScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3540000000,
+              "status": "passed"
+            },
+            "line": 84,
+            "name": "Ouvrir le site QualiProWeb",
+            "match": {
+              "location": "com.qualiprobdd.e2etests.authentification.stepdefs.AuthentificationStepDefinition.ouvrirQualiProWeb()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1048000000,
+              "status": "passed"
+            },
+            "line": 85,
+            "name": "saisir Login et PW",
+            "match": {
+              "location": "com.qualiprobdd.e2etests.authentification.stepdefs.AuthentificationStepDefinition.saisirLoginPW()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 18422000000,
+              "status": "passed"
+            },
+            "line": 86,
+            "name": "cliquer sur ouvrir une session",
+            "match": {
+              "location": "com.qualiprobdd.e2etests.authentification.stepdefs.AuthentificationStepDefinition.clickOuvrirSession()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4000000,
+              "status": "passed"
+            },
+            "line": 87,
+            "name": "saisir 1 action",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 7
+                }
+              ],
+              "location": "com.qualiprobdd.e2etests.moduleAction.stepdefs.FicheActionStepDefinition.saisir_action(int)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id\u003d\"ctl00_ContentPlaceHolder1_GridView1\"]/tbody/tr/td[1]\"}\n  (Session info: chrome\u003d91.0.4472.77)\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.8.0\u0027, revision: \u0027924c4067df\u0027, time: \u00272017-11-30T11:20:39.408Z\u0027\nSystem info: host: \u0027DESKTOP-63DTJNU\u0027, ip: \u0027192.168.56.1\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_291\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.77, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\\Users\\MOOTAZ~1.BEN\\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:62684}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 3cdedc58120028ec97b565ee9571329a\n*** Element info: {Using\u003dxpath, value\u003d//*[@id\u003d\"ctl00_ContentPlaceHolder1_GridView1\"]/tbody/tr/td[1]}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:361)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy20.findElement(Unknown Source)\r\n\tat com.qualiprobdd.e2etests.moduleAction.models.FicheActionModele.choixNumActionRealisation(FicheActionModele.java:786)\r\n\tat com.qualiprobdd.e2etests.moduleAction.stepdefs.FicheActionStepDefinition.consulter_action_a_traiter(FicheActionStepDefinition.java:626)\r\n\tat ✽.Consulter action a traiter(file:///E:/qualipro/trunk/AutomatisationTQualiPro_prod231/src/specs/features/moduleAction/Action.feature:88)\r\n",
+              "duration": 17205000000,
+              "status": "failed"
+            },
+            "line": 88,
+            "name": "Consulter action a traiter",
+            "match": {
+              "location": "com.qualiprobdd.e2etests.moduleAction.stepdefs.FicheActionStepDefinition.consulter_action_a_traiter()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 89,
+            "name": "Réaliser action avec 50",
+            "match": {
+              "arguments": [
+                {
+                  "val": "50",
+                  "offset": 21
+                }
+              ],
+              "location": "com.qualiprobdd.e2etests.moduleAction.stepdefs.FicheActionStepDefinition.réaliser_action_avec(int)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 90,
+            "name": "Vérifier etat action realisé",
+            "match": {
+              "location": "com.qualiprobdd.e2etests.moduleAction.stepdefs.FicheActionStepDefinition.vérifier_etat_action_realisé()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 91,
+            "name": "Consulter action a suivre",
+            "match": {
+              "location": "com.qualiprobdd.e2etests.moduleAction.stepdefs.FicheActionStepDefinition.consulter_action_a_suivre()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 92,
+            "name": "vérifier taux réalisation",
+            "match": {
+              "location": "com.qualiprobdd.e2etests.moduleAction.stepdefs.FicheActionStepDefinition.vérifier_taux_réalisation()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 93,
+            "name": "suivre action avec 30 et 70",
+            "match": {
+              "arguments": [
+                {
+                  "val": "30",
+                  "offset": 19
+                },
+                {
+                  "val": "70",
+                  "offset": 25
+                }
+              ],
+              "location": "com.qualiprobdd.e2etests.moduleAction.stepdefs.FicheActionStepDefinition.suivre_action_avec_et(int,int)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 94,
+            "name": "Vérifier etat action suivi",
+            "match": {
+              "location": "com.qualiprobdd.e2etests.moduleAction.stepdefs.FicheActionStepDefinition.vérifier_etat_action_suivi()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 95,
+            "name": "Clôturée Action",
+            "match": {
+              "location": "com.qualiprobdd.e2etests.moduleAction.stepdefs.FicheActionStepDefinition.Clôturée_Action()"
             },
             "keyword": "And "
           }
         ],
         "tags": [
           {
-            "name": "@GestionAcces"
+            "name": "@ModuleAction"
           },
           {
-            "name": "@AjoutEmployé"
+            "name": "@RealisationetSuiviAction"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-06-04T10:48:50.649Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1165000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.qualiprobdd.e2etests.util.Setup.setup()"
+            }
+          }
+        ],
+        "line": 100,
+        "name": "Qualipro- En tant que responsable, je souhaite traiter et suivre l action avec des taux différents",
+        "description": "",
+        "id": "qualipro--test-fiche-action;qualipro--en-tant-que-responsable--je-souhaite-traiter-et-suivre-l-action-avec-des-taux-différents;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 110000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.qualiprobdd.e2etests.util.Setup.afterScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3399000000,
+              "status": "passed"
+            },
+            "line": 84,
+            "name": "Ouvrir le site QualiProWeb",
+            "match": {
+              "location": "com.qualiprobdd.e2etests.authentification.stepdefs.AuthentificationStepDefinition.ouvrirQualiProWeb()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1039000000,
+              "status": "passed"
+            },
+            "line": 85,
+            "name": "saisir Login et PW",
+            "match": {
+              "location": "com.qualiprobdd.e2etests.authentification.stepdefs.AuthentificationStepDefinition.saisirLoginPW()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 18446000000,
+              "status": "passed"
+            },
+            "line": 86,
+            "name": "cliquer sur ouvrir une session",
+            "match": {
+              "location": "com.qualiprobdd.e2etests.authentification.stepdefs.AuthentificationStepDefinition.clickOuvrirSession()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3000000,
+              "status": "passed"
+            },
+            "line": 87,
+            "name": "saisir 1 action",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 7
+                }
+              ],
+              "location": "com.qualiprobdd.e2etests.moduleAction.stepdefs.FicheActionStepDefinition.saisir_action(int)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id\u003d\"ctl00_ContentPlaceHolder1_GridView1\"]/tbody/tr/td[1]\"}\n  (Session info: chrome\u003d91.0.4472.77)\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.8.0\u0027, revision: \u0027924c4067df\u0027, time: \u00272017-11-30T11:20:39.408Z\u0027\nSystem info: host: \u0027DESKTOP-63DTJNU\u0027, ip: \u0027192.168.56.1\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_291\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.77, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\\Users\\MOOTAZ~1.BEN\\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:65021}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 75442a2474a103f85bfe7416803cabdf\n*** Element info: {Using\u003dxpath, value\u003d//*[@id\u003d\"ctl00_ContentPlaceHolder1_GridView1\"]/tbody/tr/td[1]}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:361)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy20.findElement(Unknown Source)\r\n\tat com.qualiprobdd.e2etests.moduleAction.models.FicheActionModele.choixNumActionRealisation(FicheActionModele.java:786)\r\n\tat com.qualiprobdd.e2etests.moduleAction.stepdefs.FicheActionStepDefinition.consulter_action_a_traiter(FicheActionStepDefinition.java:626)\r\n\tat ✽.Consulter action a traiter(file:///E:/qualipro/trunk/AutomatisationTQualiPro_prod231/src/specs/features/moduleAction/Action.feature:88)\r\n",
+              "duration": 16250000000,
+              "status": "failed"
+            },
+            "line": 88,
+            "name": "Consulter action a traiter",
+            "match": {
+              "location": "com.qualiprobdd.e2etests.moduleAction.stepdefs.FicheActionStepDefinition.consulter_action_a_traiter()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 89,
+            "name": "Réaliser action avec 100",
+            "match": {
+              "arguments": [
+                {
+                  "val": "100",
+                  "offset": 21
+                }
+              ],
+              "location": "com.qualiprobdd.e2etests.moduleAction.stepdefs.FicheActionStepDefinition.réaliser_action_avec(int)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 90,
+            "name": "Vérifier etat action realisé",
+            "match": {
+              "location": "com.qualiprobdd.e2etests.moduleAction.stepdefs.FicheActionStepDefinition.vérifier_etat_action_realisé()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 91,
+            "name": "Consulter action a suivre",
+            "match": {
+              "location": "com.qualiprobdd.e2etests.moduleAction.stepdefs.FicheActionStepDefinition.consulter_action_a_suivre()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 92,
+            "name": "vérifier taux réalisation",
+            "match": {
+              "location": "com.qualiprobdd.e2etests.moduleAction.stepdefs.FicheActionStepDefinition.vérifier_taux_réalisation()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 93,
+            "name": "suivre action avec 100 et 100",
+            "match": {
+              "arguments": [
+                {
+                  "val": "100",
+                  "offset": 19
+                },
+                {
+                  "val": "100",
+                  "offset": 26
+                }
+              ],
+              "location": "com.qualiprobdd.e2etests.moduleAction.stepdefs.FicheActionStepDefinition.suivre_action_avec_et(int,int)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 94,
+            "name": "Vérifier etat action suivi",
+            "match": {
+              "location": "com.qualiprobdd.e2etests.moduleAction.stepdefs.FicheActionStepDefinition.vérifier_etat_action_suivi()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 95,
+            "name": "Clôturée Action",
+            "match": {
+              "location": "com.qualiprobdd.e2etests.moduleAction.stepdefs.FicheActionStepDefinition.Clôturée_Action()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ModuleAction"
+          },
+          {
+            "name": "@RealisationetSuiviAction"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-06-04T10:49:31.069Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1147000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.qualiprobdd.e2etests.util.Setup.setup()"
+            }
+          }
+        ],
+        "line": 140,
+        "name": "Vérification Action Non Clôturée",
+        "description": "",
+        "id": "qualipro--test-fiche-action;vérification-action-non-clôturée;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.qualiprobdd.e2etests.util.Setup.afterScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3510000000,
+              "status": "passed"
+            },
+            "line": 126,
+            "name": "Ouvrir le site QualiProWeb",
+            "match": {
+              "location": "com.qualiprobdd.e2etests.authentification.stepdefs.AuthentificationStepDefinition.ouvrirQualiProWeb()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1070000000,
+              "status": "passed"
+            },
+            "line": 127,
+            "name": "saisir Login et PW",
+            "match": {
+              "location": "com.qualiprobdd.e2etests.authentification.stepdefs.AuthentificationStepDefinition.saisirLoginPW()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 18956000000,
+              "status": "passed"
+            },
+            "line": 128,
+            "name": "cliquer sur ouvrir une session",
+            "match": {
+              "location": "com.qualiprobdd.e2etests.authentification.stepdefs.AuthentificationStepDefinition.clickOuvrirSession()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 9756000000,
+              "status": "passed"
+            },
+            "line": 129,
+            "name": "Consulter Action",
+            "match": {
+              "location": "com.qualiprobdd.e2etests.moduleAction.stepdefs.FicheActionStepDefinition.consulter_Action()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 130,
+            "name": "saisir 1 action",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 7
+                }
+              ],
+              "location": "com.qualiprobdd.e2etests.moduleAction.stepdefs.FicheActionStepDefinition.saisir_action(int)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5511000000,
+              "status": "passed"
+            },
+            "line": 131,
+            "name": "Consulter action a cloture",
+            "match": {
+              "location": "com.qualiprobdd.e2etests.moduleAction.stepdefs.FicheActionStepDefinition.consulter_action_a_cloture()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 60000000,
+              "status": "passed"
+            },
+            "line": 132,
+            "name": "cliquer  sur   action   Cloture",
+            "match": {
+              "location": "com.qualiprobdd.e2etests.moduleAction.stepdefs.FicheActionStepDefinition.cliquer_sur_action_Cloture()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3136000000,
+              "status": "passed"
+            },
+            "line": 133,
+            "name": "cliquer   sur  non cloture",
+            "match": {
+              "location": "com.qualiprobdd.e2etests.moduleAction.stepdefs.FicheActionStepDefinition.cliquer_sur_non_cloture()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 9489000000,
+              "status": "passed"
+            },
+            "line": 134,
+            "name": "Consulter Action",
+            "match": {
+              "location": "com.qualiprobdd.e2etests.moduleAction.stepdefs.FicheActionStepDefinition.consulter_Action()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1500000000,
+              "status": "passed"
+            },
+            "line": 135,
+            "name": "vérfier  etat action Module",
+            "match": {
+              "location": "com.qualiprobdd.e2etests.moduleAction.stepdefs.FicheActionStepDefinition.vérfier_etat_action_Module()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 6205000000,
+              "status": "passed"
+            },
+            "line": 136,
+            "name": "vérfier etat   action  agenda",
+            "match": {
+              "location": "com.qualiprobdd.e2etests.moduleAction.stepdefs.FicheActionStepDefinition.vérfier_etat_action_agenda()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ModuleAction"
+          },
+          {
+            "name": "@VérificationActionNonClôturée"
           }
         ]
       }
     ],
-    "name": "Gestion des accès sur Qualipro",
-    "description": "",
-    "id": "gestion-des-accès-sur-qualipro",
+    "name": "Qualipro- Test fiche Action",
+    "description": "  En tant que utilisateur je souhaite remplir une fiche Action",
+    "id": "qualipro--test-fiche-action",
     "keyword": "Feature",
-    "uri": "file:src/specs/features/Administration/GestionAcc%C3%A9s.feature",
+    "uri": "file:src/specs/features/moduleAction/Action.feature",
     "tags": [
       {
-        "name": "@GestionAcces",
+        "name": "@ModuleAction",
         "type": "Tag",
         "location": {
           "line": 1,

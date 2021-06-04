@@ -1,3 +1,4 @@
+@ModuleAction
 Feature: Qualipro- Test fiche Action
   En tant que utilisateur je souhaite remplir une fiche Action
 

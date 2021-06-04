@@ -20,7 +20,7 @@ features = { "src/specs/features/Client/ReclamationClient.feature" },
 plugin = { "json:target/cucumber.json", "junit:target/cucumber.xml",
 "com.cucumber.listener.ExtentCucumberFormatter:target/cucumber-reports/report.html" },
 dryRun= false,
-tags= {"@AjoutReclamationClient,@DecisionInvestigation,@InvestigationRéclamation,@ApprobationInvestigationRéclamation,@Decision,@Traitement,@Suivi,@Approbation"}
+tags= {"@AjoutReclamationClient or @DecisionInvestigation or @InvestigationRéclamation or @ApprobationInvestigationRéclamation or @Decision or @Traitement or @Suivi or @Approbation"}
 		//tags= {"@Paramétrage,@AjoutReclamationClient"}
 		//tags= {"@Approbation"}
 )
