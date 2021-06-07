@@ -18,9 +18,9 @@ import org.testng.annotations.Test;
 				plugin = { "json:target/cucumber.json", "junit:target/cucumber.xml","com.cucumber.listener.ExtentCucumberFormatter:target/cucumber-reports/report.html" },
 				dryRun= false,
 			//	tags = {"@Paramétrage,@CréerFichePNC,@ValiderFichePNC,@DécisionInvestigation,@DécisionDeTraitement,@InvestigationPNC,@ApprobationInvestigationPNC,@ValiderDécisionTraitement,@TraitementPNC,@SuiviPNC,@approbationFinale"}
-		tags = {"@CréerFichePNC,@ValiderFichePNC,@DécisionDeTraitement,@DécisionInvestigation"}
-		//@CréerFichePNC,@ValiderFichePNC,@DécisionDeTraitement
-		//tags = {"@ValiderDécisionTraitement,@CréerFichePNCPlusieursProduitsPlusieursTypesNC"}
+		tags = {"@CréerFichePNC or @ValiderFichePNC or @DécisionDeTraitement or @DécisionInvestigation"}
+		//@CréerFichePNC or @ValiderFichePNC or @DécisionDeTraitement
+		//tags = {"@ValiderDécisionTraitement or @CréerFichePNCPlusieursProduitsPlusieursTypesNC"}
 )
 
 	@Test

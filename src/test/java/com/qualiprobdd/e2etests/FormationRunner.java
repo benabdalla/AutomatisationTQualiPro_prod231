@@ -18,7 +18,7 @@ import org.testng.annotations.Parameters;
 					features = { "src/specs/features/Formation/Formation.feature" }, 
 					plugin = {"html:target/cucumber-html-report", "json:target/cucumber.json", "junit:target/cucumber.xml"},
 					monochrome =true,
-			tags = {"@Paramétrage_module_formation"},
+			tags = {"@Paramétrage_module_formation or @FicheFormation or @RéalisationFormation or @EvaluationAchaud or @EvaluationFormateur"},
 					//tags= {"@FicheFormation,@RéalisationFormation,@EvaluationAchaud,@EvaluationFormateur,@EvaluationAfroidMono"},
 							//",@RéalisationFormation,@EvaluationAchaud,@EvaluationFormateur,@EvaluationAfroidMono"},
 					dryRun= false

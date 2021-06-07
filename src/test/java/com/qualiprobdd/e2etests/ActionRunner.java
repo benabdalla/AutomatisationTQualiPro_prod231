@@ -16,16 +16,14 @@ import org.testng.annotations.Test;
 		strict = true,
 		features = { "src/specs/features/moduleAction/Action.feature" },
 		monochrome =true,
-		plugin = {"html:target/cucumber-html-report", "json:target/cucumber.json", "junit:target/cucumber.xml",
-				 },
-		//tags = {"@ParemétrageFicheActionDetaille,@FicheActionDetaille,@RealisationetSuiviAction,@VérificationActionNonClôturée"},
-		tags = {"@VerificationBilanAction"},
+		plugin = {"html:target/cucumber-html-report", "json:target/cucumber.json", "junit:target/cucumber.xml"},
+		tags = {"@ParemétrageFicheActionDetaille or @FicheActionDetaille or @RealisationetSuiviAction or @VérificationActionNonClôturée"},
+	//	tags = {"@ParemétrageFicheActionDetaille"},
 
 
 		dryRun= false
 )
-
-@Test(threadPoolSize = 3,invocationCount = 3)
+@Test
 public class ActionRunner extends AbstractTestNGCucumberTests {
 	@Parameters({"language", "browsername"})
 	@BeforeClass
@@ -33,10 +31,8 @@ public class ActionRunner extends AbstractTestNGCucumberTests {
 		com.qualiprobdd.e2etests.authentification.stepdefs.AuthentificationStepDefinition.lan = language;
 		com.qualiprobdd.e2etests.util.Setup.browsername = browsername;
 	}
-
 	@AfterClass
 	public static void writeExtentReport() {
 	//	Reporter.loadXMLConfig(new File("resources/configs/extent-config.xml"));
-
 	}
 }

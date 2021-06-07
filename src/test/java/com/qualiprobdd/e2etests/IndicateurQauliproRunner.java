@@ -16,7 +16,7 @@ import org.testng.annotations.Test;
         plugin = {"html:target/cucumber-html-report", "json:target/cucumber.json"
                 },
         dryRun= false,
-        tags = "@EnregistrmentIndicateur,@SUIVIIndicateurQualipro")
+        tags = "@EnregistrmentIndicateur or @SUIVIIndicateurQualipro")
 //tags = { "@EnregistrmentIndicateur,@SUIVIIndicateurQualipro" })
 //tags = { "@EnregistrmentIndicateur,@SUIVIIndicateurManuel,@SUIVIIndicateurQualipro,@SUIVIIndicateurFormule" })
 

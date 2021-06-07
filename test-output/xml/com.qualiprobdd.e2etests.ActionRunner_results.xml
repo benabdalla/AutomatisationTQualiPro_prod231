@@ -1,17 +1,109 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuite name="Test"
-           tests="1"
-           failures="0"
+           tests="5"
+           failures="4"
            errors="0"
            skipped="0"
-           time="340,596">
+           time="247,871">
     <properties></properties>
 
+            <testcase
+                name="runScenario"
+                time="41,471"
+                classname="com.qualiprobdd.e2etests.ActionRunner">
+
+            <failure type="org.openqa.selenium.NoSuchElementException" message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;ctl00_ContentPlaceHolder1_GridView1&quot;]/tbody/tr/td[1]&quot;}
+  (Session info: chrome=91.0.4472.77)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.8.0&apos;, revision: &apos;924c4067df&apos;, time: &apos;2017-11-30T11:20:39.408Z&apos;
+System info: host: &apos;DESKTOP-63DTJNU&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_291&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.77, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\MOOTAZ~1.BEN\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:62684}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3cdedc58120028ec97b565ee9571329a
+*** Element info: {Using=xpath, value=//*[@id=&quot;ctl00_ContentPlaceHolder1_GridView1&quot;]/tbody/tr/td[1]}">
+                <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="ctl00_ContentPlaceHolder1_GridView1"]/tbody/tr/td[1]"}
+  (Session info: chrome=91.0.4472.77)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.8.0', revision: '924c4067df', time: '2017-11-30T11:20:39.408Z'
+System info: host: 'DESKTOP-63DTJNU', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.77, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\MOOTAZ~1.BEN\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:62684}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3cdedc58120028ec97b565ee9571329a
+*** Element info: {Using=xpath, value=//*[@id="ctl00_ContentPlaceHolder1_GridView1"]/tbody/tr/td[1]}
+                sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)java.lang.reflect.Constructor.newInstance(Constructor.java:423)org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)org.openqa.selenium.By$ByXPath.findElement(By.java:361)org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)com.sun.proxy.$Proxy20.findElement(Unknown Source)com.qualiprobdd.e2etests.moduleAction.models.FicheActionModele.choixNumActionRealisation(FicheActionModele.java:786)com.qualiprobdd.e2etests.moduleAction.stepdefs.FicheActionStepDefinition.consulter_action_a_traiter(FicheActionStepDefinition.java:626)✽.Consulter action a traiter(file:///E:/qualipro/trunk/AutomatisationTQualiPro_prod231/src/specs/features/moduleAction/Action.feature:88)
+]]>
+            </failure>
+    </testcase>
+            <testcase
+                name="runScenario"
+                time="54,530"
+                classname="com.qualiprobdd.e2etests.ActionRunner">
+
+            <failure type="java.lang.AssertionError" message="expected [true] but found [false]">
+                <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+                org.testng.Assert.fail(Assert.java:99)org.testng.Assert.failNotEquals(Assert.java:1037)org.testng.Assert.assertTrue(Assert.java:45)org.testng.Assert.assertTrue(Assert.java:55)com.qualiprobdd.e2etests.moduleAction.stepdefs.FicheActionStepDefinition.fiche_Action_ajouté(FicheActionStepDefinition.java:367)✽.Fiche Action ajouté(file:///E:/qualipro/trunk/AutomatisationTQualiPro_prod231/src/specs/features/moduleAction/Action.feature:61)
+]]>
+            </failure>
+    </testcase>
+            <testcase
+                name="runScenario"
+                time="51,105"
+                classname="com.qualiprobdd.e2etests.ActionRunner">
+
+            <failure type="org.openqa.selenium.NoSuchElementException" message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;input&quot;}
+  (Session info: chrome=91.0.4472.77)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.8.0&apos;, revision: &apos;924c4067df&apos;, time: &apos;2017-11-30T11:20:39.408Z&apos;
+System info: host: &apos;DESKTOP-63DTJNU&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_291&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.77, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\MOOTAZ~1.BEN\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:65157}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c1fc366d49e38c2824f4b0aba70a375b
+*** Element info: {Using=tag name, value=input}">
+                <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"input"}
+  (Session info: chrome=91.0.4472.77)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.8.0', revision: '924c4067df', time: '2017-11-30T11:20:39.408Z'
+System info: host: 'DESKTOP-63DTJNU', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.77, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\MOOTAZ~1.BEN\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:65157}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c1fc366d49e38c2824f4b0aba70a375b
+*** Element info: {Using=tag name, value=input}
+                sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)java.lang.reflect.Constructor.newInstance(Constructor.java:423)org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)org.openqa.selenium.remote.RemoteWebElement.findElement(RemoteWebElement.java:179)org.openqa.selenium.remote.RemoteWebElement.findElementByTagName(RemoteWebElement.java:271)org.openqa.selenium.By$ByTagName.findElement(By.java:334)org.openqa.selenium.remote.RemoteWebElement.findElement(RemoteWebElement.java:175)com.qualiprobdd.e2etests.moduleAction.models.FicheActionModele.clique_sur_valider(FicheActionModele.java:67)com.qualiprobdd.e2etests.moduleAction.stepdefs.FicheActionStepDefinition.clique_sur_valider(FicheActionStepDefinition.java:68)✽.clique   sur   valider(file:///E:/qualipro/trunk/AutomatisationTQualiPro_prod231/src/specs/features/moduleAction/Action.feature:20)
+]]>
+            </failure>
+    </testcase>
+            <testcase
+                name="runScenario"
+                time="40,418"
+                classname="com.qualiprobdd.e2etests.ActionRunner">
+
+            <failure type="org.openqa.selenium.NoSuchElementException" message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;ctl00_ContentPlaceHolder1_GridView1&quot;]/tbody/tr/td[1]&quot;}
+  (Session info: chrome=91.0.4472.77)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.8.0&apos;, revision: &apos;924c4067df&apos;, time: &apos;2017-11-30T11:20:39.408Z&apos;
+System info: host: &apos;DESKTOP-63DTJNU&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_291&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.77, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\MOOTAZ~1.BEN\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:65021}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 75442a2474a103f85bfe7416803cabdf
+*** Element info: {Using=xpath, value=//*[@id=&quot;ctl00_ContentPlaceHolder1_GridView1&quot;]/tbody/tr/td[1]}">
+                <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="ctl00_ContentPlaceHolder1_GridView1"]/tbody/tr/td[1]"}
+  (Session info: chrome=91.0.4472.77)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.8.0', revision: '924c4067df', time: '2017-11-30T11:20:39.408Z'
+System info: host: 'DESKTOP-63DTJNU', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.77, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\MOOTAZ~1.BEN\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:65021}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 75442a2474a103f85bfe7416803cabdf
+*** Element info: {Using=xpath, value=//*[@id="ctl00_ContentPlaceHolder1_GridView1"]/tbody/tr/td[1]}
+                sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)java.lang.reflect.Constructor.newInstance(Constructor.java:423)org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)org.openqa.selenium.By$ByXPath.findElement(By.java:361)org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)com.sun.proxy.$Proxy20.findElement(Unknown Source)com.qualiprobdd.e2etests.moduleAction.models.FicheActionModele.choixNumActionRealisation(FicheActionModele.java:786)com.qualiprobdd.e2etests.moduleAction.stepdefs.FicheActionStepDefinition.consulter_action_a_traiter(FicheActionStepDefinition.java:626)✽.Consulter action a traiter(file:///E:/qualipro/trunk/AutomatisationTQualiPro_prod231/src/specs/features/moduleAction/Action.feature:88)
+]]>
+            </failure>
+    </testcase>
 
 
             <testcase
-                name="feature"
-                time="340,596"
+                name="runScenario"
+                time="60,347"
                 classname="com.qualiprobdd.e2etests.ActionRunner">
             </testcase>
 </testsuite>

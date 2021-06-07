@@ -17,7 +17,7 @@ features = { "src/specs/features/Environnement/Incident.feature" }, plugin = {
 "com.cucumber.listener.ExtentCucumberFormatter:target/cucumber-reports/report.html" },
 dryRun= false,
 		//tags= {"@CréationFicheIncident"}
-		tags= {"@CréationFicheIncident,@ValidationFicheIncident,@DécisionFicheIncident,@TraitementFicheIncident,@ClotureFicheIncident"}
+		tags= {"@CréationFicheIncident or @ValidationFicheIncident or @DécisionFicheIncident or @TraitementFicheIncident or @ClotureFicheIncident"}
 )
 
 public class IncidentEnvRunner extends AbstractTestNGCucumberTests {
