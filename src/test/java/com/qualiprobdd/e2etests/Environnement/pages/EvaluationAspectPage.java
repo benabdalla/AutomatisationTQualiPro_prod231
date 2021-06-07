@@ -18,6 +18,9 @@ public class EvaluationAspectPage {
     final static String Rechercher_Aspect_EVALUATION ="ctl00_ContentPlaceHolder1_Filtre_Rechercher";
     final static String Tab_Aspect_EVALUATION ="ctl00_ContentPlaceHolder1_GridView1p";
 
+final  static String idNumfich="ctl00_ContentPlaceHolder1_NumEvalAspect";
+@FindBy(how=How.ID,using=idNumfich)
+public  static  WebElement widnumfich;
 
     @FindBy(how = How.ID, using =consulter_Sous_Module_Aspects_ID)
     public static WebElement wconsulter_Sous_Module_Aspects_ID;

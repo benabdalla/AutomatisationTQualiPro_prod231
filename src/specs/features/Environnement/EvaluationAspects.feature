@@ -8,6 +8,7 @@ Feature: Création et validation d une fiche Evaluation aspect
         Given Ouvrir le site QualiProWeb
         And  saisir Login et PW
         And  cliquer sur ouvrir une session
+        And Lire Données Aspect <Incident> depuis Excel
         When Consulter module Environnement
         And Consulter Sous Module Aspects
         And Consulter Sous Module Evaluation des aspects

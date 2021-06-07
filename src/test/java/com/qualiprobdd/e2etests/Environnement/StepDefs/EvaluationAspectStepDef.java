@@ -19,13 +19,19 @@ public class EvaluationAspectStepDef {
 
     private Common common = new Common();
     private WebDriver driver;
-    static int row;
+    static int row=0;
 
     public EvaluationAspectStepDef() {
     driver = Setup.driver;
         PageFactory.initElements(driver, EvaluationAspectPage.class);
 
     }
+
+
+    @When("^Lire Données Aspect (\\d+) depuis Excel$")
+    public void lire_Données_Aspect_depuis_Excel(int arg1) throws Throwable{
+        row=arg1;
+    System.out.println("ligne= "+row);}
 
 
     @When("Consulter Sous Module Aspects")
@@ -58,22 +64,24 @@ public class EvaluationAspectStepDef {
     }
 
     @When("Sélectionner Lieu")
-    public void sélectionner_Lieu() {
-
+    public void sélectionner_Lieu() throws Throwable {
+        EvaluationAspectModel.sélectionner_Lieu (row);
     }
 
     @When("Sélectionner condition")
-    public void sélectionner_condition() {
-
+    public void sélectionner_condition () throws Throwable {
+        EvaluationAspectModel.sélectionner_condition(row);
     }
 
     @When("cliquer sur valider Evaluation aspect")
-    public void cliquer_sur_valider_Evaluation_aspect() {
+    public void cliquer_sur_valider_Evaluation_aspect() throws Exception {
+        EvaluationAspectModel.cliquer_sur_valider_Evaluation_aspect (row);
 
     }
 
     @Then("Vérifier Evaluation aspect ajouté")
-    public void vérifier_Evaluation_aspect_ajouté() {
+    public void vérifier_Evaluation_aspect_ajouté() throws Throwable {
+        EvaluationAspectModel.vérifier_Evaluation_aspect_ajouté (row);
 
     }
 

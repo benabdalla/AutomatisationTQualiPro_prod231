@@ -32,10 +32,12 @@ public class IncidentStepDef {
 		 PageFactory.initElements(driver, IncidentPage.class);
 	}
 
+
 	@When("^Consulter module Environnement$")
 	public void consulter_module_Environnement() throws Throwable {
 	IncidentModel.Consulter_module_Environnement(driver);
 	}
+
 
 	@When("^Consulter Sous Module Incident environnemental$")
 	public void consulter_Sous_Module_Incident_environnemental() throws Throwable {
