@@ -25,6 +25,7 @@
                 <version>2.22.0</version>
                 <configuration>
                     <suiteXmlFiles>
+                        <suiteXmlFile>${suiteFile}</suiteXmlFile>
                     </suiteXmlFiles>
                     <parallel>methods</parallel>
                     <useUnlimitedThreads>true</useUnlimitedThreads>
@@ -188,6 +189,7 @@
             <artifactId>javax.mail</artifactId>
             <version>1.6.2</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/io.skullabs.stalkr/stalkr-death-by-captcha -->
 
         <dependency>
             <groupId>org.apache.poi</groupId>
