@@ -8,11 +8,11 @@ import java.sql.Driver;
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.util.Date;
+import java.util.*;
 import java.util.List;
 import java.util.NoSuchElementException;
-import java.util.TimeZone;
 
+import com.qualiprobdd.e2etests.audit.pages.RepAuParTypePage;
 import org.openqa.selenium.*;
 import org.openqa.selenium.Point;
 import org.openqa.selenium.interactions.Actions;
@@ -317,8 +317,15 @@ Thread.sleep(1000);
         DocumentationPage.agendaVerificteurID.click();
     }
 
-    public static void cliqueApprobateurBleu(WebDriver driver) {
-
+    public static void cliqueApprobateurBleu(WebDriver driver) throws InterruptedException {
+       /* final DateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
+        Date dt = new Date();
+        Calendar c = Calendar.getInstance();
+        c.add(Calendar.DATE, 0);
+        String Sdate = dateFormat.format(dt);
+        JavascriptExecutor jse = (JavascriptExecutor) driver;
+      try{  jse.executeScript("arguments[1].value = arguments[0];", Sdate,driver.findElement(By.id(" ctl00_ContentPlaceHolder1_tb_date_applic")));
+        Thread.sleep(1000L);}catch (NoSuchElementException )*/
 
         JavascriptExecutor executor = (JavascriptExecutor) driver;
         executor.executeScript("arguments[0].click()", DocumentationPage.approbateurBleuID);
@@ -330,7 +337,9 @@ Thread.sleep(1000);
         DocumentationPage.agendApprobateurID.click();
     }
 
-    public static void cliqueDiffusion() {
+    public static void cliqueDiffusion(WebDriver driver) throws InterruptedException {
+
+
 
         DocumentationPage.diffusionID.click();
     }

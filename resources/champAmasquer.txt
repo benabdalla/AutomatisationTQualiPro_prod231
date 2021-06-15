@@ -15744,3 +15744,93 @@ le champ type cause est invisible
 le champ objectif est invisible
 le champ ref audit est invisible
 Fiche Action: 
+Nouvelle Fiche Audit
+Fiche Audit: 2260
+Nouvelle Fiche Audit
+Fiche Audit: 2261
+Nouvelle Fiche Audit
+Fiche Audit: 2262
+Nouvelle Fiche Audit
+Fiche Audit: 2263
+Nouvelle Fiche Audit
+Nouvelle Fiche Action
+le champ origine action est invisible
+le champ produit est visible
+le champ type cause est visible
+le champ objectif est visible
+le champ ref audit est invisible
+Fiche Action: 27718
+le champ gravite est visible
+le champ priorite est visible
+le champ cout prévisionelle est visible
+le champ risque est visible
+le champ cout est visible
+le champ cout est visible
+le champ cout prev total est invisible
+le champ cout prev total est invisible
+Nouvelle Fiche Action
+le champ origine action est invisible
+le champ produit est visible
+le champ type cause est visible
+le champ objectif est visible
+le champ ref audit est invisible
+Fiche Action: 27719
+le champ gravite est visible
+le champ priorite est visible
+le champ cout prévisionelle est visible
+le champ risque est visible
+Nouvelle Fiche Audit
+Fiche Audit: 2264
+Nouvelle Fiche Audit
+Nouvelle Fiche Audit
+Nouvelle Fiche Audit
+Nouvelle Fiche Audit
+Nouvelle Fiche Audit
+Nouvelle Fiche Audit
+Nouvelle Fiche Audit
+Nouvelle Fiche Audit
+Nouvelle Fiche Audit
+Nouvelle Fiche Audit
+Nouvelle Fiche Audit
+Nouvelle Fiche Audit
+Nouvelle Fiche Audit
+Nouvelle Fiche Audit
+Nouvelle Fiche Audit
+Nouvelle Fiche Audit
+Nouvelle Fiche Audit
+Nouvelle Fiche Audit
+Nouvelle Fiche Audit
+Nouvelle Fiche Audit
+Nouvelle Fiche Audit
+Nouvelle Fiche Audit
+Nouvelle Fiche Audit
+Nouvelle Fiche Audit
+Nouvelle Fiche Audit
+Nouvelle Fiche Audit
+Nouvelle Fiche Audit
+Fiche Audit: 2266
+Nouvelle Fiche Audit
+Fiche Audit: 2267
+Nouvelle Fiche Audit
+Nouvelle Fiche Audit
+Fiche Audit: 2268
+Nouvelle Fiche Audit
+Nouvelle Fiche Audit
+Fiche Audit: 2269
+Nouvelle Fiche Audit
+Fiche Audit: 2270
+Nouvelle Fiche Audit
+Fiche Audit: 2271
+Nouvelle Fiche Audit
+Fiche Audit: 2272
+Nouvelle Fiche Audit
+Fiche Audit: 2273
+Nouvelle Fiche Audit
+Nouvelle Fiche Audit
+Nouvelle Fiche Audit
+Fiche Audit: 2274
+Nouvelle Fiche Audit
+Fiche Audit: 2275
+Nouvelle Fiche Audit
+Fiche Audit: 2276
+Nouvelle Fiche Audit

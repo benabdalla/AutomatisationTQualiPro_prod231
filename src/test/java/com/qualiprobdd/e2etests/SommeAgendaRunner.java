@@ -18,8 +18,7 @@ import org.testng.annotations.Test;
 		features = { "src/specs/features/Agenda/SommeAgenda.feature" }, 
 		monochrome =true,
 		plugin = {"html:target/cucumber-html-report", "json:target/cucumber.json", "junit:target/cucumber.xml",
-	 },
-				tags = "@SommeAgenda",
+	 }, tags = "@SommeAgenda",
 		dryRun= false
 		)
 

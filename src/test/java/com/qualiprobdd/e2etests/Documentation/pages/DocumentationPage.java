@@ -24,7 +24,7 @@ public class DocumentationPage extends AbstractPage {
 	final static String REDACTEUR_SUPERVISEUR_ID = "ctl00_ContentPlaceHolder1_buttonRedacSuper";
 	final static String TYPE_DOCUMENT_ID = "ctl00_ContentPlaceHolder1_DropDownListTypeSup";
 	final static String OBJET_ID = "ctl00_ContentPlaceHolder1_TextBoxObjetSup";
-	final static String CHOISIR_FICHIER_ID = "//div[@id='ctl00_ContentPlaceHolder1_fichierlien']/div/span/label/span";
+	final static String CHOISIR_FICHIER_ID = "//*[@id=\"ctl00_ContentPlaceHolder1_fichierlien\"]/div/div/div/span/label";
 
 	final static String MESSAGE_ID = "ctl00_ContentPlaceHolder1_TextBoxMsgSup";
 	final static String ENVOI_SUPERVISEUR_ID = "ctl00_ContentPlaceHolder1_buttonEnvoiSuper";
@@ -37,7 +37,7 @@ public class DocumentationPage extends AbstractPage {
 	final static String DOCUMENT_XPATH = "//*[@id=\"ctl00_ContentPlaceHolder1_GridView_Rec\"]/tbody/tr[2]/td[1]";
 	final static String FICHIER_ID = "ctl00_ContentPlaceHolder1_VisualiserRecu";
 	final static String CREE_DOCUMENT_ID = "ctl00_ContentPlaceHolder1_buttonCreerDoc";
-	final static String SITE_ID = "ctl00_ContentPlaceHolder1_ListBox_Site";
+	final static String SITE_ID = "ctl00_ContentPlaceHolder1_ListBoxSite";
 	final static String PROCESSUS_ID = "ctl00_ContentPlaceHolder1_lBProcessus_";
 	final static String MOT_CLE_ID = "ctl00_ContentPlaceHolder1_tb_motcleSpec";
 	final static String VALIDER_ID = "ctl00_ContentPlaceHolder1_Valider_Doc";

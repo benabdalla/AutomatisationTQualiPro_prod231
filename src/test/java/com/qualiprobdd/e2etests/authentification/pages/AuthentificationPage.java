@@ -29,6 +29,8 @@ public class AuthentificationPage extends AbstractPage {
 
 	/* @FindBy */
 
+
+
 	@FindBy(how = How.ID, using = LOGIN_ID)
 	public static WebElement loginID;
 

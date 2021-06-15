@@ -333,12 +333,12 @@ if(ok) {
 
     @And("^saisir Date Début Prévue$")
     public void saisir_Date_Début_Prévue() throws Throwable {
-        ModuleAuditsModel.choixDateDebutPrevue(driver);
+        ModuleAuditsModel.choixDateDebutPrevue(driver,row);
     }
 
     @And("^saisir Date Fin Prévue$")
     public void saisir_Date_Fin_Prévue() throws Throwable {
-        ModuleAuditsModel.choixDateFinPrevue(driver);
+        ModuleAuditsModel.choixDateFinPrevue(driver,row);
     }
 
     @And("^saisir Champ audit$")
@@ -515,7 +515,10 @@ if(ok) {
 
     @Then("^Vérifier Etat Audit$")
     public void vérifier_Etat_Audit() throws Throwable {
+        String st=ModuleAuditsPage.StateAuditID.getText();
         assertTrue(ModuleAuditsPage.StateAuditID.getText().contains("REALISE"));
+        ExcelUtils.setExcelFile(Path, "Audit");
+    ExcelUtils.setCellData1(st,row, 27,Path);
 
     }
 

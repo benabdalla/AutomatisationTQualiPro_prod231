@@ -106,6 +106,7 @@ public class ModuleAuditsPage extends AbstractPage {
     final static String VALIDER_CONSTAT_ID = "ctl00_ContentPlaceHolder1_LKValider";
     final static String VALIDER_CONSTAT2_ID = "ctl00_ContentPlaceHolder1_LinkButton_OK";
     final static String DESIGNATION_ID = "ctl00_ContentPlaceHolder1_Rpt_ctl01_TxtDesig";
+
     final static String DATE_REALISATION_ID = "ctl00_ContentPlaceHolder1_Rpt_ctl01_Del";
     final static String CHOIX_DATE_REALISATION_ID = "ctl00_ContentPlaceHolder1_Rpt_ctl01_CalendarExtender1_today";
     final static String DATE_SUIVI_ID = "ctl00_ContentPlaceHolder1_Rpt_ctl01_delsuivie";

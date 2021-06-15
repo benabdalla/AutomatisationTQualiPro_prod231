@@ -34,9 +34,6 @@ Feature: Qualipro- Test fiche audit
     When valider constats
     And recuperer numero action
     Then Vérifier Etat Audit
-    And changer compte responsable cloture
-    When consulter agenda responsable cloture
-    And cloturer Audit
     And recuperer numero action
    	#And consulter rapports
    	#Then verifier rapports
@@ -55,6 +52,9 @@ Feature: Qualipro- Test fiche audit
     When saisir <example> Audit a traiter
     When Realise action a audite
     When suivi action a audite
+    When consulter agenda responsable cloture
+    When consulter agenda responsable cloture
+    And cloturer Audit
     Examples:
       | responsable | example | module  | etat   |
       | 13          | 1       | "Audit" | "Real" |

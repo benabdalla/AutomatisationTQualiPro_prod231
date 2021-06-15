@@ -2,10 +2,7 @@ package com.qualiprobdd.e2etests.util;
 
 import static org.testng.Assert.assertTrue;
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileWriter;
-import java.io.IOException;
+import java.io.*;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.time.DayOfWeek;
@@ -266,6 +263,32 @@ public class Common {
 			e.printStackTrace();
 		}
 		return Existe;
+	}
+	public  static  int  nbExiste(String path, String word) throws IOException {
+
+
+		// int   nbw=Common.nbExiste(path,"Champ Audit Auto");
+		// System.out.println(" occurence  est  "+nbw);
+		int count = 0;
+		File file = new File(path);
+		FileInputStream fileStream = new FileInputStream(file);
+		InputStreamReader input = new InputStreamReader(fileStream);
+		BufferedReader reader = new BufferedReader(input);
+		while(reader.readLine() != null){
+			String words= reader.readLine();
+			//System.out.println("words = "+words);
+			if(words.contains(word)){
+				count++;
+				String newword=words.substring(words.indexOf(word)+word.length(),words.length());
+				if(newword.contains(word)){
+					count++;
+
+				}
+			}
+
+		}
+	return count;
+
 	}
 
 	/**

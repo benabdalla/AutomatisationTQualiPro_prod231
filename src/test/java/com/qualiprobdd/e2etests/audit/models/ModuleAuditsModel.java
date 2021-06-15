@@ -24,7 +24,7 @@ public class ModuleAuditsModel {
 	public static List<String> Criteres = new ArrayList<String>();
 	private static double nbreCriteres, NumEvalated;
 	private static String numAudit;
-	private static int row;
+
 
 
 
@@ -58,7 +58,7 @@ excouter.executeScript("arguments[0].click()",ModuleAuditsPage.menuID);
 			jse.executeScript("arguments[0].click()", ModuleAuditsPage.btnAjouterID);
 	}
 
-	public static void choixDateDebutPrevue(WebDriver  driver) throws InterruptedException {
+	public static void choixDateDebutPrevue(WebDriver  driver,int row) throws Exception {
 
 
 			final DateFormat dateFormat;
@@ -78,14 +78,16 @@ excouter.executeScript("arguments[0].click()",ModuleAuditsPage.menuID);
 			JavascriptExecutor jse = (JavascriptExecutor)driver;
 			jse.executeScript("arguments[1].value = arguments[0];",Sdate,ModuleAuditsPage.wdatdebtP);
 			Thread.sleep(500);
+		ExcelUtils.setExcelFile(Path, "Audit");
 
+		ExcelUtils.setCellData1(Sdate,row,28,Path);
 
 		/*ModuleAuditsPage.calendrierDID.click();
 		Thread.sleep(1000);
 		ModuleAuditsPage.choixDateDID.click();*/
 	}
 
-	public static void choixDateFinPrevue(WebDriver driver) throws InterruptedException {
+	public static void choixDateFinPrevue(WebDriver driver,int row) throws Exception {
 
 
 		final DateFormat dateFormat;
@@ -106,7 +108,9 @@ excouter.executeScript("arguments[0].click()",ModuleAuditsPage.menuID);
 		jse.executeScript("arguments[1].value = arguments[0];",Sdate,ModuleAuditsPage.wdatdebtF);
 		Thread.sleep(500);
 
+		ExcelUtils.setExcelFile(Path, "Audit");
 
+        ExcelUtils.setCellData1(Sdate,row,29,Path);
 	/*	ModuleAuditsPage.calendrierFID.click();
 		Thread.sleep(1000);
 		ModuleAuditsPage.choixDateFID.click();*/
@@ -762,8 +766,13 @@ excouter.executeScript("arguments[0].click()",ModuleAuditsPage.menuID);
 		        //wait.until(ExpectedConditions.visibilityOf(ModuleAuditsPage.GridActionID));
 				Thread.sleep(1000);
 				ModuleAuditsPage.GridActionID.findElement(By.xpath("//*[@id=\"ctl00_ContentPlaceHolder1_GridView_Action_poup\"]/tbody/tr["+i+"]/td[2]")).findElement(By.tagName("a")).click();
-		        Thread.sleep(1000);//*[@id="ctl00_ContentPlaceHolder1_GridView_Action_poup"]/tbody/tr[2]/td[2]
-		        ModuleAuditsPage.designationID.sendKeys("Test automatique"+RandomValue.randomString(8));
+		        Thread.sleep(2000);//*[@id="ctl00_ContentPlaceHolder1_GridView_Action_poup"]/tbody/tr[2]/td[2]
+				JavascriptExecutor js=(JavascriptExecutor)driver;
+				js.executeScript("arguments[0].scrollIntoView(true);"
+						,ModuleAuditsPage.designationID);
+				Thread.sleep(1000);
+				ModuleAuditsPage.designationID.sendKeys("Test automatique"+RandomValue.randomString(8));
+
 				Thread.sleep(1000);
 				final DateFormat dateFormat;
 				Cookie cookie1 = driver.manage().getCookieNamed("lan");
@@ -796,10 +805,13 @@ excouter.executeScript("arguments[0].click()",ModuleAuditsPage.menuID);
 		        ModuleAuditsPage.choixDateSuiviID.click();*/
 		        Select select = new Select(ModuleAuditsPage.RespSuiviId);
 		        select.selectByIndex(1);
+		        JavascriptExecutor js1 =(JavascriptExecutor) driver;
+				js1.executeScript("arguments[0].scrollIntoView(true);"
+						,ModuleAuditsPage.VldSAId);
 		        ModuleAuditsPage.VldSAId.click();
 		        Thread.sleep(1000);
 			}
-			
+			Thread.sleep(2000);
 			JavascriptExecutor jse = (JavascriptExecutor)driver;
 			jse.executeScript("arguments[0].scrollIntoView(true)",ModuleAuditsPage.fermerConstatID);
 			Thread.sleep(1000);
@@ -941,12 +953,16 @@ excouter.executeScript("arguments[0].click()",ModuleAuditsPage.menuID);
 			JavascriptExecutor jse = (JavascriptExecutor)driver;
 			jse.executeScript("arguments[0].click()", ModuleAuditsPage.AgendaId);
 	//ModuleAuditsPage.AgendaId.click();
+	Thread.sleep(2000L);
+			JavascriptExecutor jse2 = (JavascriptExecutor)driver;
+			jse2.executeScript("arguments[0].click()", ModuleAuditsPage.VolAgdRespClotID);
+	//ModuleAuditsPage.VolAgdRespClotID.click();
+	Thread.sleep(2000L);
+	//ModuleAuditsPage.RechFichACloturerID.findElement(By.tagName("input")).sendKeys(numAudit);
+
+			ModuleAuditsPage.RechFichACloturerID.findElement(By.tagName("input")).sendKeys("2273");
 	Thread.sleep(1000L);
-	ModuleAuditsPage.VolAgdRespClotID.click();
-	Thread.sleep(1000L);
-	ModuleAuditsPage.RechFichACloturerID.sendKeys(numAudit);
-	Thread.sleep(1000L);
-	ModuleAuditsPage.FichACloturerID.findElement(By.tagName("a")).click();
+	ModuleAuditsPage.FichACloturerID.findElement(By.xpath("//*[@id=\"ctl00_ContentPlaceHolder1_GridView4\"]/tbody/tr/td[1]")).findElement(By.tagName("a")).click();
 	Thread.sleep(1000L);
 	}
 	}

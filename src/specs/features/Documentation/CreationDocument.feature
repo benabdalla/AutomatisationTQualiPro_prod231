@@ -28,29 +28,31 @@ Feature: Qualipro- Test demande de création document
     Given Ouvrir le site QualiProWeb
     And saisir Login et PW
     And cliquer sur ouvrir une session
-    When Consulter boite de dialogue
-    And cliquer sur Rédacteur au superviseur
-    And Saisir <Type document>
-    And choisir site lab
-    And Saisir Objet
+    When   cliquer  sur  ceration  modification   doc
+   # When Consulter boite de dialogue
+    #And cliquer sur Rédacteur au superviseur
+    #And Saisir <Type document>
+
+   # And Saisir Objet
    # And rattacher fichier lien
-    And Saisir message
-    And cliquer sur Envoyer au superviseur
-    Then verifier ajout dans la boite d envoi et vérifier message a été envoyé
-    And verifier l incrémentation du compteur
-    When cliquer sur notification agenda boite de dialogue
-    And cliquer sur le fichier joint pour stocker le document au niveau de l infrastructure
-    And cliquer sur Créer document
+   # And Saisir message
+    #And cliquer sur Envoyer au superviseur
+  #  Then verifier ajout dans la boite d envoi et vérifier message a été envoyé
+ #   And verifier l incrémentation du compteur
+#    When cliquer sur notification agenda boite de dialogue
+   # And cliquer sur le fichier joint pour stocker le document au niveau de l infrastructure
+    #And cliquer sur Créer document
     #And saisir  code document
     And rattacher fichier lien
     And saisir Mot clé spécifique
+    And choisir site lab
     And cliquer sur valider Creation Document
     #And cliquer sur valider en bas de page
     And cliquer sur Rédacteur en bas de page
     And consulter agenda documentation documents à valider par le rédacteur
     And insérer code documents
     And cliquer sur le document en question
-    And cliquer sur visualiser le document et vérifier son téléchargement et stockage sur plateforme
+#    And cliquer sur visualiser le document et vérifier son téléchargement et stockage sur plateforme
     And cliquer sur vérificateur bleu
     And consulter agenda documentation documents à valider par le vérificateur
     And insérer code documents

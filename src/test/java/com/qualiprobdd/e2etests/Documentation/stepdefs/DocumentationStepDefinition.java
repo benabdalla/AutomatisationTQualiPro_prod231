@@ -8,6 +8,7 @@ import java.util.ArrayList;
 
 import java.util.List;
 
+import com.qualiprobdd.e2etests.audit.pages.ModuleAuditsPage;
 import io.cucumber.java.en.*;
 
 import org.openqa.selenium.By;
@@ -42,8 +43,29 @@ public class DocumentationStepDefinition {
     public DocumentationStepDefinition() {
         driver = Setup.driver;
         PageFactory.initElements(driver, DocumentationPage.class);
+        PageFactory.initElements(driver, ModuleAuditsPage.class);
     }
+    @When("cliquer  sur  ceration  modification   doc")
+    public void cliquer_sur_ceration_modification_doc() throws Exception {
+        Thread.sleep(3000);
+        JavascriptExecutor excouter = (JavascriptExecutor) driver;
+        excouter.executeScript("arguments[0].click()", ModuleAuditsPage.menuID);
+//		ModuleAuditsPage.menuID.click();
+        Thread.sleep(1000);
+        Common.AccéderModule(1,0,0, driver);
+        Common.AccéderModule(1,3,0, driver);
+        Thread.sleep(500);
 
+        JavascriptExecutor excouter2 = (JavascriptExecutor) driver;
+        excouter2.executeScript("arguments[0].click()",driver.findElement(By.id("ctl00_ContentPlaceHolder1_Ajouter")));
+        Thread.sleep(500);
+        Select select =new Select(driver.findElement(By.id("ctl00_ContentPlaceHolder1_List_TypeD")));
+        select.selectByValue("330");
+        Thread.sleep(500);
+
+driver.findElement(By.id("ctl00_ContentPlaceHolder1_Text_LibD")).sendKeys(Common.paragraphe(5,8));
+        Thread.sleep(500);
+    }
 
     @When("cliquer sur superviseur  au Rédacteur")
     public void cliquer_sur_superviseur_au_Rédacteur() {
@@ -103,38 +125,17 @@ public class DocumentationStepDefinition {
 
     @When("^choisir site lab$")
     public void choisir_site_lab() throws Throwable {
-        try {
 
-            DocumentationPage.siteID.isDisplayed();
-            System.out.println("site est   visible ");
-
-            Common.Exporter_visibilité("le site est visible");
-            String text = driver.findElement(By.id("ctl00_ContentPlaceHolder1_lbsite2")).getText();
-            if (text.indexOf('*') != -1) {
-                Common.Exporter_visibilité("le site est obligatoire");
-            } else {
-                Common.Exporter_visibilité("le site n'est pas obligatoire");
-
-            }
-        } catch (NoSuchElementException e) {
-            System.out.println("non selectionne  site ");
-
-            Common.Exporter_visibilité("le site est invisible");
-        }
         Thread.sleep(500);
-        try {
             Select select = new Select(DocumentationPage.siteID);
             //   select.selectByVisibleText(ExcelUtils.getCellData(1, 13));
-            Thread.sleep(500);
-            select.selectByValue("16");
-            System.out.println("selectionne  site ");
-        } catch (NoSuchElementException e) {
-            System.out.println("non selectionne  site ");
 
-            Common.Exporter_visibilité("le site est invisible");
-        }
-        Thread.sleep(500);
+            select.selectByValue("133");
 
+        Select sproc = new Select(driver.findElement(By.id("ctl00_ContentPlaceHolder1_lBProcessus_")));
+        //   select.selectByVisibleText(ExcelUtils.getCellData(1, 13));
+
+      sproc.selectByValue("99");
 
     }
 
@@ -411,7 +412,8 @@ public class DocumentationStepDefinition {
 
     @When("^cliquer sur Envoi diffusion bleu$")
     public void cliquer_sur_Envoi_diffusion_bleu() throws Throwable {
-        DocumentationModele.cliqueDiffusion();
+
+        DocumentationModele.cliqueDiffusion(driver);
     }
 
     @When("^consulter agenda documentation documents en attente de diffusion$")
