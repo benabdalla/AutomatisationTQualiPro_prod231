@@ -351,7 +351,7 @@ public void cliquer_Valider_du_produit_ajouté() throws Throwable {
 		Common.Exporter_champ_A_masquer("Fiche PNC: "+Num);
 		Common.Exporter_numFiche("Fiche PNC: "+Num);
 		ExcelUtils.setExcelFile(ModulePNCModel.Path, "PNC");
-		ExcelUtils.setCellData1(Num, ModulePNCModel.row , 15 , ModulePNCModel.Path) ;
+		ExcelUtils.setCellData1(Num, ModulePNCModel.row , 15 , ModulePNCModel.Path, "PNC") ;
 		Boolean vide = true ;
 		if(Num.contentEquals(""))
 		{

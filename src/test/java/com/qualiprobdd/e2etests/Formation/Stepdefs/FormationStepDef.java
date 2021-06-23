@@ -393,7 +393,7 @@ public class FormationStepDef {
         Actions action = new Actions(driver);
         action.moveToElement(FormationPage.NumFormationID).perform();
         ExcelUtils.setExcelFile(Path, "Formation");
-        ExcelUtils.setCellData1(FormationPage.NumFormationID.getText(), row, 11, Path);
+        ExcelUtils.setCellData1(FormationPage.NumFormationID.getText(), row, 11, Path,"Formation");
         Common.Exporter_visibilité("Fiche formaton:" + FormationPage.NumFormationID);
         Common.Exporter_champ_A_masquer("Fiche formation: " + FormationPage.NumFormationID);
         FormationModel.verifier_formation();

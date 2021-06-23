@@ -24,9 +24,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
-import org.sikuli.script.FindFailed;
-import org.sikuli.script.Pattern;
-import org.sikuli.script.Screen;
+
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -518,7 +516,7 @@ if(ok) {
         String st=ModuleAuditsPage.StateAuditID.getText();
         assertTrue(ModuleAuditsPage.StateAuditID.getText().contains("REALISE"));
         ExcelUtils.setExcelFile(Path, "Audit");
-    ExcelUtils.setCellData1(st,row, 27,Path);
+    ExcelUtils.setCellData1(st,row, 27,Path,"Audit");
 
     }
 
@@ -537,7 +535,7 @@ if(ok) {
         ModuleAuditsModel.CloturerAudit(driver, row);
     }
 
-    @Then("^consulter rapports$")
+  /*  @Then("^consulter rapports$")
     public void consulter_rapports() throws Throwable {
         Actions action = new Actions(driver);
         action.moveToElement(ModuleAuditsPage.NumAudit).perform();
@@ -561,7 +559,7 @@ if(ok) {
         Runtime.getRuntime().exec("C:\\Qualipro_Auto\\AutomatisationTQualiPro_23\\AutomatisationTQualiPro_23\\resources\\Scripts\\EnregistrerFichier.exe");
         Thread.sleep(1000);
 
-    }
+    }*/
 
     @Then("^verifier rapports$")
     public void verifier_rapports() throws Throwable {

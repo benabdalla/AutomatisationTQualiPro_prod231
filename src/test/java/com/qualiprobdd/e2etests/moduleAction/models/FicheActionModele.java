@@ -53,7 +53,7 @@ public class FicheActionModele {
 		Thread.sleep(2000);
 		String st = "Type Action Auto " + LocalDateTime.now().toString();
 		ExcelUtils.setExcelFile(Path, "Action");
-		ExcelUtils.setCellData1(st, row, 1, Path);
+		ExcelUtils.setCellData1(st, row, 1, Path,"Action");
 		FicheActionPage.wsaitype.sendKeys(st);
 		FicheActionPage.wnancastype.click();
 	}
@@ -106,7 +106,7 @@ Thread.sleep(1000);
 		Thread.sleep(2000);
 		String st = "Source Action Auto"+ LocalDateTime.now().toString();
 		ExcelUtils.setExcelFile(Path, "Action");
-		ExcelUtils.setCellData1(st, row, 0, Path);
+		ExcelUtils.setCellData1(st, row, 0, Path,"Action");
 		FicheActionPage.wource.sendKeys(st);
 	}
 
@@ -145,7 +145,7 @@ FicheActionPage.btnAjouterAction.click();
 		Thread.sleep(2000);
 		String st = "type de causes auto" + LocalDateTime.now().toString();
 		ExcelUtils.setExcelFile(Path, "Action");
-		ExcelUtils.setCellData1(st, row, 9, Path);
+		ExcelUtils.setCellData1(st, row, 9, Path,"Action");
 		FicheActionPage.wtypecaus.sendKeys(st);
 		FicheActionPage.btnValiderSousAction.click();
 
@@ -183,7 +183,7 @@ FicheActionPage.btnAjouterAction.click();
 		Thread.sleep(2000);
 		String st = "Priorité" + LocalDateTime.now().toString();
 		ExcelUtils.setExcelFile(Path, "Action");
-		ExcelUtils.setCellData1(st, row, 2, Path);
+		ExcelUtils.setCellData1(st, row, 2, Path,"Action");
 		FicheActionPage.wtypecaus.sendKeys(st);
 		FicheActionPage.btnValiderSousAction.click();
 
@@ -220,7 +220,7 @@ FicheActionPage.wretourSource.click();
 		Thread.sleep(2000);
 		String st = "Gravité " + LocalDateTime.now().toString();
 		ExcelUtils.setExcelFile(Path, "Action");
-		ExcelUtils.setCellData1(st, row, 3, Path);
+		ExcelUtils.setCellData1(st, row, 3, Path,"Action");
 		FicheActionPage.wsaitype.sendKeys(st);
 		FicheActionPage.wValidSource.click();
 
@@ -466,7 +466,7 @@ FicheActionPage.wretourSource.click();
 		FicheActionPage.designationId.sendKeys("désignation  action  simplifie "+Common.paragraphe(11,11));
 		
 		ExcelUtils.setExcelFile(Path, "Action");
-		ExcelUtils.setCellData1(FicheActionPage.designationId.getAttribute("value") , row ,11 , Path) ;
+		ExcelUtils.setCellData1(FicheActionPage.designationId.getAttribute("value") , row ,11 , Path,"Action") ;
 		informations.add(ExcelUtils.getCellData(1,11));
 	}
 	public static void saisirCausesPossibles() {
@@ -492,7 +492,7 @@ FicheActionPage.wretourSource.click();
 
 		FicheActionPage.descriptionObjetId.sendKeys(RandomValue.randomString(10));
 		ExcelUtils.setExcelFile(Path, "Action");
-		ExcelUtils.setCellData1(FicheActionPage.descriptionObjetId.getAttribute("value") , row ,12 , Path) ;
+		ExcelUtils.setCellData1(FicheActionPage.descriptionObjetId.getAttribute("value") , row ,12 , Path,"Action") ;
 		informations.add(ExcelUtils.getCellData(1,12));
 		
 	}
@@ -672,7 +672,7 @@ System.err.println("le responable   cloture   est    "+ExcelUtils.getCellData(1,
 		FicheActionPage.designationSousAction.sendKeys("désignation  action  simplifie "+Common.paragraphe(11,11));
 		i++;
 		ExcelUtils.setExcelFile(Path, "Action");
-		ExcelUtils.setCellData1(FicheActionPage.designationSousAction.getAttribute("value"), row ,18, Path) ;
+		ExcelUtils.setCellData1(FicheActionPage.designationSousAction.getAttribute("value"), row ,18, Path,"Action") ;
 		informations.add(ExcelUtils.getCellData(row,18));
 		
 	}

@@ -823,7 +823,7 @@ js.executeScript("arguments[0].click()",ModulePNCPage.menuID);
     		  ExcelUtils.setExcelFile(Path, "PNC");
     		  ModulePNCPage.numerolot.isDisplayed();
     		  ModulePNCPage.numerolot.sendKeys("210");
-    		  ExcelUtils.setCellData1( ModulePNCPage.numerolot.getText(),1,18,Path) ;
+    		  ExcelUtils.setCellData1( ModulePNCPage.numerolot.getText(),1,18,Path, "PNC") ;
   			Common.Exporter_champ_A_masquer("le champ numerolot est visible");
   			}
   			catch (NoSuchElementException e) {

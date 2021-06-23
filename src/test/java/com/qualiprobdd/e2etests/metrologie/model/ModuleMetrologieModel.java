@@ -58,7 +58,7 @@ public class ModuleMetrologieModel {
         System.out.println(" nom  machine   est   " + nomMachine);
         ModuleMetrologiePage.widMachine.sendKeys(nomMachine);
         ExcelUtils.setExcelFile(Path, "Metrologie");
-        ExcelUtils.setCellData1(nomMachine, row, 20, Path);
+        ExcelUtils.setCellData1(nomMachine, row, 20, Path,"Metrologie");
         ModuleMetrologiePage.wValideMachine.click();
         ModuleMetrologiePage.wretourm.click();
         ModuleMetrologiePage.wtext_machine.sendKeys(nomMachine);
@@ -80,7 +80,7 @@ public class ModuleMetrologieModel {
         System.out.println(" nom  machine   est   " + nomMachine);
         ModuleMetrologiePage.wetatEquip.sendKeys(nomMachine);
         ExcelUtils.setExcelFile(Path, "Metrologie");
-        ExcelUtils.setCellData1(nomMachine, row, 2, Path);
+        ExcelUtils.setCellData1(nomMachine, row, 2, Path,"Metrologie");
     }
 
     static ArrayList<String> l = new ArrayList<String>();
@@ -160,7 +160,7 @@ public class ModuleMetrologieModel {
         //ModuleMetrologiePage.widMachine.sendKeys(typeInt);
         Thread.sleep(800);
         ExcelUtils.setExcelFile(Path, "Metrologie");
-        ExcelUtils.setCellData1(typeInt, row, 21, Path);
+        ExcelUtils.setCellData1(typeInt, row, 21, Path,"Metrologie");
         Thread.sleep(800);
 
         ModuleMetrologiePage.wtypeIn.sendKeys(typeInt);
@@ -262,7 +262,7 @@ ModuleMetrologiePage.wAjoutOrg.click();
         System.out.println(" nom  organisme   est   " + typeInt);
         //ModuleMetrologiePage.widMachine.sendKeys(typeInt);
         ExcelUtils.setExcelFile(Path, "Metrologie");
-        ExcelUtils.setCellData1(typeInt, row, 27, Path);
+        ExcelUtils.setCellData1(typeInt, row, 27, Path,"Metrologie");
         ModuleMetrologiePage.worgV.sendKeys(typeInt);
 
         ModuleMetrologiePage.wvalideraddmachine.click();
@@ -286,7 +286,7 @@ ModuleMetrologiePage.wAjoutOrg.click();
         System.out.println(" nom  machine   est   " + typeInt);
         //ModuleMetrologiePage.widMachine.sendKeys(typeInt);
         ExcelUtils.setExcelFile(Path, "Metrologie");
-        ExcelUtils.setCellData1(typeInt, row, 21, Path);
+        ExcelUtils.setCellData1(typeInt, row, 21, Path,"Metrologie");
         ModuleMetrologiePage.wtypeIn.sendKeys(typeInt);
         ModuleMetrologiePage.wvalideraddmachine.click();
 
@@ -334,7 +334,7 @@ ModuleMetrologiePage.wAjoutOrg.click();
         String test = "test_Auto_" + RandomValue.randomString(10);
         ExcelUtils.setExcelFile(Path, "Metrologie");
         ModuleMetrologiePage.wequipmentcode.sendKeys(test);
-        ExcelUtils.setCellData1(test, row, 0, Path);
+        ExcelUtils.setCellData1(test, row, 0, Path,"Metrologie");
 
 
     }
@@ -343,7 +343,7 @@ ModuleMetrologiePage.wAjoutOrg.click();
         String test = "test_AUTO";
         ModuleMetrologiePage.wdesignation.sendKeys(test);
         ExcelUtils.setExcelFile(Path, "Metrologie");
-        ExcelUtils.setCellData1(test, row, 1, Path);
+        ExcelUtils.setCellData1(test, row, 1, Path,"Metrologie");
 
 
     }
@@ -387,7 +387,7 @@ ModuleMetrologiePage.wAjoutOrg.click();
         String test = "10";
         ModuleMetrologiePage.wserialnumber.sendKeys(test);
         ExcelUtils.setExcelFile(Path, "Metrologie");
-        ExcelUtils.setCellData1(test, row, 3, Path);
+        ExcelUtils.setCellData1(test, row, 3, Path,"Metrologie");
 
     }
 
@@ -396,7 +396,7 @@ ModuleMetrologiePage.wAjoutOrg.click();
         String test = "Tes_AUTO";
         ModuleMetrologiePage.wpreciasion.sendKeys(test);
         ExcelUtils.setExcelFile(Path, "Metrologie");
-        ExcelUtils.setCellData1(test, row, 4, Path);
+        ExcelUtils.setCellData1(test, row, 4, Path,"Metrologie");
 
     }
 
@@ -405,7 +405,7 @@ ModuleMetrologiePage.wAjoutOrg.click();
         String test = "Test_AUTO";
         ModuleMetrologiePage.wrange.sendKeys(test);
         ExcelUtils.setExcelFile(Path, "Metrologie");
-        ExcelUtils.setCellData1(test, row, 5, Path);
+        ExcelUtils.setCellData1(test, row, 5, Path,"Metrologie");
 
     }
 
@@ -414,7 +414,7 @@ ModuleMetrologiePage.wAjoutOrg.click();
         String test = "30";
         ModuleMetrologiePage.wecartmax.sendKeys(test);
         ExcelUtils.setExcelFile(Path, "Metrologie");
-        ExcelUtils.setCellData1(test, row, 6, Path);
+        ExcelUtils.setCellData1(test, row, 6, Path,"Metrologie");
 
     }
 
@@ -423,7 +423,7 @@ ModuleMetrologiePage.wAjoutOrg.click();
         String test = "Test_AUTO";
         ModuleMetrologiePage.wconsigne.sendKeys(test);
         ExcelUtils.setExcelFile(Path, "Metrologie");
-        ExcelUtils.setCellData1(test, row, 7, Path);
+        ExcelUtils.setCellData1(test, row, 7, Path,"Metrologie");
 
     }
 
@@ -442,7 +442,7 @@ ModuleMetrologiePage.wAjoutOrg.click();
             //ModuleMetrologiePage.wfournisseurRecherche.findElement(By.xpath("//*[@id=\"ctl00_ContentPlaceHolder1_GridView_disp_filter\"]/label/input")).sendKeys(test);
             ModuleMetrologiePage.wfournisseurRecherche.sendKeys(test);
             ExcelUtils.setExcelFile(Path, "Metrologie");
-            ExcelUtils.setCellData1(test, row, 8, Path);
+            ExcelUtils.setCellData1(test, row, 8, Path,"Metrologie");
             ModuleMetrologiePage.wsearch.click();
             Thread.sleep(1000);
             JavascriptExecutor je =(JavascriptExecutor) driver;
@@ -516,7 +516,7 @@ ModuleMetrologiePage.wAjoutOrg.click();
         ExcelUtils.setExcelFile(Path, "Metrologie");
         String test = "Test_Auto";
         ModuleMetrologiePage.wlocation.sendKeys(test);
-        ExcelUtils.setCellData1(test, row, 18, Path);
+        ExcelUtils.setCellData1(test, row, 18, Path,"Metrologie");
 
 
     }
@@ -574,7 +574,7 @@ ModuleMetrologiePage.wAjoutOrg.click();
         String machine = "machine_Met_" + RandomValue.randomString(10);
         ModuleMetrologiePage.waddmachine.sendKeys(machine);
 
-        ExcelUtils.setCellData1(machine, row, 20, Path);
+        ExcelUtils.setCellData1(machine, row, 20, Path,"Metrologie");
 
         ModuleMetrologiePage.wvalideraddmachine.click();
 
@@ -601,7 +601,7 @@ ModuleMetrologiePage.wAjoutOrg.click();
         source.selectByVisibleText(ExcelUtils.getCellData1(row, 21));
         String test = "10";
         ModuleMetrologiePage.woperationfrequence.sendKeys(test);
-        ExcelUtils.setCellData1(test, row, 23, Path);
+        ExcelUtils.setCellData1(test, row, 23, Path,"Metrologie");
         //ModuleMetrologiePage.woperationalerte.sendKeys("30");
         executor.executeScript("arguments[0].click()", ModuleMetrologiePage.woperationvalider);
 
@@ -630,7 +630,7 @@ ModuleMetrologiePage.wAjoutOrg.click();
         Thread.sleep(1000);
         ModuleMetrologiePage.woperationlocation.sendKeys(test);
         ExcelUtils.setExcelFile(Path, "Metrologie");
-        ExcelUtils.setCellData1(test, row, 25, Path);
+        ExcelUtils.setCellData1(test, row, 25, Path,"Metrologie");
         Select source = new Select(ModuleMetrologiePage.woperationreporttype);
         source.selectByVisibleText(ExcelUtils.getCellData1(row, 26));
         //source.selectByValue("34");
@@ -639,16 +639,16 @@ ModuleMetrologiePage.wAjoutOrg.click();
         //sourc.selectByValue("31");
         String test1 = "test_Auto";
         ModuleMetrologiePage.woperationreportcomment.sendKeys(test1);
-        ExcelUtils.setCellData1(test1, row, 28, Path);
+        ExcelUtils.setCellData1(test1, row, 28, Path,"Metrologie");
         Select sourcee = new Select(ModuleMetrologiePage.woperationreportintervention);
         sourcee.selectByVisibleText(ExcelUtils.getCellData1(row, 29));
         //sourcee.selectByValue("1");
         String test2 = "Test_AUTO";
         String test3 = "Test__Auto";
         ModuleMetrologiePage.woperationreportdecision.sendKeys(test2);
-        ExcelUtils.setCellData1(test2, row, 31, Path);
+        ExcelUtils.setCellData1(test2, row, 31, Path,"Metrologie");
         ModuleMetrologiePage.woperationreportobservation.sendKeys(test3);
-        ExcelUtils.setCellData1(test3, row, 32, Path);
+        ExcelUtils.setCellData1(test3, row, 32, Path,"Metrologie");
         ModuleMetrologiePage.woperationreportvalider.click();
 
         //**************
@@ -744,30 +744,30 @@ ModuleMetrologiePage.wAjoutOrg.click();
         String test = "3";
         ModuleMetrologiePage.wnombrepiece.sendKeys(test);
         ExcelUtils.setExcelFile(Path, "Metrologie");
-        ExcelUtils.setCellData1(test, row, 37, Path);
+        ExcelUtils.setCellData1(test, row, 37, Path,"Metrologie");
         String test2 = "50";
         Thread.sleep(1000);
         ModuleMetrologiePage.wmesuredpiece.sendKeys(test2);
-        ExcelUtils.setCellData1(test2, row, 34, Path);
+        ExcelUtils.setCellData1(test2, row, 34, Path,"Metrologie");
         String test3 = "test_AUTO";
         ModuleMetrologiePage.wfolderref.sendKeys(test3);
-        ExcelUtils.setCellData1(test3, row, 35, Path);
+        ExcelUtils.setCellData1(test3, row, 35, Path,"Metrologie");
         String test4 = "test_AUTO";
         ModuleMetrologiePage.wcharacteristic.sendKeys(test4);
-        ExcelUtils.setCellData1(test4, row, 36, Path);
+        ExcelUtils.setCellData1(test4, row, 36, Path,"Metrologie");
         String test5 = "test_AUTO";
         ModuleMetrologiePage.wtolerance.sendKeys(test5);
-        ExcelUtils.setCellData1(test5, row, 39, Path);
+        ExcelUtils.setCellData1(test5, row, 39, Path,"Metrologie");
         String test6 = "test_AUTO";
         ModuleMetrologiePage.wbatch.sendKeys(test6);
-        ExcelUtils.setCellData1(test6, row, 40, Path);
+        ExcelUtils.setCellData1(test6, row, 40, Path,"Metrologie");
         ModuleMetrologiePage.wselect.click();
         //executor.executeScript("arguments[0].click()", ModuleMetrologiePage.wselect);
         String test7 = "sabrine bondka";
         ModuleMetrologiePage.wselectRecherche.sendKeys(test7);
         ModuleMetrologiePage.wbtnRecherche.click();
         ModuleMetrologiePage.woperateur.click();
-        ExcelUtils.setCellData1(test7, row, 42, Path);
+        ExcelUtils.setCellData1(test7, row, 42, Path,"Metrologie");
         ModuleMetrologiePage.wBTNVALIDER.click();
         ModuleMetrologiePage.wmesureop11.sendKeys("29");
         ModuleMetrologiePage.wmesureop22.sendKeys("27");

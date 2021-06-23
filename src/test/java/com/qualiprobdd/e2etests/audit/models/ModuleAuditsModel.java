@@ -80,7 +80,7 @@ excouter.executeScript("arguments[0].click()",ModuleAuditsPage.menuID);
 			Thread.sleep(500);
 		ExcelUtils.setExcelFile(Path, "Audit");
 
-		ExcelUtils.setCellData1(Sdate,row,28,Path);
+		ExcelUtils.setCellData1(Sdate,row,28,Path,"Audit");
 
 		/*ModuleAuditsPage.calendrierDID.click();
 		Thread.sleep(1000);
@@ -110,7 +110,7 @@ excouter.executeScript("arguments[0].click()",ModuleAuditsPage.menuID);
 
 		ExcelUtils.setExcelFile(Path, "Audit");
 
-        ExcelUtils.setCellData1(Sdate,row,29,Path);
+        ExcelUtils.setCellData1(Sdate,row,29,Path,"Audit");
 	/*	ModuleAuditsPage.calendrierFID.click();
 		Thread.sleep(1000);
 		ModuleAuditsPage.choixDateFID.click();*/
@@ -255,9 +255,9 @@ excouter.executeScript("arguments[0].click()",ModuleAuditsPage.menuID);
 		Thread.sleep(500);
 		numAudit= ModuleAuditsPage.NumAudit.getText();
 		ExcelUtils.setExcelFile(Path, "Audit");
-		ExcelUtils.setCellData1(numAudit, arg1, 15, Path);
+		ExcelUtils.setCellData1(numAudit, arg1, 15, Path,"Audit");
 		String date_création = driver.findElement(By.id("ctl00_ContentPlaceHolder1_datdebpre")).getAttribute("value");
-		ExcelUtils.setCellData1(date_création, arg1, 16, Path);
+		ExcelUtils.setCellData(date_création, arg1, 16);
 	}
 
 	public static void AjouterDocumentsAssocies() throws InterruptedException {
@@ -869,7 +869,7 @@ excouter.executeScript("arguments[0].click()",ModuleAuditsPage.menuID);
 			System.out.println(" action number       "+numAct);
 				Thread.sleep(1000L);
 
-				ExcelUtils.setCellData1(numAct,row,i+19,Path);
+				ExcelUtils.setCellData(numAct,row,i+19);
 				Thread.sleep(1000L);
 
 			}catch(NoSuchElementException e){

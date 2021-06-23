@@ -11,9 +11,7 @@ import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
-import org.sikuli.script.FindFailed;
-import org.sikuli.script.Pattern;
-import org.sikuli.script.Screen;
+
 
 import com.qualiprobdd.e2etests.moduleAction.models.FicheActionModele;
 import com.qualiprobdd.e2etests.moduleAction.models.ModeleActionModel;
@@ -229,7 +227,7 @@ public class ModeleActionStepdef {
 		FicheActionModele.validerAjout(driver);
 	}
 	
-	@When("^Exporter apercu action$")
+/*	@When("^Exporter apercu action$")
 	public void Exporter_apercu_action() throws Throwable {
 		ModeleActionModel.apercu_action(driver);
 		FicheActionPage.ExporterId.click();
@@ -259,7 +257,7 @@ public class ModeleActionStepdef {
 		}
 		Runtime.getRuntime().exec("C:\\Qualipro_Auto\\AutomatisationTQualiPro_23\\AutomatisationTQualiPro_23\\resources\\Scripts\\EnregistrerFichier.exe");
 		Thread.sleep(3000);
-	}
+	}*/
 
 	@Then("^vérifier les données importés$")
 	public void vérifier_si_tous_les_donneés_existe() throws Throwable {

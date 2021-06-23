@@ -99,7 +99,7 @@ public class EvaluationAspectModel {
         String   NumFichAsp=EvaluationAspectPage.widnumfich.getText();
         System.out.println(" num   de  fiche  est   "+NumFichAsp);
         ExcelUtils.setExcelFile(Path, "EvaluationAspect");
-        ExcelUtils.setCellData1(NumFichAsp,row, 5,Path);
+        ExcelUtils.setCellData1(NumFichAsp,row, 5,Path,"EvaluationAspect");
     }
 
 

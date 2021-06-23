@@ -60,7 +60,7 @@ public class FormationModel {
 		System.out.println("Type de thème st1 =  "+st);
 
 		ExcelUtils.setExcelFile(Path, "Formation");
-		ExcelUtils.setCellData1(st, row, 16, Path);
+		ExcelUtils.setCellData1(st, row, 16, Path,"Formation");
 		FormationPage.wsaisir_un_Type_de_thème.sendKeys(st);
 
 	}
@@ -105,7 +105,7 @@ public class FormationModel {
 		String st = " formation auto" + LocalDateTime.now().toString();
 		System.out.println("st1 =  "+st);
 		ExcelUtils.setExcelFile(Path, "Formation");
-		ExcelUtils.setCellData1(st, row, 3, Path);
+		ExcelUtils.setCellData1(st, row, 3, Path,"Formation");
 		FormationPage.wsaisir_un_Type_de_formation.sendKeys(st);
 
 
@@ -139,7 +139,7 @@ public class FormationModel {
 		System.out.println("SOCIETE st14 =  "+st);
 
 		ExcelUtils.setExcelFile(Path, "Formation");
-		ExcelUtils.setCellData1(st, row, 6, Path);
+		ExcelUtils.setCellData1(st, row, 6, Path,"Formation");
 		FormationPage.wsaisir_une_Société.sendKeys(st);
 	
 	}
@@ -186,7 +186,7 @@ public class FormationModel {
 		System.out.println("SOCIETE st15 =  "+st);
 
 		ExcelUtils.setExcelFile(Path, "Formation");
-		ExcelUtils.setCellData1(st, row, 17, Path);
+		ExcelUtils.setCellData1(st, row, 17, Path,"Formation");
 		FormationPage.wsaisir_type_de_critère_d_évaluation.sendKeys(st);
 
 	}
@@ -231,7 +231,7 @@ public class FormationModel {
 		System.out.println("Théme AUTO =  "+st);
 
 		ExcelUtils.setExcelFile(Path, "Formation");
-		ExcelUtils.setCellData1(st, row, 2, Path);
+		ExcelUtils.setCellData1(st, row, 2, Path,"Formation");
 		FormationPage.wsaisir_thèmes_de_formation.sendKeys(st);
 
 	}
@@ -285,7 +285,7 @@ public class FormationModel {
 		System.out.println("ORGANISME AUTO =  "+st);
 
 		ExcelUtils.setExcelFile(Path, "Formation");
-		ExcelUtils.setCellData1(st, row, 7, Path);
+		ExcelUtils.setCellData1(st, row, 7, Path,"Formation");
 		FormationPage.wsaisir_Organisme_de_Formation.sendKeys(st);
 	}
 

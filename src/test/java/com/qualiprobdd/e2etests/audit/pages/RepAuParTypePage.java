@@ -35,6 +35,10 @@ public class RepAuParTypePage extends AbstractPage {
     static final String dataetAnnu = "ctl00_ContentPlaceHolder1_Tb_date2";
     static final String typAuditProgrammAnnu="ctl00_ContentPlaceHolder1_laud";
     static final  String  champAuditProgrammAnnu="ctl00_ContentPlaceHolder1_ListBox2";
+    static  final   String chamAuditParEtat="ctl00_ContentPlaceHolder1_ListBox1";
+    @FindBy(how = How.ID, using = chamAuditParEtat)
+    public static WebElement wchamAuditParEtat;
+
     @FindBy(how = How.ID, using = dateProgAnnu)
     public static WebElement wdateProgAnnu;
     @FindBy(how = How.ID, using = dataetAnnu)

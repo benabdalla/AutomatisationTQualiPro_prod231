@@ -216,7 +216,7 @@ public class IncidentStepDef {
 		Common.Exporter_visibilité("Fiche Incident Environnemental:"+Num);
 		Common.Exporter_champ_A_masquer("Fiche Incident Environnemental: "+Num);
 		ExcelUtils.setExcelFile(Path, "IncidentEnv");
-		ExcelUtils.setCellData1(Num,row,7,Path) ;
+		ExcelUtils.setCellData1(Num,row,7,Path,"IncidentEnv") ;
 		assertTrue(!(num.getText().equals("")));
 		System.out.println("La fiche incident N:"+ Num + "est Ajoute");
 		NumIncident=Num;

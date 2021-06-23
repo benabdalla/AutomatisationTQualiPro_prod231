@@ -16,9 +16,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
-import org.sikuli.script.FindFailed;
-import org.sikuli.script.Pattern;
-import org.sikuli.script.Screen;
+
 import org.testng.annotations.Test;
 
 import com.qualiprobdd.e2etests.Documentation.pages.DocumentationPage;

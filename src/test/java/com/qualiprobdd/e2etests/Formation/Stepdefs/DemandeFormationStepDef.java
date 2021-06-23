@@ -157,7 +157,7 @@ public class DemandeFormationStepDef {
 	public void saisir_les_objectifs_de_formation() throws Throwable {
 		ExcelUtils.setExcelFile(Path, "DemandeFormation");
 		String obj="objectif formation "+ Common.paragraphe(12,10);
-				ExcelUtils.setCellData1(obj,row,6,Path);
+				ExcelUtils.setCellData1(obj,row,6,Path,"DemandeFormation");
 		DemandeFormationModel.saisir_objectif(obj);
 	}
 

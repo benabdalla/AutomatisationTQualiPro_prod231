@@ -191,6 +191,7 @@ public class RepAuParTypeModel {
         ExcelUtils.setExcelFile(Path, "Audit");
         String value = ExcelUtils.getCellData(arg1, 5);
         Select select = new Select(RepAuParTypePage.wtypeAuditTaux);
+
         select.selectByVisibleText(value);
 
 

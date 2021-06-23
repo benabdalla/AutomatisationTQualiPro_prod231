@@ -1,8 +1,6 @@
 package com.qualiprobdd.e2etests.util;
 
-import org.apache.poi.ss.usermodel.CellValue;
-import org.apache.poi.ss.usermodel.DataFormatter;
-import org.apache.poi.ss.usermodel.FormulaEvaluator;
+import org.apache.poi.ss.usermodel.*;
 import org.apache.poi.xssf.usermodel.XSSFCell;
 import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
@@ -22,7 +20,7 @@ public class ExcelUtils {
 	private static XSSFCell Cell;
 
 	private static XSSFRow Row;
-	
+
 
 	// This method is to set the File path and to open the Excel file, Pass Excel
 	// Path and Sheetname as Arguments to this method
@@ -46,7 +44,7 @@ public class ExcelUtils {
 			throw (e);
 
 		}
-		 
+
 	}
 
 	// This method is to read the test data from the Excel cell, in this we are
@@ -63,7 +61,7 @@ public class ExcelUtils {
 /***********get formula cell ******************************/
 			FormulaEvaluator evaluator = ExcelWBook.getCreationHelper().createFormulaEvaluator();
 			CellValue cellValue = evaluator.evaluate(Cell);
-	 
+
 			if(Cell.getCellType() == Cell.CELL_TYPE_FORMULA) {
 				//System.out.println("Cell formula value is  --> " + cellValue.getNumberValue()); // La valeur int de la formule
 				int intCellData = (int) cellValue.getNumberValue();
@@ -83,7 +81,7 @@ public class ExcelUtils {
 		}
 
 	}
-	
+
 	public static String getCellData1(int RowNum, int ColNum) throws Exception {
 
 		try {
@@ -94,7 +92,7 @@ public class ExcelUtils {
 /***********get formula cell ******************************/
 			FormulaEvaluator evaluator = ExcelWBook.getCreationHelper().createFormulaEvaluator();
 			CellValue cellValue = evaluator.evaluate(Cell);
-	 
+
 			if(Cell.getCellType() == Cell.CELL_TYPE_FORMULA) {
 				//System.out.println("Cell formula value is  --> " + cellValue.getNumberValue()); // La valeur int de la formule
 				float intCellData = (float) cellValue.getNumberValue();
@@ -114,9 +112,9 @@ public class ExcelUtils {
 		}
 
 	}
-	
+
 	//This method return numéro de ligne of given user
-	
+
 	public static int GetLigneData(String User) throws Exception
 	{
 		try {
@@ -127,7 +125,7 @@ public class ExcelUtils {
 				detecteduser=getCellData(num_ligne,1);
 			}while(!(detecteduser.equals(User)||detecteduser.equals("")));
 			if(detecteduser.equals(User))
-			{		
+			{
 				return num_ligne;
 			}
 			else
@@ -139,8 +137,8 @@ public class ExcelUtils {
 			return 0;
 
 		}
-		
-		
+
+
 	}
 	public static int GetLigneData1(String User) throws Exception
 	{
@@ -152,7 +150,7 @@ public class ExcelUtils {
 				detecteduser=getCellData(num_ligne,0);
 			}while(!(detecteduser.equals(User)||detecteduser.equals("")));
 			if(detecteduser.equals(User))
-			{		
+			{
 				return num_ligne;
 			}
 			else
@@ -164,8 +162,8 @@ public class ExcelUtils {
 			return 0;
 
 		}
-		
-		
+
+
 	}
 
 	// This method is to write in the Excel cell, Row num and Col num are the
@@ -208,32 +206,54 @@ public class ExcelUtils {
 		}
 
 	}
-	
-	public static void setCellData1(String Result, int RowNum, int ColNum, String Path) throws Exception {
+
+    public static void setCellData1(String Result, int RowNum, int ColNum, String Path,String name) throws Exception {
+
+        try {
+
+			setExcelFile(Path,name);
+			System.out.println("file name = "+ExcelWSheet.getSheetName());
+
+            ExcelWSheet.getRow(RowNum).createCell(ColNum).setCellValue(Result);
+            // here we need to specify where you want to save file
+
+            // Constant variables Test Data path and Test Data file name
+
+            FileOutputStream fileOut = new FileOutputStream(Path);
+
+     ExcelWBook.write(fileOut);
+
+
+
+            fileOut.close();
+
+        } catch (Exception e) {
+
+            throw (e);
+
+        }
+
+    }
+
+	/*public static void setCellData1(String Result, int RowNum, int ColNum, String Path) throws Exception {
 
 		try {
+			FileInputStream inputStream = new FileInputStream(new File(Path));
+			Workbook workbook = WorkbookFactory.create(inputStream);
+				Row row = ExcelWSheet.createRow(RowNum);
+					org.apache.poi.ss.usermodel.Cell cell = row.createCell(ColNum);
+			cell.setCellValue(Result);
+			FileOutputStream outputStream = new FileOutputStream(Path);
+			workbook.write(outputStream);
+			outputStream.close();
 
-			ExcelWSheet.getRow(RowNum).createCell(ColNum).setCellValue(Result);
-			// here we need to specify where you want to save file
-
-			// Constant variables Test Data path and Test Data file name
-
-			FileOutputStream fileOut = new FileOutputStream(Path);
-
-			ExcelWBook.write(fileOut);
-
-			fileOut.flush();
-
-			fileOut.close();
-
-		} catch (Exception e) {
-
-			throw (e);
-
+		} catch (IOException | EncryptedDocumentException
+				| InvalidFormatException ex) {
+			ex.printStackTrace();
 		}
 
-	}
-	
-	
+	}*/
+
+
 
 }

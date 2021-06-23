@@ -367,7 +367,7 @@ public void vérfier_etat_action_agenda() throws Throwable {
 		assertTrue(vide);
 		NumAction=Num;
 		ExcelUtils.setExcelFile(Path, "Action");
-		ExcelUtils.setCellData1(Num, row,7, Path) ;
+		ExcelUtils.setCellData1(Num, row,7, Path,"Action") ;
 		Common.Exporter_numFiche(" num Action   "+Num);
 
 	}
@@ -641,7 +641,7 @@ public void vérfier_etat_action_agenda() throws Throwable {
 			}
 		FicheActionPage.tauxRealisation.clear();
 		FicheActionPage.tauxRealisation.sendKeys("85");
-		ExcelUtils.setCellData1(taux, row,20,Path);
+		ExcelUtils.setCellData1(taux, row,20,Path,"Action");
 		FicheActionModele.saisirDepenses();
 		FicheActionModele.saisirCommentaire();
 		//FicheActionModele.rattacher_intervenant(driver);
@@ -651,13 +651,15 @@ public void vérfier_etat_action_agenda() throws Throwable {
 		c.add(Calendar.DATE,0);
 		dt = c.getTime();
 		String Sdate = dateFormat.format(dt);
-		ExcelUtils.setCellData1(Sdate, row ,19,Path);
+		ExcelUtils.setExcelFile(Path, "Action");
+		ExcelUtils.setCellData1(Sdate, row ,19,Path,"Action");
 		JavascriptExecutor jse = (JavascriptExecutor)driver;
 		jse.executeScript("arguments[1].value = arguments[0];",Sdate, FicheActionPage.SaisieDRealisation);
 		
 		Thread.sleep(500);
 		String datesaisie=driver.findElement(By.id("ctl00_ContentPlaceHolder1_TextBox9")).getAttribute("value");
-		ExcelUtils.setCellData1(datesaisie, row ,23,Path);
+		ExcelUtils.setExcelFile(Path, "Action");
+		ExcelUtils.setCellData1(datesaisie, row ,23,Path,"Action");
 		Thread.sleep(500L);
 		
 		FicheActionModele.validerRealisationAction(driver);
@@ -704,7 +706,7 @@ public void vérfier_etat_action_agenda() throws Throwable {
 		FicheActionPage.NouvTxReaId.clear();
 		Thread.sleep(1000L);
 		FicheActionPage.NouvTxReaId.sendKeys(taux);
-		ExcelUtils.setCellData1(taux, row ,20,Path);
+		ExcelUtils.setCellData1(taux, row ,20,Path,"Action");
 		FicheActionPage.CommNouvTxReaId.sendKeys("nécessite verification");
 		Thread.sleep(500L);
 		FicheActionPage.VldNvTxReaId.click();
@@ -716,7 +718,7 @@ public void vérfier_etat_action_agenda() throws Throwable {
 		FicheActionPage.TauxEffiID.sendKeys(taux);
 		Thread.sleep(500L);
 
-		ExcelUtils.setCellData1(taux, row ,22,Path);
+		ExcelUtils.setCellData1(taux, row ,22,Path,"Action");
 		Thread.sleep(500L);
 
 		FicheActionPage.rapportEffiID.clear();
@@ -727,9 +729,10 @@ public void vérfier_etat_action_agenda() throws Throwable {
 
 		String Sdate=driver.findElement(By.id("ctl00_ContentPlaceHolder1_TextBox10")).getAttribute("value");
 		Thread.sleep(500L);
-
-		ExcelUtils.setCellData1(Sdate, row ,21,Path);
-		ExcelUtils.setCellData1(Sdate, row ,19,Path);
+		ExcelUtils.setExcelFile(Path, "Action");
+		ExcelUtils.setCellData1(Sdate, row ,21,Path,"Action");
+		ExcelUtils.setExcelFile(Path, "Action");
+		ExcelUtils.setCellData1(Sdate, row ,19,Path,"Action");
 		Thread.sleep(1000L);
 		FicheActionModele.validerSuivi(driver);
 
@@ -870,7 +873,7 @@ System.err.println("element   not  found ");
 			e.printStackTrace();
 		}*/
 		Runtime.getRuntime().exec("E:\\qualipro\\trunk\\AutomatisationTQualiPro_prod231\\resources\\Scripts\\EnregistrerFichier.exe");
-		Thread.sleep(1000);
+		Thread.sleep(3000);
 	}
 
 	@Then("^Vérifier (\\d+) et (\\d+)$")
@@ -1206,8 +1209,8 @@ System.err.println("element   not  found ");
 	@When("^Consulter reporting liste des actions réalisées par personne$")
 	public void consulter_reporting_liste_des_actions_réalisées_par_personne() throws Throwable {
 	//	driver.get("http://10.66.245.30/w23/action/rapport/FilteEtatnbreactionparpersonne.aspx");
-		Thread.sleep(1000L);	
-		
+		Thread.sleep(1000L);
+
 		  JavascriptExecutor executor = (JavascriptExecutor)driver;
 	      executor.executeScript("arguments[0].click();",FicheActionPage.wreporting.findElement(By.cssSelector("#menu_rep > div > div > ul > li > a > img")) );
 	      JavascriptExecutor executor1 = (JavascriptExecutor)driver;
@@ -1237,6 +1240,8 @@ System.err.println("element   not  found ");
 public void récupérer_reporting(String arg1) throws Throwable {
 	FicheActionModele.initializer_filtre_Bilan_action(Path,arg1);
 }
+
+
 }
 
 	

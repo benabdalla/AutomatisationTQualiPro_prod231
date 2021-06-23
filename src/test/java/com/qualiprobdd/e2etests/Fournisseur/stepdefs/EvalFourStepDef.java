@@ -97,7 +97,7 @@ public class EvalFourStepDef {
 		Actions action = new Actions(driver);
 		action.moveToElement(NumFiche).perform();
 		ExcelUtils.setExcelFile(Path, "EvalFRN");
-		ExcelUtils.setCellData1(NumFiche.getText(), row , 2 , Path) ;
+		ExcelUtils.setCellData1(NumFiche.getText(), row , 2 , Path,"EvalFRN") ;
 		Common.Exporter_visibilité("Fiche évaluation fournisseur:"+NumFiche.getText());
 		Common.Exporter_champ_A_masquer("Fiche évaluation fournisseur: "+NumFiche.getText());
 		assertTrue(!(NumFiche.getText().equals("")));

@@ -4,8 +4,11 @@ import com.qualiprobdd.e2etests.authentification.pages.AuthentificationPage;
 
 import com.qualiprobdd.e2etests.util.ExcelUtils;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.interactions.Action;
+import org.openqa.selenium.interactions.Actions;
 
 public class AuthentificationModel {
 
@@ -48,9 +51,8 @@ public class AuthentificationModel {
 
     public static void clickOuvrirSession(WebDriver driver) throws Exception {
 
-
-        JavascriptExecutor jse = (JavascriptExecutor) driver;
-        jse.executeScript("arguments[0].click()", AuthentificationPage.Valider);
+JavascriptExecutor jse=(JavascriptExecutor)driver;
+  jse.executeScript("arguments[0].click()", AuthentificationPage.Valider);
         //AuthentificationPage.Valider.click();
 
         Thread.sleep(5000L);

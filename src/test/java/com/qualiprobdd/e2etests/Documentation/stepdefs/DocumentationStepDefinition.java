@@ -635,7 +635,7 @@ driver.findElement(By.id("ctl00_ContentPlaceHolder1_Text_LibD")).sendKeys(Common
         String superviseur = "ctl00_ContentPlaceHolder1_LbSuperviseur";
         String superviseurdoc = "AUTO";
 
-        Common.F(driver, url, type, typeDocument, superviseur, superviseurdoc);
+       // Common.F(driver, url, type, typeDocument, superviseur, superviseurdoc);
 
         Thread.sleep(1000);
         String name1 = "BilanDocInternes";
@@ -666,7 +666,7 @@ driver.findElement(By.id("ctl00_ContentPlaceHolder1_Text_LibD")).sendKeys(Common
 
         informations.add(superviseurdoc);
 
-        Common.F(driver, url, code, codeDocument, superviseur, superviseurdoc);
+        //Common.F(driver, url, code, codeDocument, superviseur, superviseurdoc);
         Thread.sleep(2000);
         String name1 = "BilanDocEnCours";
         // Common.Vérifier_données(name1,codeDocument);

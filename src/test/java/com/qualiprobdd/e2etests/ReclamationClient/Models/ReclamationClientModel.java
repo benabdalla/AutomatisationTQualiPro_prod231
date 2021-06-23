@@ -186,7 +186,7 @@ public class ReclamationClientModel {
 				Thread.sleep(500);
 				Thread.sleep(500);
 
-				ExcelUtils.setCellData1(st, 1, k, Path);
+				ExcelUtils.setCellData1(st, 1, k, Path, "PNC");
 
 				System.out.println(ExcelUtils.getCellData(1, k));
 
@@ -630,7 +630,7 @@ public class ReclamationClientModel {
 		NumFich=ReclamationClientPage.NumReclamationId.getText();
 		System.out.println(ReclamationClientPage.NumReclamationId.getText());
 		ExcelUtils.setExcelFile(Path, "ReclamationClient");
-		ExcelUtils.setCellData1(NumFich, row , 9 , Path) ;
+		ExcelUtils.setCellData1(NumFich, row , 9 , Path, "PNC") ;
 		Common.Exporter_visibilité("Fiche réclamation Client:"+NumFich);
 		Common.Exporter_champ_A_masquer("Fiche réclamation Client: "+NumFich);
 		Thread.sleep(500L);

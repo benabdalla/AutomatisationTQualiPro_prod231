@@ -13,7 +13,7 @@ import org.testng.annotations.Test;
         plugin = {"html:target/cucumber-html-report", "json:target/cucumber.json", "junit:target/cucumber.xml",
         },
         dryRun= false,
-        tags ={"@ProgramDAudit"})
+        tags ={"@RecupperatinDeDonne or @EtatParAudit or @EtatDesAuditsParTypeTousFich or @TauxDeChargesParAuditeur or @ProgramDAudit"})
       // tags = {"@RecupperatinDeDonne or @EtatDesAuditsParType"})
 public class AuditReportingParType extends AbstractTestNGCucumberTests {
 

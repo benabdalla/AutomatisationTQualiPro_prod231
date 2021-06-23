@@ -11,10 +11,7 @@ import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.Select;
-import org.sikuli.script.FindFailed;
-import org.sikuli.script.Pattern;
-import org.sikuli.script.Screen;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -189,7 +186,7 @@ public class IndicateurStepDefinition {
 		WebElement N_indicateur = driver.findElement(By.id("ctl00_ContentPlaceHolder1_TextBox1"));
 		N_Indicateur = N_indicateur.getText();		
 			ExcelUtils.setExcelFile(Path, "Indicateur");
-			ExcelUtils.setCellData1(N_indicateur.getText(), row , 10 , Path) ;
+			ExcelUtils.setCellData1(N_indicateur.getText(), row , 10 , Path,"Indicateur") ;
 			Common.Exporter_visibilité("Fiche indicateur:"+ N_Indicateur);
 			Common.Exporter_champ_A_masquer("Fiche indicateur: "+ N_Indicateur);
 			Common.Exporter_numFiche("Fiche indicateur:"+N_Indicateur);
@@ -333,7 +330,7 @@ public class IndicateurStepDefinition {
 	}
 
 
-	@When("^vérifier l apercu$")
+/*	@When("^vérifier l apercu$")
 	public void vérifier_l_apercu() throws Throwable {
 		Thread.sleep(1000);
 		driver.findElement(By.id("ctl00_ContentPlaceHolder1_LinkButton11")).click();
@@ -380,7 +377,7 @@ public class IndicateurStepDefinition {
 		Thread.sleep(1000);
 		driver.findElement(By.id("ctl00_ContentPlaceHolder1_LinkButton8")).click();
 	}
-
+*/
 
 	@When("^cocher indicateur non cloturé en fin de fiche$")
 	public void cocher_indicateur_non_cloturé_en_fin_de_fiche() throws Throwable {

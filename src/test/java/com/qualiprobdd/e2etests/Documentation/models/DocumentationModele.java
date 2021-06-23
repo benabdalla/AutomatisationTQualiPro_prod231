@@ -141,7 +141,7 @@ jse.executeScript("arguments[0].click()",DocumentationPage.redacteurSuperviseurI
         Date date1 = formatter.parse(dateEnvoi);
         dateEnvoi = formatter.format(date1);
         ExcelUtils.setExcelFile(Path, "Documentation");
-        ExcelUtils.setCellData1(dateEnvoi, i, 3, Path);
+        ExcelUtils.setCellData1(dateEnvoi, i, 3, Path,"Documentation");
         System.out.println("Date est: " + dateEnvoi);
         assertEquals(DateSystem, dateEnvoi);
     }
@@ -249,7 +249,7 @@ Thread.sleep(1000);
         Thread.sleep(500);
         String CodeDocument = DocumentationPage.codeDocumentsEncoursID.getAttribute("value");
         ExcelUtils.setExcelFile(Path, "Documentation");
-        ExcelUtils.setCellData1(CodeDocument, i, 4, Path);
+        ExcelUtils.setCellData1(CodeDocument, i, 4, Path,"Documentation");
     }
 
     public static void cliqueValiderBas(WebDriver driver) throws Throwable {

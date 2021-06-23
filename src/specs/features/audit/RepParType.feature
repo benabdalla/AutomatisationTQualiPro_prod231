@@ -79,3 +79,40 @@ Feature: Qualipro- Test reporting audit
 
 
 
+
+  @EtatDesDauditsParChamp
+  Scenario Outline: Qualipro-En tant qu utilisateur je veux reporter l'etat des audits par champ existant
+    Given Ouvrir le site QualiProWeb
+    And saisir Login et PW
+    And cliquer sur ouvrir une session
+    When saisir <example> Audit a traiter par type
+    And consulter reporting de l'etat des audits par champ
+    When saisir Champ  de l'etat des audits par champ
+    When Date prévue entre
+    And  clique sur valider rep
+    Then Exporter tracabilite
+    Then vérifier est reporté de l'etat des audits par champ
+    Then delete file
+    Examples:
+      | example |
+      | 1       |
+
+  @EtatParAudit
+  Scenario Outline: Qualipro-En tant qu utilisateur je veux reporter l'etat des audits par champ existant
+    Given Ouvrir le site QualiProWeb
+    And saisir Login et PW
+    And cliquer sur ouvrir une session
+    When saisir <example> Audit a traiter par type
+    And consulter reporting de audit par état
+    When saisir Type Audit
+    When  saisir  type  Audit  par etat
+    When Date prévue entre
+    And  clique sur valider rep
+    Then Exporter tracabilite
+   # Then vérifier est reporté de audit par état
+    Then vérifier est reporté de l'etat des audits par champ
+    Then delete file
+    Examples:
+      | example |
+      | 1       |
+

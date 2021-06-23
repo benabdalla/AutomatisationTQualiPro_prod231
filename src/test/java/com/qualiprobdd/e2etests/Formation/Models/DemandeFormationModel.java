@@ -267,9 +267,9 @@ try {
 	}
 	
 	public static void ajouter_participant(WebDriver driver)throws Throwable {
-		//DemandeFormationPage.AjtParID.click();
-		//DemandeFormationPage.RechParID.sendKeys("AUTO");
-		//DemandeFormationPage.VldRechParID.click();
+		DemandeFormationPage.AjtParID.click();
+		DemandeFormationPage.RechParID.sendKeys("AUTO");
+		DemandeFormationPage.VldRechParID.click();
 		//added by rahma
 		JavascriptExecutor  executor = (JavascriptExecutor)driver;
 		executor.executeScript("arguments[0].click()", DemandeFormationPage.AjtParID);
@@ -312,6 +312,7 @@ try {
 			System.out.println("responsable:" + Column_Table.get(1).getText() );
 			}
 		}
+		System.out.println(" tous  le  respo   " + EnsResponsables );
 			
     }
    

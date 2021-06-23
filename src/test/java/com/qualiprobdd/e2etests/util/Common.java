@@ -20,9 +20,7 @@ import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.sikuli.script.FindFailed;
-import org.sikuli.script.Pattern;
-import org.sikuli.script.Screen;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -459,7 +457,7 @@ public class Common {
 	 *
 	 */
 
-	public static void F(WebDriver driver, String url, String code, String f1, String libelle, String libelledoc)
+/*	public static void F(WebDriver driver, String url, String code, String f1, String libelle, String libelledoc)
 			throws BadLocationException, InterruptedException {
 
 		driver.get(url);
@@ -487,7 +485,7 @@ public class Common {
 			e.printStackTrace();
 		}
 
-	}
+	}*/
 
 	public static void remplir_filtre_by_id(WebDriver driver, String identifiant, String contenu)
 			throws BadLocationException, InterruptedException, Throwable {

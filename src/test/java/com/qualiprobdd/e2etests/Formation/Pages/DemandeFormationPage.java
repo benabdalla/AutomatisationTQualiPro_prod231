@@ -42,7 +42,7 @@ public class DemandeFormationPage {
    	
    	final static String BOUTON_VL_ID ="ctl00_ContentPlaceHolder1_LinkButton17";
    	final static String NUM_DFORMATION_ID ="ctl00_ContentPlaceHolder1_Text_Nform";
-   	
+
    	final static String RESP_TABLE_ID="ctl00_ContentPlaceHolder1_GridView1";
    	final static String CPT_AGD_ID="ctl00_label_lb_form";
    	final static String MEN_AGD_XPATH="//*[@id=\"ctl00_lb_form\"]";

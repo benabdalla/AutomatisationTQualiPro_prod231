@@ -18,8 +18,7 @@ import org.testng.annotations.Test;
 				strict = true,
 				features = { "src/specs/features/Formation/DemandeFormation.feature" }, 
 				monochrome =true,
-			    plugin = {"html:target/cucumber-html-report", "json:target/cucumber.json", "junit:target/cucumber.xml",
-			    "com.cucumber.listener.ExtentCucumberFormatter:target/cucumber-reports/report.html" },
+			    plugin = {"html:target/cucumber-html-report", "json:target/cucumber.json", "junit:target/cucumber.xml"},
 				tags= {"@DemandeFormation"},
                 dryRun= false
 )

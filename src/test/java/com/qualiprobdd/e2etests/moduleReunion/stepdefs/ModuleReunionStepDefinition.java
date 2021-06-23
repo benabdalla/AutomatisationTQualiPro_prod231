@@ -27,9 +27,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.sikuli.script.FindFailed;
-import org.sikuli.script.Pattern;
-import org.sikuli.script.Screen;
+
 
 import com.qualiprobdd.e2etests.moduleReunion.models.ModuleReunionModel;
 import com.qualiprobdd.e2etests.moduleReunion.pages.ModuleReunionPage;
@@ -522,7 +520,7 @@ public class ModuleReunionStepDefinition {
 		ModuleReunionPage.pvActionID.click();
 	}
 
-	@When("^Exporter le rapport$")
+	/*@When("^Exporter le rapport$")
 	public void exporter_le_rapport() throws Throwable {
 		JavascriptExecutor  executor = (JavascriptExecutor)driver;
 		executor.executeScript("arguments[0].click()", ModuleReunionPage.exportPVActionID);
@@ -546,7 +544,7 @@ public class ModuleReunionStepDefinition {
 		}
 		Runtime.getRuntime().exec("C:\\Qualipro_Auto\\AutomatisationTQualiPro_23\\AutomatisationTQualiPro_23\\resources\\Scripts\\EnregistrerFichier.exe");
 		Thread.sleep(3000);
-	}
+	}*/
 
 	@Then("^vérifier si tous les donneés existe$")
 	public void vérifier_si_tous_les_donneés_existe() throws Throwable {

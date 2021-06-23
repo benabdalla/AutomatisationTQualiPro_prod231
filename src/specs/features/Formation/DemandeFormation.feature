@@ -4,7 +4,6 @@ Feature: Qualipro-Test fiche Demande Formation
 
   @DemandeFormation
   Scenario Outline: Qualipro- Test remplir et valider fiche demande de formation
-
     Given Ouvrir le site QualiProWeb
     And  saisir Login et PW
     And  cliquer sur ouvrir une session
@@ -40,9 +39,6 @@ Feature: Qualipro-Test fiche Demande Formation
     And  Insérer Numéro fiche formation En Excel
     And  consulter aperçu fiche demande de formation
     And  exporter l’aperçu
-
-
-
     Examples:
       | Numero example |
      | 1              |

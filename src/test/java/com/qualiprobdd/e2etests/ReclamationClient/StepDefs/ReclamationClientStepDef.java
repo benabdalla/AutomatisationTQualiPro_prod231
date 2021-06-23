@@ -11,9 +11,7 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
-import org.sikuli.script.FindFailed;
-import org.sikuli.script.Pattern;
-import org.sikuli.script.Screen;
+
 import java.util.concurrent.TimeUnit;
 import static org.junit.Assert.assertTrue;
 public class ReclamationClientStepDef {
@@ -674,7 +672,7 @@ public class ReclamationClientStepDef {
 	}
 
 
-	@When("^exporter le rapport reclamation$")
+/*	@When("^exporter le rapport reclamation$")
 	public void exporter_le_rapport_reclamation() throws Throwable {
 		ReclamationClientPage.ExporterID.click();
 		Screen s = new Screen();
@@ -696,7 +694,7 @@ public class ReclamationClientStepDef {
 		}
 
 		Runtime.getRuntime().exec("C:\\Qualipro_Auto\\AutomatisationTQualiPro_23\\AutomatisationTQualiPro_23\\resources\\Scripts\\EnregistrerFichier.exe");
-	}
+	}*/
 
 	@Then("^vérifier \"([^\"]*)\"  existent$")
 	public void vérifier_existent(String arg1) throws Throwable {

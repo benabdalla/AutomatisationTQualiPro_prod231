@@ -44,7 +44,7 @@ public class ReportingEnvironnementModel {
         System.out.println("Aspect st15 =  "+st);
 
         ExcelUtils.setExcelFile(Path, "Reporting-env");
-        ExcelUtils.setCellData1(st, row, 4, Path);
+        ExcelUtils.setCellData1(st, row, 4, Path,"Reporting-env");
         ReportingEnvironnementPage.wsélectionner_Aspect.sendKeys(st);
 
     }

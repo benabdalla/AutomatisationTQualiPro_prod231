@@ -66,7 +66,7 @@ public class SatisPersonnelStepdef {
 		String code="test_Auto_Perso_code_"+RandomValue.randomString(14);
 		SatisfClientModel.saisir_code_questionnaire(code,21);
 		SatisfClientPage.CodeQuestionnaireId.sendKeys(code);
-		ExcelUtils.setCellData1(code,num, 0, Path);
+		ExcelUtils.setCellData1(code,num, 0, Path,"Questionnaire");
 	}
 
 	@When("^Saisir titre questionnaire personnel$")
@@ -77,7 +77,7 @@ public class SatisPersonnelStepdef {
 		SatisfClientModel.saisir_titre_questionnaire(titre,22);
 		SatisfClientPage.TitreQuestionnaireId.sendKeys(titre);
 
-		ExcelUtils.setCellData1(titre,num, 0, Path);
+		ExcelUtils.setCellData1(titre,num, 0, Path,"Questionnaire");
 
 	}
 	@Then("^vérifier ajout de la fiche questionnaire personnel$")
@@ -86,9 +86,9 @@ public class SatisPersonnelStepdef {
 		Thread.sleep(200);
 		int num=SatisfClientstepDef.row+1;
 		String code=SatisfClientPage.CodeQuestionnaireId.getAttribute("value");
-		ExcelUtils.setCellData1(code,num,0,Path);
+		ExcelUtils.setCellData1(code,num,0,Path,"Questionnaire");
 		String titre = SatisfClientPage.TitreQuestionnaireId.getAttribute("value");
-		ExcelUtils.setCellData1(titre,num,1,Path);
+		ExcelUtils.setCellData1(titre,num,1,Path,"Questionnaire");
 		Common.Exporter_numFiche("fiche questionnaire personnel"+code);
 	}
 	@When("^Choisir questionnaire personnel$")
@@ -145,14 +145,14 @@ public class SatisPersonnelStepdef {
 		SatisfClientPage.RefEnqueteId.sendKeys(ref);
 
 		SatisfClientModel.saisir_ref_enquete(ref,18);
-		ExcelUtils.setCellData1(ref, num,0,Path);
+		ExcelUtils.setCellData1(ref, num,0,Path,"EnquetePersonnel");
 	}
 	
 	@Then("^vérifier ajout de la fiche enquête personnel$")
 	public void vérifier_ajout_de_la_fiche_enquête_personnel() throws Throwable {
 		ExcelUtils.setExcelFile(Path, "EnquetePersonnel");
 		int num=SatisfClientstepDef.row;
-		ExcelUtils.setCellData1(SatisfClientPage.RefEnqueteId.getAttribute("value"),num,0,Path);
+		ExcelUtils.setCellData1(SatisfClientPage.RefEnqueteId.getAttribute("value"),num,0,Path,"EnquetePersonnel");
 	}
 	
 	@When("^Ajouter coefficients des questions jauges personnel$")

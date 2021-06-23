@@ -23,10 +23,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.Select;
-import org.sikuli.script.FindFailed;
-import org.sikuli.script.Pattern;
-import org.sikuli.script.Screen;
+
 
 import com.qualiprobdd.e2etests.Client.Page.SatisfClientPage;
 import com.qualiprobdd.e2etests.Client.models.SatisfClientModel;
@@ -83,7 +80,7 @@ public class SatisfClientstepDef {
 		ExcelUtils.setExcelFile(Path, "Questionnaire");
 		
 		String code="Test_Auto_Stai_Client1_"+RandomValue.randomString(15);
-		ExcelUtils.setCellData1(code, row, 0, Path);
+		ExcelUtils.setCellData1(code, row, 0, Path,"Questionnaire");
 		Thread.sleep(500);
 
 		SatisfClientPage.CodeQuestionnaireId.sendKeys(code);
@@ -100,7 +97,7 @@ public class SatisfClientstepDef {
 		SatisfClientModel.saisir_titre_questionnaire(titre,19);
 		Thread.sleep(500);
 		SatisfClientPage.TitreQuestionnaireId.sendKeys(titre);
-	ExcelUtils.setCellData1(titre, row, 1, Path);
+	ExcelUtils.setCellData1(titre, row, 1, Path,"Questionnaire");
 		
 		
 
@@ -116,9 +113,9 @@ public class SatisfClientstepDef {
 		ExcelUtils.setExcelFile(Path, "Questionnaire");
 		Thread.sleep(200);
 		String code=SatisfClientPage.CodeQuestionnaireId.getAttribute("value");
-		ExcelUtils.setCellData1(code,row,0,Path);
+		ExcelUtils.setCellData1(code,row,0,Path,"Questionnaire");
 		String titre = SatisfClientPage.TitreQuestionnaireId.getAttribute("value");
-		ExcelUtils.setCellData1(titre,row,1,Path);
+		ExcelUtils.setCellData1(titre,row,1,Path,"Questionnaire");
 	}
 
 	@Then("^Ajouter introduction$")
@@ -156,7 +153,7 @@ public class SatisfClientstepDef {
 		executor.executeScript("arguments[0].click()", SatisfClientPage.ApercuQuestionnaireId);
 	}
 
-	@Then("^Exporter aperçu$")
+/*	@Then("^Exporter aperçu$")
 	public void exporter_aperçu() throws Throwable {
 		Thread.sleep(1000);
 		WebElement need= driver.findElement(By.id("IconImg_CrystalReportViewer1_toptoolbar_export"));
@@ -183,7 +180,7 @@ public class SatisfClientstepDef {
 		Runtime.getRuntime().exec("C:\\Qualipro_Auto\\AutomatisationTQualiPro_23\\AutomatisationTQualiPro_23\\resources\\Scripts\\EnregistrerFichier.exe");
 		Thread.sleep(3000);
 	 
-	}
+	}*/
 
 	@Then("^Vérifier la cohérence des données questionnaire$")
 	public void vérifier_la_cohérence_des_données_questionnaire() throws Throwable {
@@ -276,7 +273,7 @@ public class SatisfClientstepDef {
 		SatisfClientModel.saisir_ref_enquete(ref,15);
 		Thread.sleep(500);
 		SatisfClientPage.RefEnqueteId.sendKeys(ref);
-		ExcelUtils.setCellData1(ref, row, 0, Path);
+		ExcelUtils.setCellData1(ref, row, 0, Path,"EnqueteClient");
 
 		
 	}

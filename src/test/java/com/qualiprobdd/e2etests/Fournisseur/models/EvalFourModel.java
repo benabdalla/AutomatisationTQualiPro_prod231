@@ -367,15 +367,15 @@ public class EvalFourModel {
 
 							 	ExcelUtils.setExcelFile(Path,"CritèreTypeProduit");
 
-								 ExcelUtils.setCellData1(ExcelUtils.getCellData1(1,2),1,4,Path);
+								 ExcelUtils.setCellData1(ExcelUtils.getCellData1(1,2),1,4,Path,"CritèreTypeProduit");
 								 Thread.sleep(2000);
 
-								 ExcelUtils.setCellData1(ExcelUtils.getCellData1(2,2),2,4,Path);
+								 ExcelUtils.setCellData1(ExcelUtils.getCellData1(2,2),2,4,Path,"CritèreTypeProduit");
 
 								 randomNum =  (int)(Math.random() *5);
 								 System.out.println("le critère  random egal "+randomNum);
 
-								 ExcelUtils.setCellData1(String.valueOf(randomNum),1,2,Path);
+								 ExcelUtils.setCellData1(String.valueOf(randomNum),1,2,Path,"CritèreTypeProduit");
 								 cellIneed3.clear();
 							 cellIneed3.sendKeys(String.valueOf(randomNum));}
 
@@ -384,7 +384,7 @@ public class EvalFourModel {
 								 randomNum =  (int)(Math.random() *5);
 								 System.out.println("le critère  random 2 egal "+randomNum);
 								 Thread.sleep(2000);
-								 ExcelUtils.setCellData1(String.valueOf(randomNum),2,2,Path);
+								 ExcelUtils.setCellData1(String.valueOf(randomNum),2,2,Path,"CritèreTypeProduit");
 								 cellIneed3.clear();
 								 Thread.sleep(2000);
 								 cellIneed3.sendKeys(String.valueOf(randomNum));}
@@ -557,7 +557,7 @@ catch (NoSuchElementException exp){
 		String str = arg1.replaceAll(numcode, newcode);
 		EvalFourPage.nomTypPdtID.sendKeys(str);
 		ExcelUtils.setExcelFile(Path, "EvalFRN");
-		ExcelUtils.setCellData1(str,row,1,Path);
+		ExcelUtils.setCellData1(str,row,1,Path,"EvalFRN");
 		
 	}
 

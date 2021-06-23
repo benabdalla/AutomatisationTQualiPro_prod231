@@ -220,7 +220,7 @@ public void consulter_Sous_Module_Liste_des_incidents_sécurité() throws Throwa
 		Common.Exporter_visibilité("Fiche Incident sécurité:"+Num);
 		Common.Exporter_champ_A_masquer("Fiche Incident sécurité: "+Num);
 		ExcelUtils.setExcelFile(Path, "IncidentSec");
-		ExcelUtils.setCellData1(Num,row,6,Path) ;
+		ExcelUtils.setCellData1(Num,row,6,Path,"IncidentSec") ;
 		assertTrue(!(num.getText().equals("")));
 		System.out.println("La fiche incident sécurité N:"+ Num + "est Ajoute");
 		Common.Exporter_numFiche("La fiche incident sécurité N:"+ Num );

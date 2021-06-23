@@ -68,7 +68,7 @@ public class RisqueOppModele {
 		String st = RandomValue.randomString(10);
 		System.out.println(" object" + st);
 		RisqueOppPage.wobject.sendKeys(st);
-		ExcelUtils.setCellData1(st, row, 11, Path);
+		ExcelUtils.setCellData1(st, row, 11, Path, "RisqueOpp");
 	}
 
 	public static void saisir_Objectif(WebDriver driver, int row) throws Exception {
@@ -83,7 +83,7 @@ public class RisqueOppModele {
 				RisqueOppPage.wobjectif.sendKeys(st);
 				Common.Exporter_visibilité("l'activité est visible");
 
-				ExcelUtils.setCellData1(st, row, 10, Path);
+				ExcelUtils.setCellData1(st, row, 10, Path, "RisqueOpp");
 
 				String text = driver.findElement(By.id("ctl00_ContentPlaceHolder1_Label_obj")).getText();
 				if (text.indexOf('*') != -1) {
@@ -117,7 +117,7 @@ public class RisqueOppModele {
 				RisqueOppPage.Wsource.sendKeys(st);
 				System.out.println(" _Source_Cause" + st);
 
-				ExcelUtils.setCellData1(st, row, 12, Path);
+				ExcelUtils.setCellData1(st, row, 12, Path, "PNC");
 
 				String text = driver.findElement(By.id("ctl00_ContentPlaceHolder1_Label_cause")).getText();
 				if (text.indexOf('*') != -1) {
@@ -146,7 +146,7 @@ public class RisqueOppModele {
 			if (RisqueOppPage.wevenment.isDisplayed()) {
 				RisqueOppPage.wevenment.sendKeys(st);
 				System.out.println(" Evènement_Contexte" + st);
-				ExcelUtils.setCellData1(st, row, 13, Path);
+				ExcelUtils.setCellData1(st, row, 13, Path, "RisqueOpp");
 
 				String text = driver.findElement(By.id("ctl00_ContentPlaceHolder1_Label_cont")).getText();
 				if (text.indexOf('*') != -1) {
@@ -178,7 +178,7 @@ public class RisqueOppModele {
 			if (RisqueOppPage.Wenjeu.isDisplayed()) {
 				System.out.println(" enjeu" + st);
 				RisqueOppPage.Wenjeu.sendKeys(st);
-				ExcelUtils.setCellData1(st, row, 15, Path);
+				ExcelUtils.setCellData1(st, row, 15, Path, "RisqueOpp");
 
 				String text = driver.findElement(By.id("ctl00_ContentPlaceHolder1_Label31")).getText();
 				if (text.indexOf('*') != -1) {
@@ -433,7 +433,7 @@ public class RisqueOppModele {
 		Assert.assertTrue(Ok, "fiche ne  pas   crée");
 	
 
-		ExcelUtils.setCellData1(Numfich, row, 14, Path);
+		ExcelUtils.setCellData1(Numfich, row, 14, Path, "RisqueOpp");
 		// WebDriverWait wait = new WebDriverWait(driver,60);
 
 		/*
@@ -536,7 +536,7 @@ public class RisqueOppModele {
 			String st = RandomValue.randomString(150);
 
 			driver.findElement(By.id("ctl00_ContentPlaceHolder1_tb_decision_com")).sendKeys(st);
-			ExcelUtils.setCellData1(st, row, 17, Path);
+			ExcelUtils.setCellData1(st, row, 17, Path, "RisqueOpp");
 
 			JavascriptExecutor executor8 = (JavascriptExecutor) driver;
 			executor8.executeScript("arguments[0].click()",
@@ -574,7 +574,7 @@ public class RisqueOppModele {
 
 		System.out.println(" numero  ficher risque " + RisqueOppPage.WNumfiche.getText());
 
-		ExcelUtils.setCellData1(RisqueOppPage.WNumfiche.getText(), row, 14, Path);
+		ExcelUtils.setCellData1(RisqueOppPage.WNumfiche.getText(), row, 14, Path, "RisqueOpp");
 		Thread.sleep(500);
 
 		JavascriptExecutor executor2 = (JavascriptExecutor) driver;
