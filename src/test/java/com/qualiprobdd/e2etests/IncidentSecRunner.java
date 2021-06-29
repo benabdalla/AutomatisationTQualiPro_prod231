@@ -15,10 +15,10 @@ monochrome =true,
 strict = true,
 features = { "src/specs/features/Sécurité/IncidentSec.feature" }, plugin = {
 		"html:target/cucumber-html-report", "json:target/cucumber.json", "junit:target/cucumber.xml",
-"com.cucumber.listener.ExtentCucumberFormatter:target/cucumber-reports/report.html" },
+ },
 dryRun= false,
-		tags= {"@CréationFicheIncidentSec or @ValidationFicheIncidentSec or @DécisionFicheIncidentSec or @TraitementFicheIncidentSec or @ClotureFicheIncidentSec"}
-)
+		tags= {"@CréationFicheIncidentSec or @ValidationFicheIncidentSec or @ValidationFicheIncidentSec or @DécisionFicheIncidentSec or @TraitementFicheIncidentSec or @ClotureFicheIncidentSec"}
+)//@ValidationFicheIncidentSec or @ValidationFicheIncidentSec or @DécisionFicheIncidentSec or @TraitementFicheIncidentSec or @ClotureFicheIncidentSec
 
 public class IncidentSecRunner extends AbstractTestNGCucumberTests {
 	@Parameters({"language","browsername"}) 

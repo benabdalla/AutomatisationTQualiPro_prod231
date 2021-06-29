@@ -150,7 +150,7 @@ public class IncidentSecPage {
 	final static String RAP_CLOT_INC_ID="ctl00_ContentPlaceHolder1_tb_comm";
 	final static String RAP_CLOT_INC_ID2="ctl00_ContentPlaceHolder1_Txt_RAP_CLOT";
 	final static String VLD_CLOT_INC_ID="ctl00_ContentPlaceHolder1_LinkButton_Clot";
-	final static String VLD_CLOT_INC_ID2="ctl00_ContentPlaceHolder1_Lk_CLOT";
+	final static String VLD_CLOT_INC_ID2="ctl00_ContentPlaceHolder1_LinkButton_Clot";
 	
 	
 	

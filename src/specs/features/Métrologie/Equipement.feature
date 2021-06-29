@@ -2,7 +2,7 @@ Feature: Qualipro- Test fiche Equipement
   En tant que utilisateur je souhaite remplir une fiche Equipement
 
   @Paramétrage
-  Scenario Outline: Création  fiche   Equipement
+  Scenario Outline: Création parametrage de  fiche   Equipement
     Given Ouvrir le site QualiProWeb
     When saisir Login et PW
     When cliquer sur ouvrir une session

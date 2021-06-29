@@ -300,7 +300,7 @@ try {
 	}
     
    public static void Recuperer_RV(){
-    	
+
     	EnsResponsables= new ArrayList();
 		List<WebElement> rows_Table = DemandeFormationPage.RespTableID.findElements(By.tagName("tr"));
 		int rowCount= rows_Table.size();
@@ -308,11 +308,14 @@ try {
 			List<WebElement> Column_Table = rows_Table.get(i).findElements(By.tagName("td"));
 			if(Column_Table.size()!=0)
 			{
-			EnsResponsables.add(Column_Table.get(2).getText());
+				Column_Table.get(2).getText();
+				System.out.println("Column_Table.get(2).getText() "+Column_Table.get(2).getText());
+			EnsResponsables.add(Column_Table.get(1).getText());
 			System.out.println("responsable:" + Column_Table.get(1).getText() );
 			}
 		}
 		System.out.println(" tous  le  respo   " + EnsResponsables );
+	   //*[@id="ctl00_ContentPlaceHolder1_GridView1"]/tbody/tr/td[2]
 			
     }
    

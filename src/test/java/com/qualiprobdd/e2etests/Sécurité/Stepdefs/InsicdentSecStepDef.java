@@ -300,7 +300,11 @@ public void consulter_Incident_à_valider(int arg1) throws Throwable {
 	
 }
 
-
+	@When("consulter {int} Incident securite  à valider")
+	public void consulter_Incident_securite_à_valider(Integer int1) {
+		// Write code here that turns the phrase above into concrete actions
+		throw new io.cucumber.java.PendingException();
+	}
 
 
 	@When("^saisir \"([^\"]*)\" incident securite à prendre$")

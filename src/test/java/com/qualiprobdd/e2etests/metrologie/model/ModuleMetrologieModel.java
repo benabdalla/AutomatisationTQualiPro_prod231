@@ -206,11 +206,11 @@ public class ModuleMetrologieModel {
 
         JavascriptExecutor js4 = (JavascriptExecutor) driver;
      //   js4.executeScript("arguments[0].click()", driver.findElement(By.id("ctl00_ContentPlaceHolder1_LinkButton_selectemp")));
-        ModuleMetrologiePage.wtabRech.findElement(By.tagName("input")).sendKeys("MILA");
-        ModuleMetrologiePage.wGRidPerson.findElement(By.xpath("//*[@id=\"ctl00_ContentPlaceHolder1_GridView18_wrapper\"]/div[2]/div/table/tbody/tr[1]/td[1]")).
-                findElement(By.tagName("input")).click();
+        ModuleMetrologiePage.wtabRech.findElement(By.tagName("input")).sendKeys("a");
+      Thread.sleep(1000);
+        driver.findElement(By.id("ctl00_ContentPlaceHolder1_GridView_Informes")).findElement(By.xpath("//*[@id=\"ctl00_ContentPlaceHolder1_GridView_Informes\"]/tbody/tr[1]/td[1]")).findElement(By.tagName("input")).click();
 
-        ModuleMetrologiePage.wValiderPersonner.click();
+       // ModuleMetrologiePage.wValiderPersonner.click();
         Thread.sleep(1000);
         ModuleMetrologiePage.wgroupeTyp.click();
         for (int i = 1; i <= 10; i++) {
@@ -495,7 +495,7 @@ ModuleMetrologiePage.wAjoutOrg.click();
     public static void choisir_un_site_historique(int row) throws Throwable {
         ExcelUtils.setExcelFile(Path, "Metrologie");
         Select source = new Select(ModuleMetrologiePage.wsite);
-        source.selectByValue("15");
+        source.selectByValue("133");
        // source.selectByVisibleText(ExcelUtils.getCellData1(row, 16));
 
 

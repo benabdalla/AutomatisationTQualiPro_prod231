@@ -780,9 +780,9 @@ JavascriptExecutor executor4 = (JavascriptExecutor) driver;
 			 executor.executeScript("arguments[0].click()", FormationPage.AgdID);
 			 //FormationPage.AgdID.click();
 			 Thread.sleep(1000L);
-			 boolean Test=isElementPresent(By.id("Span4"),driver);
+			 boolean Test=isElementPresent(By.id("ctl00_ContentPlaceHolder1_num4"),driver);
 			 Thread.sleep(1000L);
-		
+
 			 if(Test==false)
 			 {
 				 //added by rahma
@@ -950,8 +950,9 @@ JavascriptExecutor executor4 = (JavascriptExecutor) driver;
 		     wait.until(ExpectedConditions.visibilityOf(FormationPage.VolEvalForID));
 			 executor.executeScript("arguments[0].click()", FormationPage.VolEvalForID);
 			 //FormationPage.VolEvalForID.click();
-			 FormationPage.RechFichForID.sendKeys(NumFich);
-			 WebElement Element=FormationPage.PosfichForID.findElement(By.tagName("a"));
+			 FormationPage.RechFichForID.findElement(By.tagName("input")).sendKeys(NumFich);
+			Thread.sleep(1000);
+			 WebElement Element=FormationPage.PosfichForID.findElement(By.xpath("//*[@id=\"ctl00_ContentPlaceHolder1_GridView3\"]/tbody/tr/td[1]")).findElement(By.tagName("a"));
 			 executor.executeScript("arguments[0].click()", Element);
 			 //Element.click();
 			 Thread.sleep(1000L);
@@ -961,7 +962,7 @@ JavascriptExecutor executor4 = (JavascriptExecutor) driver;
 			 //added by rahma
 			 //FormationPage.EditFichForID.click();
 			 JavascriptExecutor  executor = (JavascriptExecutor)driver;
-			 executor.executeScript("arguments[0].click()", FormationPage.EditFichForID);
+		//	 executor.executeScript("arguments[0].click()", FormationPage.EditFichForID);
 			// Thread.sleep(1000L);
 			// FormationPage.VolEnrForID.click();
 			// Thread.sleep(1000L);
@@ -982,12 +983,21 @@ JavascriptExecutor executor4 = (JavascriptExecutor) driver;
 				int i=1;
 				 while(i<Elements.size()) 
 				 {
-					WebElement cellIneed = FormationPage.TableEvalForID.findElement(By.xpath("//*[@id=\"ctl00_ContentPlaceHolder1_GridView8\"]/tbody/tr["+i+"]/td[3]"));
-					WebElement cellIneed1 = cellIneed.findElement(By.tagName("input"));
-					int note =RandomValue.randomInt(100);
-					String str1 = Integer.toString(note);
-					cellIneed1.sendKeys(str1);
-					i++;
+					WebElement cellIneed = FormationPage.TableEvalForID.findElement(By.xpath("//*[@id=\"ctl00_ContentPlaceHolder1_GridView_Efficacite\"]/tbody/tr["+i+"]/td[3]"));
+				 cellIneed.findElement(By.tagName("a")).click();
+					Thread.sleep(500);
+
+					// WebElement cellIneed2 = FormationPage.TableEvalForID.findElement(By.xpath("//*[@id=\"ctl00_ContentPlaceHolder1_GridView_Efficacite\"]/tbody/tr["+i+"]/td[4]"));
+					// WebElement cellIneed22 = cellIneed2.findElement(By.tagName("input"));
+					 while(i<Elements.size()) {
+						 int note = RandomValue.randomInt(100);
+						 String str1 = Integer.toString(note);
+						// cellIneed1.sendKeys(str1);
+						 Thread.sleep(500);
+					 }
+				///	 cellIneed22.sendKeys(Common.paragraphe(5,8));
+
+					 i++;
 				 }}
 			 
 		 }
@@ -1021,7 +1031,9 @@ JavascriptExecutor executor4 = (JavascriptExecutor) driver;
 			 {
 				 //FormationPage.VolEvalFroidID.click();
 				 executor.executeScript("arguments[0].click()", FormationPage.VolEvalFroidID);
-				 FormationPage.RechFichFroidID.sendKeys(NumFich);
+				 FormationPage.RechFichForID.findElement(By.tagName("input")).sendKeys(NumFich);
+				 Thread.sleep(1000);
+
 				 Thread.sleep(1000L);
 				 boolean Test1=isElementPresent(By.xpath("//*[@id=\"ctl00_ContentPlaceHolder1_GridView3\"]/tbody/tr/td[1]"),driver);
 				 System.out.println(Test1);
@@ -1035,7 +1047,7 @@ JavascriptExecutor executor4 = (JavascriptExecutor) driver;
 			 
 				 }else 
 				 {
-					 WebElement Element=FormationPage.PosFichFroidID.findElement(By.tagName("a"));
+					 WebElement Element=FormationPage.PosfichForID.findElement(By.xpath("//*[@id=\"ctl00_ContentPlaceHolder1_GridView3\"]/tbody/tr/td[1]")).findElement(By.tagName("a"));
 					 executor.executeScript("arguments[0].click()", Element);
 					 //Element.click();
 					 //Thread.sleep(1000L);
@@ -1085,7 +1097,7 @@ JavascriptExecutor executor4 = (JavascriptExecutor) driver;
 		 public static void saisir_rapport(WebElement Element) throws Throwable
 		 {
 			 WebElement cellIneed1 =  Element.findElement(By.tagName("input"));
-			 cellIneed1.sendKeys(RandomValue.randomString(10));
+			 cellIneed1.sendKeys(Common.paragraphe(8,8));
 		 }
 		 
 		 public static void valider_qualification(WebElement Element) throws Throwable
@@ -1101,8 +1113,9 @@ JavascriptExecutor executor4 = (JavascriptExecutor) driver;
 
 			 //cellIneed12.click();
 			 Thread.sleep(500);
-				Runtime.getRuntime().exec("E:\\qualipro\\trunk\\AutomatisationTQualiPro_prod\\resources\\Scripts\\joindreFichier1.exe");
+				Runtime.getRuntime().exec("E:\\qualipro\\trunk\\AutomatisationTQualiPro_prod231\\resources\\Scripts\\joindreFichier1.exe");
 				 Thread.sleep(1000);
+
 		 }
 		 
 		 public static void evaluer_participant_afroid(WebDriver driver) throws Throwable

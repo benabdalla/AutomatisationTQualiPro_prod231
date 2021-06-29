@@ -29,7 +29,7 @@ Feature: Qualipro- Test demande de création document
     And saisir Login et PW
     And cliquer sur ouvrir une session
     When   cliquer  sur  ceration  modification   doc
-   # When Consulter boite de dialogue
+   When Consulter boite de dialogue
     #And cliquer sur Rédacteur au superviseur
     #And Saisir <Type document>
 

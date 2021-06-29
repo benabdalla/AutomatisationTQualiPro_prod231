@@ -109,8 +109,7 @@ Feature: Qualipro- Test fiche formation
     Examples:
       | Numero example |
       | 1              |
-      | 1              |
-      | 1              |
+
      #|2|
      #|6|
 
@@ -119,7 +118,6 @@ Feature: Qualipro- Test fiche formation
   Scenario Outline: En tant que déclencheur ou ayant accès en modification sur la fiche formation,
   je souhaite confirmer la réalisation  de la formation afin d’informer les participants,
   les responsables d’évaluation à chaud  et à froid et ou le formateur
-
     Given Ouvrir le site QualiProWeb
     And  saisir Login et PW
     And  cliquer sur ouvrir une session
@@ -157,7 +155,7 @@ Feature: Qualipro- Test fiche formation
 
     Examples:
       | Participant | fiche formation |
-      | "TESTAUTO2" | 1               |
+      | "AUTO1"     | 1               |
 
   @EvaluationFormateur
   Scenario Outline: En tant que formateur ou personne habilité à introduire évaluation formateur,

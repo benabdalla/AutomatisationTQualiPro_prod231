@@ -25,7 +25,12 @@ import javax.swing.text.BadLocationException;
 public class Test {
 	public static void main(String[] args) throws IOException, BadLocationException {
 
+		String  s="0,00";
+		String  s2=s.replace(",",".");
+		System.out.println(s2);
+		float f = Float.valueOf(s2.trim()).floatValue();
 
+		System.out.println(f);
 
 } }
 

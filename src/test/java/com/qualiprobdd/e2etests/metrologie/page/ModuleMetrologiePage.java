@@ -132,6 +132,7 @@ public class ModuleMetrologiePage extends AbstractPage {
     final static String tabTypIn = "ctl00_ContentPlaceHolder1_GridView1";
     final static String tabRech = "ctl00_ContentPlaceHolder1_GridView_Informes_filter";
     final static String GRidPerson = "ctl00_ContentPlaceHolder1_GridView18";
+
     final static String ValiderPersonner = "ctl00_ContentPlaceHolder1_LinkButton_ValiderEmp";
     final static String groupeTyp = "ctl00_ContentPlaceHolder1_LinkButton_selectgpe";
     final static String groupTable = "ctl00_ContentPlaceHolder1_GridView_Groupe";

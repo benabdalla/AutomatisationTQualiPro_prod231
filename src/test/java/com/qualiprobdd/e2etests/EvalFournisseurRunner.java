@@ -17,8 +17,8 @@ import org.testng.annotations.Test;
 		features = {"src/specs/features/Fournisseur/EvaluationFournisseur.feature"},
 		monochrome =true,
 		plugin = {"html:target/cucumber-html-report", "json:target/cucumber.json", "junit:target/cucumber.xml",
-		"com.cucumber.listener.ExtentCucumberFormatter:target/cucumber-reports/report.html" },
-		tags = {"@CreationFicheEvaluation" },
+		 },
+		tags = {"@CreationFicheEvaluation or @Evaluationfournisseur" },
 				//",@Evaluationfournisseur"},
 		//tags = {"@CréationFicheAutomatique"},
 		dryRun= false

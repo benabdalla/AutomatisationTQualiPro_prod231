@@ -425,7 +425,12 @@ public class IncidentModel {
 		executor.executeScript("arguments[0].click()", IncidentPage.SPIncAVldId);
 
 	   Thread.sleep(500);
-	   IncidentPage.RechIncAVldId.sendKeys(num);
+	   try{
+		   IncidentPage.RechIncAVldId.sendKeys(num);
+		}catch (NoSuchElementException exp){
+		   driver.findElement(By.xpath("//*[@id=\"ctl00_ContentPlaceHolder1_GridView3_filter\"]/label/input")).sendKeys(num);
+	   }
+
 	   Thread.sleep(500);
 	   IncidentPage.GridIncAVldId.findElement(By.xpath("//*[@id=\"ctl00_ContentPlaceHolder1_GridView1\"]/tbody/tr/td[1]")).findElement(By.tagName("a")).click();
 

@@ -457,8 +457,11 @@ public class EvalFourModel {
 			System.out.println("critere 2" + n2);
 				System.out.println("nnote golbal" );
 				float gbl = Float.parseFloat(nnote);
-				float gbl1 = Float.parseFloat(n1.getText());
-				float gbl2 = Float.parseFloat(n1.getText());
+				String   s2=n1.getText().trim().replace(",",".");
+				float gbl1 = Float.parseFloat(s2);
+			String   s3=n2.getText().trim().replace(",",".");
+
+			float gbl2 = Float.parseFloat(s3);
 			ExcelUtils.setExcelFile(Path, "CritèreTypeProduit");
 			String nn1 =ExcelUtils.getCellData1(1,4);
 			String nn2 =ExcelUtils.getCellData1(2,4);
@@ -530,9 +533,15 @@ catch (NoSuchElementException exp){
         	 WebElement n2 = EvalFourPage.GridEvaluationID.findElement(By.xpath("//*[@id=\"ctl00_ContentPlaceHolder1_GridView2\"]/tbody/tr[2]/td[3]")).findElement(By.tagName("span"));
 
 			 System.out.println("nnote golbal"+note);
+
 			 float  gbl=Float.parseFloat(nnote);
-			 float  gbl1=Float.parseFloat(n1.getText());
-			 float  gbl2=Float.parseFloat(n2.getText());
+			 System.out.println(" n1 "+n1.getText().trim());
+			 String n11=n1.getText().trim();
+			 String  s2=n11.replace(",",".");
+			 float  gbl1=Float.valueOf(s2.trim()).floatValue();
+			 String  n22=n2.getText().trim();
+			 String  s3=n22.replace(",",".");
+			 float  gbl2=Float.valueOf(s3.trim()).floatValue();
 			 System.out.println("note1 "+ gbl1);
 			 System.out.println("note2 "+ gbl2);
 			 assertEquals(gbl,(gbl1+gbl2)/2);

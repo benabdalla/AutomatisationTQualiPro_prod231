@@ -88,7 +88,7 @@ public class FormationPage {
 	final static String STAT_REA_ID="ctl00_ContentPlaceHolder1_text_etat";
 	
 	final static String AGD_ID="ctl00_lb_form";
-	final static String VOL_EVAL_CHD_ID="Span4";
+	final static String VOL_EVAL_CHD_ID="ctl00_ContentPlaceHolder1_num4";
 	final static String RECH_FICH_CHD_ID="//*[@id=\"ctl00_ContentPlaceHolder1_GridView4_filter\"]/label/input";
 	final static String POS_FICH_CHD_ID="//*[@id=\"ctl00_ContentPlaceHolder1_GridView4\"]/tbody/tr/td[1]";
 	final static String TABLE_EVAL_PAR_ID="ctl00_ContentPlaceHolder1_GridView7";
@@ -99,12 +99,12 @@ public class FormationPage {
 	final static String VLD_REA_ID="ctl00_ContentPlaceHolder1_LinkButton10";
 	
 	final static String VOL_EVAL_FOR_ID="Span6";
-	final static String RECH_FICH_FOR_ID="//*[@id=\"ctl00_ContentPlaceHolder1_GridView6_filter\"]/label/input";
-	final static String POS_FICH_FOR_ID="//*[@id=\"ctl00_ContentPlaceHolder1_GridView6\"]/tbody/tr/td[1]";
-	final static String EDIT_FICH_FOR_ID="ctl00_ContentPlaceHolder1_LinkButton59";
+	final static String RECH_FICH_FOR_ID="ctl00_ContentPlaceHolder1_GridView4_filter";
+	final static String POS_FICH_FOR_ID="ctl00_ContentPlaceHolder1_GridView3";
+	final static String EDIT_FICH_FOR_ID="ctl00_ContentPlaceHolder1_Lkeditobjectif";
 	final static String VOL_ENR_FOR_ID="//*[@id=\"span1\"]";
 	final static String VOL_EVAL_FORMAT_ID="//*[@id=\"span3\"]";
-	final static String TABLE_EVAL_FOR_ID="ctl00_ContentPlaceHolder1_GridView8";
+	final static String TABLE_EVAL_FOR_ID="ctl00_ContentPlaceHolder1_GridView_Efficacite";
 	final static String VLD_FICH_FOR_ID="ctl00_ContentPlaceHolder1_LinkButton60";
 	
 	final static String VOL_EVAL_FROID_ID="Span5";
@@ -500,9 +500,9 @@ public class FormationPage {
 	
 	@FindBy(how = How.ID, using = VOL_EVAL_FOR_ID)
 	public static WebElement VolEvalForID;
-	@FindBy(how = How.XPATH, using = RECH_FICH_FOR_ID)
+	@FindBy(how = How.ID, using = RECH_FICH_FOR_ID)
 	public static WebElement RechFichForID;
-	@FindBy(how = How.XPATH, using = POS_FICH_FOR_ID)
+	@FindBy(how = How.ID, using = POS_FICH_FOR_ID)
 	public static WebElement PosfichForID;
 	@FindBy(how = How.ID, using = EDIT_FICH_FOR_ID)
 	public static WebElement EditFichForID;

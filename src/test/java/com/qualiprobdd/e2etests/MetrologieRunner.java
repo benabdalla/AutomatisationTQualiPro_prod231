@@ -14,13 +14,13 @@ import org.testng.annotations.Test;
 @CucumberOptions(
 		strict = true,
 
-		features = { "src/specs/features/Métrologie/Equipement.feature" }, 
+		features = { "src/specs/features/Métrologie/Equipement.feature" },
 		monochrome =true,
 		plugin = {"html:target/cucumber-html-report", "json:target/cucumber.json", "junit:target/cucumber.xml",
 		 },
 			//	tags = {"@Paramétrage"},
 				//tags = "@CreationFicher,@ConsulterAgenda",
-		tags = {"@Paramétrage or @CreationFicher"},
+		tags = {"@CreationFicher"},
 		//@ConsulterAgenda"
 		dryRun= false
 		)
