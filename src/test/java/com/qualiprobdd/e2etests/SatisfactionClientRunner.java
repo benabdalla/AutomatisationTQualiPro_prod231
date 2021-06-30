@@ -21,7 +21,7 @@ import org.testng.annotations.Parameters;
 	"com.cucumber.listener.ExtentCucumberFormatter:target/cucumber-reports/report.html" },
 	dryRun= false,
 	//tags= {"@CréationQuestionnaire,@CréationEnquête,@RéponseEnquête"}
-	tags= {"@CréationQuestionnaire"}
+	tags= "@CréationQuestionnaire"
 	)
 
 public class SatisfactionClientRunner extends AbstractTestNGCucumberTests {

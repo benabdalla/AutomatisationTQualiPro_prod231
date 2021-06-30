@@ -16,7 +16,7 @@ import org.testng.annotations.Test;
 		"html:target/cucumber-html-report", "json:target/cucumber.json", "junit:target/cucumber.xml"},
 
 		//"com.cucumber.listener.ExtentCucumberFormatter:target/cucumber-reports/report.html" },
-		tags= {"@tag4"}
+		tags= "@tag4"
 )
 
 

@@ -27,7 +27,7 @@ import com.qualiprobdd.e2etests.util.DriverManager;
     	glue = {"com.qualiprobdd.e2etests"}
     	,
 		//tags = {"@CréationFicherRisque"}
-		tags = {"@CréationFicherRisque or @EvaluationBruteagenda or @EvaluationRésiduelle"}
+		tags = "@CréationFicherRisque or @EvaluationBruteagenda or @EvaluationRésiduelle"
         , dryRun = false
         , monochrome = true
 )

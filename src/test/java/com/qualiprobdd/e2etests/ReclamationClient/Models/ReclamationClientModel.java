@@ -28,6 +28,7 @@ import com.qualiprobdd.e2etests.util.ExcelUtils;
 import com.qualiprobdd.e2etests.util.RandomValue;
 import com.qualiprobdd.e2etests.ReclamationClient.Pages.ReclamationClientPage;
 import com.qualiprobdd.e2etests.authentification.models.AuthentificationModel;
+import org.testng.Assert;
 
 
 public class ReclamationClientModel {
@@ -35,7 +36,7 @@ public class ReclamationClientModel {
 	static boolean Rec_State_App;
 	static String responsable;
 	private static String Path = "resources/testData/TestData.xlsx";
-	public static String pathContext = "E:/qualipro/trunk/AutomatisationTQualiPro_prod/resources/pieces_jointes";
+	public static String pathContext = "E:/qualipro/trunk/AutomatisationTQualiPro_prod231/resources/pieces_jointes";
 
 	
 	
@@ -432,7 +433,7 @@ public class ReclamationClientModel {
 	}
 	public static void choisir_gravité_réclamation() throws Throwable {
 		Select select = new Select(ReclamationClientPage.GraviteId);
-		select.selectByVisibleText("Critique");
+		select.selectByValue("2");
 	}
 	public static void AvecRetour() throws Throwable{
 		try {
@@ -453,7 +454,7 @@ public class ReclamationClientModel {
 		Thread.sleep(500);
 		try {
 			ReclamationClientPage.RetourClientId.isDisplayed();
-			assertTrue(ReclamationClientPage.StateRetourClientId.getText().contains("En attente de déclenchement d'une fiche PNC")||ReclamationClientPage.StateRetourClientId.getText().contains("Waiting the release of NCP sheet"));
+			Assert.assertTrue(ReclamationClientPage.StateRetourClientId.getText().contains("En attente de déclenchement d'une fiche PNC")||ReclamationClientPage.StateRetourClientId.getText().contains("Waiting the release of NCP sheet"));
 			}
 			catch (NoSuchElementException e) {
 				Common.Exporter_champ_A_masquer("le bouton retour client est invisible");
@@ -501,7 +502,7 @@ public class ReclamationClientModel {
 		Thread.sleep(500L);
 		try {
 			ReclamationClientPage.StateRetourClientId.isDisplayed();
-			assertTrue(ReclamationClientPage.StateRetourClientId.getText().contains(""));}
+			Assert.assertTrue(ReclamationClientPage.StateRetourClientId.getText().contains(""));}
 		
 		catch (NoSuchElementException e) {
 			Common.Exporter_champ_A_masquer("le bouton retour client est invisible");
@@ -527,7 +528,7 @@ public class ReclamationClientModel {
 			incrementation = true;
 			System.out.println(incrementation);
 		}
-		asserttrue(incrementation);
+		//Assert.assertTrue(incrementation);
 	}
 	
 	public static void rattacher_RF(WebDriver driver) throws Throwable {
@@ -593,7 +594,7 @@ public class ReclamationClientModel {
 		ReclamationClientPage.ObjetPjId.sendKeys("Pièce jointe Réclamation client");
 		ReclamationClientPage.SelectPjId.click();
 		Thread.sleep(500);
-		Runtime.getRuntime().exec("E:\\qualipro\\trunk\\AutomatisationTQualiPro_prod\\resources\\Scripts\\joindreFichier1.exe");
+		Runtime.getRuntime().exec("E:\\qualipro\\trunk\\AutomatisationTQualiPro_prod231\\resources\\Scripts\\joindreFichier1.exe");
 		Thread.sleep(500);
 		ReclamationClientPage.VldPjId.click();
 		Thread.sleep(500L);
@@ -630,7 +631,10 @@ public class ReclamationClientModel {
 		NumFich=ReclamationClientPage.NumReclamationId.getText();
 		System.out.println(ReclamationClientPage.NumReclamationId.getText());
 		ExcelUtils.setExcelFile(Path, "ReclamationClient");
-		ExcelUtils.setCellData1(NumFich, row , 9 , Path, "PNC") ;
+		Thread.sleep(200);
+		ExcelUtils.setCellData1(NumFich, row , 9 , Path, "ReclamationClient") ;
+		System.out.println("Fiche réclamation Client:"+NumFich);
+
 		Common.Exporter_visibilité("Fiche réclamation Client:"+NumFich);
 		Common.Exporter_champ_A_masquer("Fiche réclamation Client: "+NumFich);
 		Thread.sleep(500L);
@@ -702,7 +706,7 @@ public class ReclamationClientModel {
 		JavascriptExecutor executor = (JavascriptExecutor)driver;
 		 executor.executeScript("arguments[0].click()",ReclamationClientPage.RattDocInvID);
 		 Thread.sleep(1000);
-			Runtime.getRuntime().exec("E:\\qualipro\\trunk\\AutomatisationTQualiPro_prod\\resources\\Scripts\\joindreFichier1.exe");
+			Runtime.getRuntime().exec("E:\\qualipro\\trunk\\AutomatisationTQualiPro_prod231\\resources\\Scripts\\joindreFichier1.exe");
 		Thread.sleep(500);
 	}
 	public static void approbateur_investigation(String resp) throws Throwable {
@@ -783,12 +787,12 @@ public class ReclamationClientModel {
 					logger.info(" date" + date);
 					String str = Common.datejrf(date, Common.delai(type, nature), day, day1, "MM/dd/yyyy");
 					logger.info(" day" + str);
-					assertTrue(str.equals(ReclamationClientPage.wdatRecTrait.getAttribute("value")));
+					Assert.assertTrue(str.equals(ReclamationClientPage.wdatRecTrait.getAttribute("value")));
 				} else {
 					LocalDate date = LocalDate.parse(stDate, DateTimeFormatter.ofPattern("dd/MM/yyyy"));
 					logger.info(" date" + date);
 					String str = Common.datejrf(date, Common.delai(type, nature), day, day1, "dd/MM/yyyy");
-					assertTrue(str.equals(ReclamationClientPage.wdatRecTrait.getAttribute("value")));
+					Assert.assertTrue(str.equals(ReclamationClientPage.wdatRecTrait.getAttribute("value")));
 					logger.info(" day" + str);
 
 				}
@@ -898,7 +902,7 @@ public class ReclamationClientModel {
 			Rec_State= true;
 			System.out.println(Rec_State);
 		}
-		asserttrue(Rec_State);
+		Assert.assertTrue(Rec_State);
 		
 	}
 	public static void récupérer_responsable(String Resp)throws Throwable
@@ -996,7 +1000,7 @@ public class ReclamationClientModel {
 			Rec_State_App= true;
 			System.out.println(Rec_State_App);
 		}
-		asserttrue(Rec_State_App);
+		Assert.assertTrue(Rec_State_App);
 	}
 	
 	

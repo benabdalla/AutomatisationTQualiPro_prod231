@@ -17,7 +17,7 @@ import org.testng.annotations.Test;
 		features = { "src/specs/features/moduleAction/Action.feature" },
 		monochrome =true,
 		plugin = {"html:target/cucumber-html-report", "json:target/cucumber.json", "junit:target/cucumber.xml"},
-	tags = {"@FicheActionDetaille or @RealisationetSuiviAction or @VérificationActionNonClôturée"},
+	tags = "@FicheActionDetaille or @RealisationetSuiviAction or @VérificationActionNonClôturée",
 	//tags = {"@ParemétrageFicheActionDetaille or  @FicheActionDetaille"},
 
 

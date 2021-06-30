@@ -16,7 +16,7 @@ features = { "src/specs/features/Documentation/CreationDocSpirale.feature" },
 monochrome =true,
 plugin = {"html:target/cucumber-html-report", "json:target/cucumber.json", "junit:target/cucumber.xml",
 "com.cucumber.listener.ExtentCucumberFormatter:target/cucumber-reports/report.html" },
-tags = { "@DocumentaionSpirale"},
+tags = "@DocumentaionSpirale",
 dryRun= false	
 		)
 

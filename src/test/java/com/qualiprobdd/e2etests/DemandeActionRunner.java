@@ -20,7 +20,7 @@ import org.testng.annotations.Test;
 		plugin = {"html:target/cucumber-html-report", "json:target/cucumber.json", "junit:target/cucumber.xml",
 		},
 		dryRun= false,
-		tags= {"@AjoutDemandeAction"}
+		tags= "@AjoutDemandeAction"
 )
 
 @Test

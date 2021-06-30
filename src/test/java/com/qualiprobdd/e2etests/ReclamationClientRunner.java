@@ -17,11 +17,10 @@ import org.testng.annotations.Parameters;
 monochrome =true,
 strict = true,
 features = { "src/specs/features/Client/ReclamationClient.feature" },
-plugin = { "json:target/cucumber.json", "junit:target/cucumber.xml",
-"com.cucumber.listener.ExtentCucumberFormatter:target/cucumber-reports/report.html" },
-dryRun= false,
-tags= {"@AjoutReclamationClient or @DecisionInvestigation or @InvestigationRéclamation or @ApprobationInvestigationRéclamation or @Decision or @Traitement or @Suivi or @Approbation"}
-		//tags= {"@Paramétrage,@AjoutReclamationClient"}
+		plugin = {"html:target/cucumber-html-report", "json:target/cucumber.json", "junit:target/cucumber.xml"},
+
+//tags= {"@Paramétrage or @AjoutReclamationClient or @DecisionInvestigation or @InvestigationRéclamation or @ApprobationInvestigationRéclamation or @Decision or @Traitement or @Suivi or @Approbation"}
+		tags= {"@AjoutReclamationClient"}
 		//tags= {"@Approbation"}
 )
 public class ReclamationClientRunner extends AbstractTestNGCucumberTests {

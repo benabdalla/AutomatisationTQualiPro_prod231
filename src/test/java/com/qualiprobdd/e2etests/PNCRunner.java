@@ -15,10 +15,12 @@ import org.testng.annotations.Test;
 				strict = true,
 				features = { "src/specs/features/PNC/PNC.feature" }, 
 				monochrome =true,
-				plugin = { "json:target/cucumber.json", "junit:target/cucumber.xml","com.cucumber.listener.ExtentCucumberFormatter:target/cucumber-reports/report.html" },
+				plugin = { "json:target/cucumber.json", "junit:target/cucumber.xml"},
 				dryRun= false,
-			//	tags = {"@Paramétrage,@CréerFichePNC,@ValiderFichePNC,@DécisionInvestigation,@DécisionDeTraitement,@InvestigationPNC,@ApprobationInvestigationPNC,@ValiderDécisionTraitement,@TraitementPNC,@SuiviPNC,@approbationFinale"}
-		tags = {"@CréerFichePNC or @ValiderFichePNC or @DécisionDeTraitement or @DécisionInvestigation"}
+			tags = "@CréerFichePNC or @ValiderFichePNC or @DécisionDeTraitement or @DécisionInvestigation or @InvestigationPNC or @ApprobationInvestigationPNC " +
+					"or @ValiderDécisionTraitement or  @TraitementPNC or " +
+					"@SuiviPNC or @approbationFinale"
+	//	tags = {"@CréerFichePNC or @ValiderFichePNC or @DécisionDeTraitement or @DécisionInvestigation"}
 		//@CréerFichePNC or @ValiderFichePNC or @DécisionDeTraitement
 		//tags = {"@ValiderDécisionTraitement or @CréerFichePNCPlusieursProduitsPlusieursTypesNC"}
 )

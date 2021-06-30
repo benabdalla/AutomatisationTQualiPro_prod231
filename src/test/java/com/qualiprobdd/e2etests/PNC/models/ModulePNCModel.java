@@ -1182,7 +1182,7 @@ js.executeScript("arguments[0].click()",ModulePNCPage.menuID);
     			  JavascriptExecutor  executor = (JavascriptExecutor)driver;
     			  executor.executeScript("arguments[0].click()", driver.findElement(By.id("ctl00_ContentPlaceHolder1_FileUpload2")));
     			  Thread.sleep(1000);
-    			  Runtime.getRuntime().exec("E:\\qualipro\\trunk\\AutomatisationTQualiPro_prod\\resources\\Scripts\\joindreFichier1.exe");
+    			  Runtime.getRuntime().exec("E:\\qualipro\\trunk\\AutomatisationTQualiPro_prod231\\resources\\Scripts\\joindreFichier1.exe");
     			  Thread.sleep(1000);
     		  }
     	  }
@@ -1204,9 +1204,11 @@ js.executeScript("arguments[0].click()",ModulePNCPage.menuID);
     	  {
     		  if(Investigation)
     		  {
-    			  Actions action = new Actions(driver);
-    				action.moveToElement(ModulePNCPage.VldInvID).perform();
-    			  Thread.sleep(200);
+    			//  Actions action = new Actions(driver);
+    				//action.moveToElement(ModulePNCPage.VldInvID).perform();
+				  JavascriptExecutor  executor2 = (JavascriptExecutor)driver;
+				  executor2.executeScript("arguments[0].scrollIntoView(true);", ModulePNCPage.VldInvID);
+				  Thread.sleep(200);
     			  JavascriptExecutor  executor = (JavascriptExecutor)driver;
     			  executor.executeScript("arguments[0].click()", ModulePNCPage.VldInvID);
 
@@ -1374,7 +1376,7 @@ js.executeScript("arguments[0].click()",ModulePNCPage.menuID);
 			ModulePNCPage.RechNumValDecTrait.findElement(By.tagName("input")).sendKeys(ExcelUtils.getCellData(row,15));
 			Thread.sleep(100L);
     	  utilisateur =ModulePNCPage.UtilisateurID.getAttribute("innerText");
-		  String RespVald=ExcelUtils.getCellData(row,5);
+		  String RespVald=ExcelUtils.getCellData(row,6);
 		  Boolean isPresent = ModulePNCPage.NumValdecTrait.findElements(By.tagName("a")).size() > 0;
 		  if((isPresent==true)&&(utilisateur.equals(RespVald)))
 		  {

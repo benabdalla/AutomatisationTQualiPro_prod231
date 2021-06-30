@@ -20,7 +20,7 @@ import org.testng.annotations.Test;
 		 },
 			//	tags = {"@Paramétrage"},
 				//tags = "@CreationFicher,@ConsulterAgenda",
-		tags = {"@CreationFicher"},
+		tags = "@CreationFicher",
 		//@ConsulterAgenda"
 		dryRun= false
 		)

@@ -19,7 +19,7 @@ import org.testng.annotations.Parameters;
         features = { "src/specs/features/Environnement/EvaluationAspects.feature" },
         plugin = {"html:target/cucumber-html-report", "json:target/cucumber.json", "junit:target/cucumber.xml"},
         monochrome =true,
-        tags = {"@EvaluationAspect"},
+        tags = "@EvaluationAspect",
         //tags= {"@FicheFormation,@RéalisationFormation,@EvaluationAchaud,@EvaluationFormateur,@EvaluationAfroidMono"},
         //",@RéalisationFormation,@EvaluationAchaud,@EvaluationFormateur,@EvaluationAfroidMono"},
         dryRun= false

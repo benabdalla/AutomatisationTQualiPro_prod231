@@ -54,11 +54,7 @@
             <version>2.11.2</version>
         </dependency>
         <!-- https://mvnrepository.com/artifact/com.aventstack/extentreports -->
-        <dependency>
-            <groupId>com.aventstack</groupId>
-            <artifactId>extentreports</artifactId>
-            <version>5.0.8</version>
-        </dependency>
+
 
         <!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-annotations -->
         <dependency>
@@ -86,9 +82,12 @@
             <artifactId>cucumber-java</artifactId>
             <version>5.6.0</version>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/io.cucumber/tag-expressions -->
-
-        <!-- https://mvnrepository.com/artifact/com.google.code.gson/gson -->
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>7.3.0</version>
+            <scope>test</scope>
+        </dependency>
         <dependency>
             <groupId>com.google.code.gson</groupId>
             <artifactId>gson</artifactId>
@@ -222,11 +221,7 @@
         </dependency>
 
         <!-- https://mvnrepository.com/artifact/org.testng/reportng -->
-        <dependency>
-            <groupId>org.testng</groupId>
-            <artifactId>reportng</artifactId>
-            <version>1.2.2</version>
-        </dependency>
+
         <dependency>
             <groupId>com.github.oshi</groupId>
             <artifactId>oshi-core</artifactId>
@@ -269,12 +264,7 @@
             <artifactId>cucumber-extentsreport</artifactId>
             <version>3.0.2</version>
         </dependency>
-        <dependency>
-            <groupId>org.testng</groupId>
-            <artifactId>testng</artifactId>
-            <version>7.3.0</version>
-            <scope>test</scope>
-        </dependency>
+
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-firefox-driver</artifactId>

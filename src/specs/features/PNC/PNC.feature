@@ -213,7 +213,7 @@ Feature: Qualipro- Test fiche PNC En tant que utilisateur je souhaite remplir un
     #Then vérifier que l état de la fiche PNC suit <décision>
     Examples:
       | responsable | exemple | module | décision          |
-      |           5 |       1 | "PNC"  | "val. Dec. Trait" |
+      |           6 |       1 | "PNC"  | "val. Dec. Trait" |
 
   @TraitementPNC
   Scenario Outline: Qualipro-test:En tant que responsable traitement, je souhaite traiter la non conformité

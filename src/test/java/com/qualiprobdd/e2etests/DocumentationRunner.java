@@ -18,7 +18,7 @@ strict = true,
 features = { "src/specs/features/Documentation/CreationDocument.feature" }, 
 monochrome =true,
 plugin = {"html:target/cucumber-html-report", "json:target/cucumber.json", "junit:target/cucumber.xml"},
-tags = { "@Documentaion"},
+tags = "@Documentaion",
 dryRun= false
 		
 		)

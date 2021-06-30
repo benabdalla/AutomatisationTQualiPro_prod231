@@ -38,9 +38,9 @@ Feature: QualiPro-TestModuleIndicateur
     Examples:
       | example |
       | 1       |
-     # | 2       |
-      #| 3       |
-     #|4|
+      | 2       |
+      | 3       |
+
 
   @SUIVIIndicateurManuel
   Scenario Outline: QualiPro-Test Suivi indicateur manuel

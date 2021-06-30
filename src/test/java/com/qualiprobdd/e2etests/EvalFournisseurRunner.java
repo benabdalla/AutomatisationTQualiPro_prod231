@@ -18,7 +18,7 @@ import org.testng.annotations.Test;
 		monochrome =true,
 		plugin = {"html:target/cucumber-html-report", "json:target/cucumber.json", "junit:target/cucumber.xml",
 		 },
-		tags = {"@CreationFicheEvaluation or @Evaluationfournisseur" },
+		tags = "@CreationFicheEvaluation or @Evaluationfournisseur",
 				//",@Evaluationfournisseur"},
 		//tags = {"@CréationFicheAutomatique"},
 		dryRun= false

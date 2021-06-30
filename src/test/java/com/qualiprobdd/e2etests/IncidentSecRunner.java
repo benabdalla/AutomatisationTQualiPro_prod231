@@ -17,7 +17,7 @@ features = { "src/specs/features/Sécurité/IncidentSec.feature" }, plugin = {
 		"html:target/cucumber-html-report", "json:target/cucumber.json", "junit:target/cucumber.xml",
  },
 dryRun= false,
-		tags= {"@CréationFicheIncidentSec or @ValidationFicheIncidentSec or @ValidationFicheIncidentSec or @DécisionFicheIncidentSec or @TraitementFicheIncidentSec or @ClotureFicheIncidentSec"}
+		tags= "@CréationFicheIncidentSec or @ValidationFicheIncidentSec or @ValidationFicheIncidentSec or @DécisionFicheIncidentSec or @TraitementFicheIncidentSec or @ClotureFicheIncidentSec"
 )//@ValidationFicheIncidentSec or @ValidationFicheIncidentSec or @DécisionFicheIncidentSec or @TraitementFicheIncidentSec or @ClotureFicheIncidentSec
 
 public class IncidentSecRunner extends AbstractTestNGCucumberTests {

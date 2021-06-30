@@ -16,7 +16,7 @@ import org.testng.annotations.Test;
 
 @CucumberOptions( features = { "src/specs/features/Documentation/CreationDocPlusieursResponsables.feature" }, plugin = {
 		"html:target/cucumber-html-report", "json:target/cucumber.json", "junit:target/cucumber.xml" },
-		tags = {"@DocumentationPlusieurResp"})
+		tags = "@DocumentationPlusieurResp")
 @Test
 public class DocPlusieursResponsablesRunner extends AbstractTestNGCucumberTests {
 

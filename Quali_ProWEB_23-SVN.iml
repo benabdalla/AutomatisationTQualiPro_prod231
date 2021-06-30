@@ -11,7 +11,7 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: com.aventstack:extentreports:3.1.3" level="project" />
-    <orderEntry type="library" name="Maven: org.freemarker:freemarker:2.3.23" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.freemarker:freemarker:2.3.23" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.mongodb:mongodb-driver:3.3.0" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.mongodb:bson:3.3.0" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.mongodb:mongodb-driver-core:3.3.0" level="project" />
@@ -38,19 +38,26 @@
     <orderEntry type="library" name="Maven: io.cucumber:datatable:3.3.1" level="project" />
     <orderEntry type="library" name="Maven: io.cucumber:docstring:5.6.0" level="project" />
     <orderEntry type="library" name="Maven: org.apiguardian:apiguardian-api:1.1.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.testng:testng:7.3.0" level="project" />
+    <orderEntry type="library" name="Maven: com.beust:jcommander:1.78" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.apache.ant:ant:1.10.3" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.apache.ant:ant-launcher:1.10.3" level="project" />
+    <orderEntry type="library" name="Maven: junit:junit:4.12" level="project" />
+    <orderEntry type="library" name="Maven: org.hamcrest:hamcrest-core:1.3" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: com.google.inject:guice:no_aop:4.2.2" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: javax.inject:javax.inject:1" level="project" />
+    <orderEntry type="library" name="Maven: org.yaml:snakeyaml:1.21" level="project" />
     <orderEntry type="library" name="Maven: com.google.code.gson:gson:2.8.7" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: io.cucumber:cucumber-picocontainer:5.6.0" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.picocontainer:picocontainer:2.15" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: io.cucumber:cucumber-junit:5.6.0" level="project" />
-    <orderEntry type="library" name="Maven: junit:junit:4.13" level="project" />
-    <orderEntry type="library" name="Maven: org.hamcrest:hamcrest-core:1.3" level="project" />
     <orderEntry type="library" name="Maven: io.cucumber:cucumber-gherkin:5.6.0" level="project" />
     <orderEntry type="library" name="Maven: io.cucumber:cucumber-plugin:5.6.0" level="project" />
     <orderEntry type="library" name="Maven: de.monochromata.cucumber:reporting-plugin:4.0.49" level="project" />
     <orderEntry type="library" name="Maven: io.cucumber:gherkin:13.0.0" level="project" />
     <orderEntry type="library" name="Maven: io.cucumber:messages:12.0.0" level="project" />
     <orderEntry type="library" name="Maven: org.json:json:20190722" level="project" />
-    <orderEntry type="library" name="Maven: io.cucumber:cucumber-testng:5.6.0" level="project" />
+    <orderEntry type="library" name="Maven: io.cucumber:cucumber-testng:6.10.4" level="project" />
     <orderEntry type="library" name="Maven: org.apache.commons:commons-lang3:3.9" level="project" />
     <orderEntry type="library" name="Maven: log4j:log4j:1.2.17" level="project" />
     <orderEntry type="library" name="Maven: org.assertj:assertj-core:3.2.0" level="project" />
@@ -90,9 +97,6 @@
     <orderEntry type="library" name="Maven: com.googlecode.owasp-java-html-sanitizer:owasp-java-html-sanitizer:20191001.1" level="project" />
     <orderEntry type="library" name="Maven: commons-configuration:commons-configuration:1.10" level="project" />
     <orderEntry type="library" name="Maven: commons-lang:commons-lang:2.6" level="project" />
-    <orderEntry type="library" name="Maven: org.testng:reportng:1.2.2" level="project" />
-    <orderEntry type="library" name="Maven: com.google.inject:guice:4.2.0" level="project" />
-    <orderEntry type="library" name="Maven: javax.inject:javax.inject:1" level="project" />
     <orderEntry type="library" name="Maven: com.github.oshi:oshi-core:3.11.0" level="project" />
     <orderEntry type="library" name="Maven: net.java.dev.jna:jna-platform:5.1.0" level="project" />
     <orderEntry type="library" name="Maven: com.1stleg:jnativehook:2.0.2" level="project" />
@@ -109,12 +113,6 @@
     <orderEntry type="library" name="Maven: org.apache.httpcomponents:httpcore:4.4.6" level="project" />
     <orderEntry type="library" name="Maven: javax.mail:mail:1.4.7" level="project" />
     <orderEntry type="library" name="Maven: com.vimalselvam:cucumber-extentsreport:3.0.2" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.testng:testng:7.3.0" level="project" />
-    <orderEntry type="library" name="Maven: com.beust:jcommander:1.78" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.apache.ant:ant:1.10.3" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.apache.ant:ant-launcher:1.10.3" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: com.google.inject:guice:no_aop:4.2.2" level="project" />
-    <orderEntry type="library" name="Maven: org.yaml:snakeyaml:1.21" level="project" />
     <orderEntry type="library" name="Maven: org.seleniumhq.selenium:selenium-firefox-driver:3.8.0" level="project" />
     <orderEntry type="library" name="Maven: org.seleniumhq.selenium:selenium-ie-driver:3.8.0" level="project" />
     <orderEntry type="library" name="Maven: org.seleniumhq.selenium:selenium-remote-driver:3.8.0" level="project" />

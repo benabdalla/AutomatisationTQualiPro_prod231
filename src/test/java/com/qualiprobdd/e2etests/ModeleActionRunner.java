@@ -17,7 +17,7 @@ import org.testng.annotations.Parameters;
 		plugin = {"html:target/cucumber-html-report", "json:target/cucumber.json", "junit:target/cucumber.xml",
 		 },
 		dryRun= false,
-		tags = {"@creationModele"})
+		tags = "@creationModele")
 
 public class ModeleActionRunner extends AbstractTestNGCucumberTests {
 	@Parameters({"language","browsername"}) 

@@ -18,7 +18,7 @@ import org.testng.annotations.Test;
 		monochrome =true,
 		plugin = {"html:target/cucumber-html-report", "json:target/cucumber.json", "junit:target/cucumber.xml"},
 				dryRun= false,
-		tags = { "@FicheActionsimplifiée" })
+		tags = "@FicheActionsimplifiée")
 public class ActionSimplifiéeRunner extends AbstractTestNGCucumberTests {
 	@Parameters({"language","browsername"}) 
 	@BeforeClass

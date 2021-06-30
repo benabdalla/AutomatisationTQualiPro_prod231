@@ -20,7 +20,7 @@ import org.testng.annotations.Test;
 		plugin = {"html:target/cucumber-html-report", "json:target/cucumber.json", "junit:target/cucumber.xml",
 		 },
 		dryRun= false,
-		tags = { "@AuditAvecValidationConstat"})
+		tags = "@AuditAvecValidationConstat")
 	//tags = { "@AuditAvecValidationConstat or @TraitementAction or @VerficationTauxAudit"})
 	@Test
 	public class AuditRunner extends AbstractTestNGCucumberTests {

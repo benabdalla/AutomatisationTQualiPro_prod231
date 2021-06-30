@@ -23,7 +23,7 @@ features = { "src/specs/features/reunion/ficheReunion.feature" }, plugin = {
 		"html:target/cucumber-html-report", "json:target/cucumber.json", "junit:target/cucumber.xml",
 "com.cucumber.listener.ExtentCucumberFormatter:target/cucumber-reports/report.html" },
 dryRun= false,
-		tags= {"@reunion"}
+		tags= "@reunion"
 )
 
 	

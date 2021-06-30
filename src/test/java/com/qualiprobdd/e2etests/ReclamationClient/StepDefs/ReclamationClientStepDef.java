@@ -11,9 +11,10 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.Assert;
 
 import java.util.concurrent.TimeUnit;
-import static org.junit.Assert.assertTrue;
+
 public class ReclamationClientStepDef {
 
 
@@ -525,7 +526,7 @@ public class ReclamationClientStepDef {
 			ReclamationClientPage.CoutPncID.isDisplayed();
 
 			//System.out.println("coutPNC"+ Integer.parseInt(ReclamationClientPage.CoutPncID.getAttribute("value")));
-			assertTrue(ReclamationClientPage.CoutPncID.getAttribute("value").contains(CoutPNC));
+			Assert.assertTrue(ReclamationClientPage.CoutPncID.getAttribute("value").contains(CoutPNC));
 			Common.Exporter_champ_A_masquer("le champ CNQ produit est visible");
 		}
 		catch (NoSuchElementException e) {
@@ -544,7 +545,7 @@ public class ReclamationClientStepDef {
 		System.out.println("FraisTraiID"+Integer.parseInt(ReclamationClientPage.FraisTraiID.getAttribute("value")));
 		Integer total= Integer.parseInt(CoutPNC)+Integer.parseInt(ReclamationClientPage.FraisTraiID.getAttribute("value"))+Integer.parseInt(PenaliteCost);
 		System.out.println(total);
-		assertTrue(ReclamationClientPage.CoutTotalID.getAttribute("value").contains(total.toString()));
+		Assert.assertTrue(ReclamationClientPage.CoutTotalID.getAttribute("value").contains(total.toString()));
 
 	}
 
@@ -706,7 +707,7 @@ public class ReclamationClientStepDef {
 		System.out.println("**************************************PV************************************************" + fileData);
 
 		System.out.println("Existe: " + common.ExisteWord(path, arg1));
-		assertTrue(common.ExisteWord(path, arg1));
+		Assert.assertTrue(common.ExisteWord(path, arg1));
 
 		driver.navigate().back();
 	}

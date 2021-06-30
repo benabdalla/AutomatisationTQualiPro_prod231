@@ -15,7 +15,7 @@ import static com.qualiprobdd.e2etests.util.Setup.browsername;
         "html:target/cucumber-html-report", "json:target/cucumber.json", "junit:target/cucumber.xml",
 },
         dryRun= false,
-        tags= {"@Reporting-Environnement_Tous"}
+        tags= "@Reporting-Environnement_Tous"
 )
 
 

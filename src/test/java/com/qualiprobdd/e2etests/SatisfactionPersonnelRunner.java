@@ -19,7 +19,7 @@ import org.testng.annotations.Parameters;
 	plugin = { "json:target/cucumber.json", "junit:target/cucumber.xml",
 	"com.cucumber.listener.ExtentCucumberFormatter:target/cucumber-reports/report.html" },
 	dryRun= false,
-	tags= {"@CréationQuestionnairePersonnel or @CréationEnquêtePersonnel or @RéponseEnquêtePersonnel or @EnregistrerRéponseEnquête"}
+	tags= "@CréationQuestionnairePersonnel or @CréationEnquêtePersonnel or @RéponseEnquêtePersonnel or @EnregistrerRéponseEnquête"
 	)
 	//
 	public class SatisfactionPersonnelRunner extends AbstractTestNGCucumberTests {
